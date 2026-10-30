@@ -70,4 +70,4 @@ Trace路径和验收目录须未存在。evaluate运行data/evaluation_cases.jso
 
 其他examples/子目录保留历史测试结果，以测试记录链接的最终材料为入口。
 
-仓库：[7csd/knowledge](https://github.com/7csd/knowledge)。私有仓库的评审访问通过GitHub协作者权限提供，最终commit SHA以Git记录为准。
+仓库：[7csd/knowledge](https://github.com/7csd/knowledge)。仓库公开，评审可直接查看代码和运行记录，最终commit SHA以Git记录为准。

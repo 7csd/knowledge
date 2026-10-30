@@ -85,7 +85,7 @@
   },
   "publication_review": {
     "repository": "https://github.com/7csd/knowledge",
-    "visibility": "private",
+    "visibility": "public",
     "secret_pattern_matches": 0,
     "ignored": [
       ".env",
