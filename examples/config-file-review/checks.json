@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-30",
+  "scope": "Local JSON configuration and full engineering regression; no external model request",
+  "pytest": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest -q",
+    "exit_code": 0,
+    "actual_output_summary": "79 passed in 8.75s"
+  },
+  "ruff": {
+    "command": ".\\.venv\\Scripts\\python.exe -m ruff check src tests scripts",
+    "exit_code": 0,
+    "actual_output": "All checks passed!"
+  },
+  "configuration_checks": [
+    "JSON credentials reach the HTTP adapter via httpx.MockTransport",
+    "JSON overrides environment, environment overrides .env, blank JSON values override credentials",
+    "Loading .env does not mutate process environment",
+    "Invalid JSON, invalid root type and unknown fields fail without exposing file contents",
+    "Explicit missing configuration fails instead of silently using defaults",
+    "Custom configuration path and CLI retrieval override work"
+  ]
+}

@@ -34,6 +34,7 @@ def main(argv: list[str] | None = None) -> int:
         if hasattr(stream, "reconfigure"):
             stream.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description="企业知识问答 Agent（真实模型或显式离线回放）")
+    parser.add_argument("--config", type=Path, help="JSON配置文件，默认读取项目根目录下的config.json")
     parser.add_argument("--data", type=Path, help="原JSON或多格式解析快照路径")
     parser.add_argument("--retrieval", choices=["hybrid", "bm25"], help="覆盖检索模式，不自动降级")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -52,7 +53,7 @@ def main(argv: list[str] | None = None) -> int:
     search = sub.add_parser("search", help="仅检索，不调用对话模型")
     search.add_argument("query")
     search.add_argument("--top-k", type=int, choices=range(1, 13), default=6)
-    ask = sub.add_parser("ask", help="真实模型问答，需要 .env 配置")
+    ask = sub.add_parser("ask", help="真实模型问答，在config.json填写URL、API Key和模型名")
     ask.add_argument("question")
     ask.add_argument("--history", type=Path, help="[{role: user/assistant, content: ...}] JSON")
     ask.add_argument("--trace", type=Path, required=True, help="新的 JSONL 文件，拒绝覆盖")
@@ -65,7 +66,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     tools = model = None
     try:
-        settings = Settings.from_env()
+        settings = Settings.load(args.config)
         if args.data:
             settings.data_path = args.data
         if args.retrieval:
@@ -128,7 +129,7 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps(result, ensure_ascii=False, indent=2, default=str))
         return 0
     except ValidationError:
-        print("配置或输入结构校验失败，请核对 .env、语料、历史或用例格式。", file=sys.stderr)
+        print("配置或输入结构校验失败，请核对 config.json（或 .env）、语料、历史或用例格式。", file=sys.stderr)
         return 2
     except (ValueError, OSError) as exc:
         message = str(exc)

@@ -7,6 +7,7 @@
 | 测试 | 预期 | 实际结果与记录 |
 | --- | --- | --- |
 | pytest回归 | 检索、引用、历史、失败、预算、增量等断言通过 | 本次72项通过，见 [tests.xml](../examples/final-review/tests.xml) |
+| 配置文件入口回归 | JSON配置可驱动请求，优先级、CLI覆盖和错误处理正确 | 后续复核79项通过，Ruff通过，见 [配置复核](../examples/config-file-review/checks.json)；HTTP使用MockTransport，无外部模型请求 |
 | Ruff / pip check | 无静态错误、无依赖冲突 | 本次均通过，见 [checks.json](../examples/final-review/checks.json) |
 | 离线回放 | 正常、冲突、资料不足、工具失败状态正确 | 四组输出与Trace见 [final-check](../examples/ingestion/final-check/)，模式offline_scripted |
 | 解析入库 | OCR、跨页续行和注释可核对，来源变化可检测 | 已验证，见 [报告](../examples/ingestion/final-check/report.json) |
@@ -44,7 +45,7 @@
 | 冲突 c01 | search_documents(query="费用发生后报销最晚几天交？")；读取D01@2026-01-01/c005和D02@2026-03-01/c005，分别为30、15自然日 | 调用list_related_documents补查双方，再读D01/c001、D02/c008；范围和优先级仍缺，提交needs_clarification | [Trace](../examples/assistant-evaluation/2026-10-30/c01/trace.jsonl)、[输出](../examples/assistant-evaluation/2026-10-30/c01/actual.json) |
 | 失败恢复 f03 | 首次search_documents返回injected_tool_failure；改查query="内部培训 取消报名"成功，读取D12@2026-02-15/c001 | 根据失败观察重试，恢复后核验原文，回答开课前1工作日取消，提交completed | [Trace](../examples/assistant-evaluation/2026-10-30/f03/trace.jsonl)、[输出](../examples/assistant-evaluation/2026-10-30/f03/actual.json) |
 
-默认上限为8次模型决策、12次工具调用，配置在.env.example及Settings，执行控制在agent.py。b01将模型步数限为1，返回incomplete和“达到模型决策步数上限”；b02将工具次数限为1，返回incomplete和“达到工具调用次数上限”。见 [b01输出](../examples/assistant-evaluation/2026-10-30/b01/actual.json)、[b01 Trace](../examples/assistant-evaluation/2026-10-30/b01/trace.jsonl)、[b02输出](../examples/assistant-evaluation/2026-10-30/b02/actual.json)、[b02 Trace](../examples/assistant-evaluation/2026-10-30/b02/trace.jsonl)。
+默认上限为8次模型决策、12次工具调用，配置模板在config.example.json，默认值在Settings，执行控制在agent.py。b01将模型步数限为1，返回incomplete和“达到模型决策步数上限”；b02将工具次数限为1，返回incomplete和“达到工具调用次数上限”。见 [b01输出](../examples/assistant-evaluation/2026-10-30/b01/actual.json)、[b01 Trace](../examples/assistant-evaluation/2026-10-30/b01/trace.jsonl)、[b02输出](../examples/assistant-evaluation/2026-10-30/b02/actual.json)、[b02 Trace](../examples/assistant-evaluation/2026-10-30/b02/trace.jsonl)。
 
 ## 检索实测
 

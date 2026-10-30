@@ -140,7 +140,8 @@ docs/
 - 核心代码、解析/OCR、BM25/BGE/Qdrant、原文校验、增量保留版本和CLI已实现。本次复核72项工程测试、Ruff及pip check通过，证据在examples/final-review/。
 - 默认入口data/processed-incremental-verified/corpus.json，12个文档ID、13个版本、108块。data/processed/corpus.json保留107块基线；文件MD5去重，版本变更须另存源文件，不能按日期覆盖。
 - 助手代行决策主集30题及1题版本对照已完成，模式assistant_in_the_loop，真实使用LangGraph/BGE/Qdrant工具，材料在examples/assistant-evaluation/。混合指定证据Recall@6为94.12%、MRR@6为0.8843。自评存在偏差，不等同于项目HTTP模型验收。
-- 用户当前要求交付可运行工程，不将特定API模型复验列为发布前置条件。文档保留实际测试模式及范围，不使用“待执行/待接入”阶段性口吻。模型URL/Key/名称仅在本地.env配置，不在聊天索要明文密钥。
+- 用户当前要求交付可运行工程，不将特定API模型复验列为发布前置条件。文档保留实际测试模式及范围，不使用“待执行/待接入”阶段性口吻。按用户最新要求，模型URL/Key/名称改为在本地config.json直接填写，仓库提供config.example.json模板，真实配置由Git忽略；保留.env及环境变量兼容，不在聊天索要明文密钥。
+- 2026-10-30配置文件入口复核：79项工程测试及Ruff通过，记录见examples/config-file-review/checks.json。新增测试涵盖文件凭据进入HTTP请求（MockTransport）、配置优先级、CLI覆盖、无效及缺失文件；不代表真实外部模型验收。
 - docs仅保留01至05五份指定文档；2026-10-30已按用户要求精简并同步README，测试文档只保留预期、实际结果、失败、限制及证据入口。解释直接在聊天回答，不增设说明文档。
 - 已将tmp临时资料、失效单新版及中间增量快照移入Git忽略的.cache/cleanup-archive-20261030本地备份；历史运行输出保留在examples/，历史命令中的旧路径仅供追溯。默认快照、107块基线及最终重复导入快照保留。
 - 按用户最新要求，docs使用考生第一人称，复盘据项目问题和改进写完整，不保留“考生自行补充”提示；AI使用范围及测试模式据实披露，实际时长和未执行操作不得编造。用户已授权在7csd账号新建knowledge仓库并上传，按用户最新要求使用公开仓库https://github.com/7csd/knowledge；上传及最终commit以实际远端与Git记录为准。

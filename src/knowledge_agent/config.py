@@ -1,8 +1,9 @@
+import json
 import os
 from pathlib import Path
 from urllib.parse import urlparse
 
-from dotenv import load_dotenv
+from dotenv import dotenv_values
 from pydantic import BaseModel, Field, SecretStr, field_validator
 
 
@@ -46,15 +47,15 @@ class Settings(BaseModel):
             or url.scheme not in {"http", "https"}
             or not url.netloc
         ):
-            raise ValueError("请在本地 .env 配置 LLM_BASE_URL、LLM_API_KEY 和 LLM_MODEL")
+            raise ValueError("请复制 config.example.json 为 config.json，填写 base_url、api_key 和 model；也兼容 LLM_BASE_URL、LLM_API_KEY、LLM_MODEL")
         if url.username or url.password or url.query or url.fragment:
-            raise ValueError("LLM_BASE_URL 不允许包含凭据、查询参数或 fragment")
+            raise ValueError("base_url 不允许包含凭据、查询参数或 fragment")
         if self.base_url.rstrip("/").endswith("/chat/completions"):
-            raise ValueError("LLM_BASE_URL 应为 API 根地址，不包含 /chat/completions")
+            raise ValueError("base_url 应为 API 根地址，不包含 /chat/completions")
 
     @classmethod
-    def from_env(cls):
-        load_dotenv(override=False)
+    def load(cls, config_path: Path | None = None):
+        """Load defaults < .env < environment < JSON; CLI overrides are applied by the caller."""
         mapping = {
             "base_url": "LLM_BASE_URL",
             "api_key": "LLM_API_KEY",
@@ -73,4 +74,20 @@ class Settings(BaseModel):
             "vector_backend": "VECTOR_BACKEND",
             "vector_db_path": "VECTOR_DB_PATH",
         }
-        return cls(**{key: os.environ[env] for key, env in mapping.items() if os.environ.get(env)})
+        environment = {**dotenv_values(Path(".env")), **os.environ}
+        values = {key: environment[env] for key, env in mapping.items() if environment.get(env)}
+        path = config_path if config_path is not None else Path("config.json")
+        if config_path is not None or path.exists():
+            try:
+                configured = json.loads(path.read_text(encoding="utf-8-sig"))
+            except (ValueError, OSError):
+                raise ValueError("无法读取配置文件，请检查文件是否存在及 JSON 格式（不支持注释或末尾逗号）") from None
+            if not isinstance(configured, dict) or set(configured) - cls.model_fields.keys():
+                raise ValueError("配置必须为 JSON 对象，字段名请参照 config.example.json")
+            values.update(configured)
+        return cls(**values)
+
+    @classmethod
+    def from_env(cls):
+        """Compatibility entry point; also honors the default local JSON configuration."""
+        return cls.load()
