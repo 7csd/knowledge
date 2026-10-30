@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "先检索问题对应制度；追问结合已有对话确定事项。",
+  "tool_calls": [
+    {
+      "id": "n07-1-0",
+      "type": "function",
+      "function": {
+        "name": "search_documents",
+        "arguments": "{\"query\": \"现在企业账号密码最少几位，多久更新？旧8位规则还有效吗？\"}"
+      }
+    }
+  ]
+}

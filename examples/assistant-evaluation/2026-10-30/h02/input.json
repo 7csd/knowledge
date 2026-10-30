@@ -1,0 +1,23 @@
+{
+  "case_id": "h02",
+  "category": "上下文追问",
+  "question": "那取消最晚什么时候？",
+  "expected_behavior": "理解为内部培训，开课前1工作日",
+  "required": [
+    "D12@2026-02-15#c001"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ],
+  "history": [
+    {
+      "role": "user",
+      "content": "内部培训在哪里报名？"
+    },
+    {
+      "role": "assistant",
+      "content": "通过学习平台报名。"
+    }
+  ]
+}

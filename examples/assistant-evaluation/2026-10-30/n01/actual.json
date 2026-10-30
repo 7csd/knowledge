@@ -1,0 +1,35 @@
+{
+  "run_id": "78d293b0ecb9407ba3a7407d3251b8b2",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 3,
+  "result": {
+    "status": "completed",
+    "answer": "正式员工应至少提前3个工作日在办公系统提交年假申请，由直属主管审批。",
+    "citations": [
+      {
+        "doc_id": "D03",
+        "version_date": "2026-02-01",
+        "chunk_id": "r001",
+        "quote": "正式员工申请年假，应至少提前3个工作日在办公系统提交申请，并由直属主管审批。",
+        "source_locations": [
+          {
+            "file_id": "D03-canonical",
+            "source_path": "data/source_materials/corpus/markdown/D03_年假申请流程.md",
+            "sha256": "041edf691e47cbcdc69171f784c112374b5b1f13fb3cb87501fd6c1b0c7e36be",
+            "method": "markdown",
+            "text": "正式员工申请年假，应至少提前3个工作日在办公系统提交申请，并由直属主管审批。",
+            "page": null,
+            "bbox": null,
+            "line_start": 13,
+            "line_end": 13,
+            "confidence": null
+          }
+        ]
+      }
+    ],
+    "gaps": [],
+    "conflicts": []
+  }
+}

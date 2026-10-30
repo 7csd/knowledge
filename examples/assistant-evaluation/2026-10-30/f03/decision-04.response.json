@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "重试后已成功读取取消报名原文，可以按证据回答。",
+  "tool_calls": [
+    {
+      "id": "f03-4-0",
+      "type": "function",
+      "function": {
+        "name": "submit_result",
+        "arguments": "{\"answer\": \"内部培训取消报名应至少在开课前1个工作日操作。\", \"status\": \"completed\", \"citations\": [{\"doc_id\": \"D12\", \"version_date\": \"2026-02-15\", \"chunk_id\": \"r001\", \"quote\": \"需取消报名的，应至少在开课前1个工作日操作；\"}], \"gaps\": [], \"conflicts\": []}"
+      }
+    }
+  ]
+}

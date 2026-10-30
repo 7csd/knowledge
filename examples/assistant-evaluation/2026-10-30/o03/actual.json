@@ -1,0 +1,37 @@
+{
+  "run_id": "9efa11db1fbd492c9513aa83ae1b1ac3",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 3,
+  "result": {
+    "status": "insufficient_evidence",
+    "answer": "现有培训说明不规定外部培训费用标准，无法确定可报销金额。请补充外部培训报销制度。",
+    "citations": [
+      {
+        "doc_id": "D12",
+        "version_date": "2026-02-15",
+        "chunk_id": "r001",
+        "quote": "本文不规定外部培训费用标准。",
+        "source_locations": [
+          {
+            "file_id": "D12-canonical",
+            "source_path": "data/source_materials/corpus/markdown/D12_培训报名说明.md",
+            "sha256": "6886534016c7f0c5a3440e5129740f76d66e89bf4df55a5f3be0d417b1b2afbb",
+            "method": "markdown",
+            "text": "内部培训通过学习平台报名。需取消报名的，应至少在开课前1个工作日操作；本文不规定外部培训费用标准。",
+            "page": null,
+            "bbox": null,
+            "line_start": 13,
+            "line_end": 13,
+            "confidence": null
+          }
+        ]
+      }
+    ],
+    "gaps": [
+      "缺少外部培训费用标准"
+    ],
+    "conflicts": []
+  }
+}

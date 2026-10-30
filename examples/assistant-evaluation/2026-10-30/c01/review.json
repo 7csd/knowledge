@@ -1,0 +1,84 @@
+{
+  "run_id": "41479fd77ef948d9afe66d7963d0f66f",
+  "artifact_sha256": "99179041b4de4f6b58dc340b61573d7e37f752d60e6e99084a44e2c35c17afe4",
+  "status": "reviewed",
+  "reviewer": "Codex current assistant (answer author; non-independent)",
+  "all_factual_claims_reviewed": true,
+  "claims": [
+    {
+      "answer_span": "D01规定费用发生后30个自然日提交",
+      "supported_by_read_evidence": true,
+      "supporting_read_keys": [
+        "D01@2026-01-01#r005"
+      ],
+      "supporting_citation_indices": [
+        0
+      ],
+      "rationale": "已读原文与指定引文支持该事实，保留范围、时间及条件；表格单元格结合相同行与计价单位判断。"
+    },
+    {
+      "answer_span": "D02规定15个自然日",
+      "supported_by_read_evidence": true,
+      "supporting_read_keys": [
+        "D02@2026-03-01#r005"
+      ],
+      "supporting_citation_indices": [
+        1
+      ],
+      "rationale": "已读原文与指定引文支持该事实，保留范围、时间及条件；表格单元格结合相同行与计价单位判断。"
+    },
+    {
+      "answer_span": "仍缺少适用范围和优先关系",
+      "supported_by_read_evidence": true,
+      "supporting_read_keys": [
+        "D01@2026-01-01#r001",
+        "D02@2026-03-01#r008"
+      ],
+      "supporting_citation_indices": [
+        2,
+        3
+      ],
+      "rationale": "已读原文与指定引文支持该事实，保留范围、时间及条件；表格单元格结合相同行与计价单位判断。"
+    },
+    {
+      "answer_span": "不能因为D02较新或更严格就选择15天",
+      "supported_by_read_evidence": true,
+      "supporting_read_keys": [
+        "D02@2026-03-01#r008"
+      ],
+      "supporting_citation_indices": [
+        3
+      ],
+      "rationale": "已读原文与指定引文支持该事实，保留范围、时间及条件；表格单元格结合相同行与计价单位判断。"
+    }
+  ],
+  "citation_judgments": [
+    {
+      "citation_index": 0,
+      "supports_associated_claim": true,
+      "rationale": "与回答事实对应；表格的城市、金额、计价单位需联合支持同一结论，续行及共同注释支持超标条件。"
+    },
+    {
+      "citation_index": 1,
+      "supports_associated_claim": true,
+      "rationale": "与回答事实对应；表格的城市、金额、计价单位需联合支持同一结论，续行及共同注释支持超标条件。"
+    },
+    {
+      "citation_index": 2,
+      "supports_associated_claim": true,
+      "rationale": "与回答事实对应；表格的城市、金额、计价单位需联合支持同一结论，续行及共同注释支持超标条件。"
+    },
+    {
+      "citation_index": 3,
+      "supports_associated_claim": true,
+      "rationale": "与回答事实对应；表格的城市、金额、计价单位需联合支持同一结论，续行及共同注释支持超标条件。"
+    }
+  ],
+  "answer_correctness": 1,
+  "answer_relevance": 1,
+  "status_appropriate": true,
+  "conflict_handling": true,
+  "clarification_quality": true,
+  "refusal_appropriate": null,
+  "notes": "当前助手对照已读原文、问题和预期逐条审阅；同一助手出题/作答/审阅，存在自评偏差，需独立复核。纯操作状态和澄清请求不计企业事实。"
+}

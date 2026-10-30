@@ -1,0 +1,35 @@
+{
+  "run_id": "7044c2ce7f0644429c63a2b52e46effc",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 4,
+  "result": {
+    "status": "completed",
+    "answer": "总部办公区员工个人快递请在工作日18点前到一楼收发室领取。",
+    "citations": [
+      {
+        "doc_id": "D11",
+        "version_date": "2026-01-05",
+        "chunk_id": "r001",
+        "quote": "员工个人快递请在工作日18点前到一楼收发室领取，",
+        "source_locations": [
+          {
+            "file_id": "D11-canonical",
+            "source_path": "data/source_materials/corpus/markdown/D11_快递领取规范.md",
+            "sha256": "f05f6939113789ec6039b9b03044e9ed78fc7aa18617994111badee48dbba0e2",
+            "method": "markdown",
+            "text": "员工个人快递请在工作日18点前到一楼收发室领取，公司不承担个人快递的寄件费用。",
+            "page": null,
+            "bbox": null,
+            "line_start": 13,
+            "line_end": 13,
+            "confidence": null
+          }
+        ]
+      }
+    ],
+    "gaps": [],
+    "conflicts": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "已读原文支持以下结论；保留原文范围与条件。",
+  "tool_calls": [
+    {
+      "id": "o04-3-0",
+      "type": "function",
+      "function": {
+        "name": "submit_result",
+        "arguments": "{\"answer\": \"VPN指南未提供服务器地址和端口，无法据此配置。请补充企业受控的接入配置资料。\", \"status\": \"insufficient_evidence\", \"citations\": [{\"doc_id\": \"D05\", \"version_date\": \"2026-01-01\", \"chunk_id\": \"r020\", \"quote\": \"本文未提供真实服务台入口、客户端版本、服务器地址、端口、验证码有效秒数、账号锁定阈值、服务时限、个人设备和海外接入规则。\"}], \"gaps\": [\"缺少VPN服务器地址与端口\"], \"conflicts\": []}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "run_id": "2f02ba138a9c4ffc8bb02b5a31af2963",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 3,
+  "result": {
+    "status": "completed",
+    "answer": "新员工可通过资产系统申请一台工作笔记本电脑，经直属主管审批后由行政部门发放。",
+    "citations": [
+      {
+        "doc_id": "D07",
+        "version_date": "2026-01-01",
+        "chunk_id": "r001",
+        "quote": "新入职员工可通过资产系统申请一台工作笔记本电脑，经直属主管审批后由行政部门发放。",
+        "source_locations": [
+          {
+            "file_id": "D07-canonical",
+            "source_path": "data/source_materials/corpus/markdown/D07_设备申领指南.md",
+            "sha256": "bf39d195bc01cc0e1b8c9bcfa4471500b95b5ed3bcb02b8ef671ad89c4c3cbf8",
+            "method": "markdown",
+            "text": "新入职员工可通过资产系统申请一台工作笔记本电脑，经直属主管审批后由行政部门发放。",
+            "page": null,
+            "bbox": null,
+            "line_start": 13,
+            "line_end": 13,
+            "confidence": null
+          }
+        ]
+      }
+    ],
+    "gaps": [],
+    "conflicts": []
+  }
+}

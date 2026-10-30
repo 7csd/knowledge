@@ -1,0 +1,21 @@
+{
+  "command": [
+    "E:\\企业知识库问答agent\\.venv\\Scripts\\python.exe",
+    "-m",
+    "knowledge_agent",
+    "--data",
+    "data/processed-incremental-verified/corpus.json",
+    "--retrieval",
+    "hybrid",
+    "index"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"mode\": \"hybrid\",\n  \"documents\": 13,\n  \"passages\": 108,\n  \"corpus_hash\": \"8d15dcb31ad9808976828da27f7e8a2d8e34ae8c8ddc9e6c8eb08769de8563b2\",\n  \"parents\": 108,\n  \"vector_backend\": \"qdrant_local\",\n  \"vector_database\": \".cache\\\\incremental-verified\\\\qdrant\\\\29a0ad98257d68c67b4dd23d1d4a4bec687cdd3eeca4212e10264b65a737aa6e\",\n  \"vector_count\": 108,\n  \"embedding_stats\": {\n    \"encoded_inputs\": 1,\n    \"reused_passages\": 107\n  },\n  \"vector_points_added\": 1\n}\n",
+  "stderr": "\nLoading weights:   0%|          | 0/71 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 71/71 [00:00<00:00, 2058.82it/s]\n",
+  "execution_environment": {
+    "EMBEDDING_LOCAL_ONLY": "true",
+    "HF_HUB_OFFLINE": "1",
+    "CACHE_DIR": ".cache/incremental-verified",
+    "VECTOR_DB_PATH": ".cache/incremental-verified/qdrant"
+  }
+}

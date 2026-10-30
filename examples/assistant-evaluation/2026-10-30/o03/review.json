@@ -1,0 +1,34 @@
+{
+  "run_id": "9efa11db1fbd492c9513aa83ae1b1ac3",
+  "artifact_sha256": "50a4362aff32a632e0ab9bfbdd05f03e09ad6c6148e032313920cac63bbf7347",
+  "status": "reviewed",
+  "reviewer": "Codex current assistant (answer author; non-independent)",
+  "all_factual_claims_reviewed": true,
+  "claims": [
+    {
+      "answer_span": "现有培训说明不规定外部培训费用标准",
+      "supported_by_read_evidence": true,
+      "supporting_read_keys": [
+        "D12@2026-02-15#r001"
+      ],
+      "supporting_citation_indices": [
+        0
+      ],
+      "rationale": "已读原文与指定引文支持该事实，保留范围、时间及条件；表格单元格结合相同行与计价单位判断。"
+    }
+  ],
+  "citation_judgments": [
+    {
+      "citation_index": 0,
+      "supports_associated_claim": true,
+      "rationale": "与回答事实对应；表格的城市、金额、计价单位需联合支持同一结论，续行及共同注释支持超标条件。"
+    }
+  ],
+  "answer_correctness": 1,
+  "answer_relevance": 1,
+  "status_appropriate": true,
+  "conflict_handling": null,
+  "clarification_quality": null,
+  "refusal_appropriate": true,
+  "notes": "当前助手对照已读原文、问题和预期逐条审阅；同一助手出题/作答/审阅，存在自评偏差，需独立复核。纯操作状态和澄清请求不计企业事实。"
+}

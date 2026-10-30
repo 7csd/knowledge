@@ -1,0 +1,35 @@
+{
+  "run_id": "485a4ed0c7a242dab98ef08900a2fa5a",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 3,
+  "result": {
+    "status": "completed",
+    "answer": "紧急请假可先联系主管，再于返岗后1个工作日内补交申请。",
+    "citations": [
+      {
+        "doc_id": "D03",
+        "version_date": "2026-02-01",
+        "chunk_id": "r002",
+        "quote": "紧急请假可先联系主管，再于返岗后1个工作日内补交申请。",
+        "source_locations": [
+          {
+            "file_id": "D03-canonical",
+            "source_path": "data/source_materials/corpus/markdown/D03_年假申请流程.md",
+            "sha256": "041edf691e47cbcdc69171f784c112374b5b1f13fb3cb87501fd6c1b0c7e36be",
+            "method": "markdown",
+            "text": "紧急请假可先联系主管，再于返岗后1个工作日内补交申请。本文不规定年假天数。",
+            "page": null,
+            "bbox": null,
+            "line_start": 15,
+            "line_end": 15,
+            "confidence": null
+          }
+        ]
+      }
+    ],
+    "gaps": [],
+    "conflicts": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "a02",
+  "category": "信息不全",
+  "question": "出差住宿一晚能报多少？",
+  "expected_behavior": "先询问城市及国内范围，不能统一给最高限额",
+  "required": [],
+  "relevant": null,
+  "acceptable_statuses": [
+    "needs_clarification"
+  ]
+}

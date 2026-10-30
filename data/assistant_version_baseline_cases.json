@@ -1,0 +1,9 @@
+[
+  {
+    "case_id": "v01",
+    "category": "文档增量前基线",
+    "question": "现在个人快递最晚几点领？",
+    "expected_behavior": "基线仅有D11旧版时回答工作日18点前；与增量双版本c03对照",
+    "acceptable_statuses": ["completed"]
+  }
+]

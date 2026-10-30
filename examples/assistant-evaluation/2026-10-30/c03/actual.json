@@ -1,0 +1,59 @@
+{
+  "run_id": "04683158086d4adeaf3c4f7b1c035ba4",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 4,
+  "tool_calls": 5,
+  "result": {
+    "status": "needs_clarification",
+    "answer": "D11的2026-01-05版要求工作日18点前领取，2026-10-30版要求17点前领取。两版均列为有效，未提供替代依据，不能仅凭日期认定旧版作废。请确认总部办公区目前适用哪个版本，或补充正式替代通知。",
+    "citations": [
+      {
+        "doc_id": "D11",
+        "version_date": "2026-01-05",
+        "chunk_id": "r001",
+        "quote": "员工个人快递请在工作日18点前到一楼收发室领取，",
+        "source_locations": [
+          {
+            "file_id": "D11-canonical",
+            "source_path": "data/source_materials/corpus/markdown/D11_快递领取规范.md",
+            "sha256": "f05f6939113789ec6039b9b03044e9ed78fc7aa18617994111badee48dbba0e2",
+            "method": "markdown",
+            "text": "员工个人快递请在工作日18点前到一楼收发室领取，公司不承担个人快递的寄件费用。",
+            "page": null,
+            "bbox": null,
+            "line_start": 13,
+            "line_end": 13,
+            "confidence": null
+          }
+        ]
+      },
+      {
+        "doc_id": "D11",
+        "version_date": "2026-10-30",
+        "chunk_id": "r001",
+        "quote": "员工个人快递请在工作日17点前到一楼收发室领取，",
+        "source_locations": [
+          {
+            "file_id": "D11-20261030",
+            "source_path": "data/source_materials/corpus/markdown/D11_快递领取规范_20261030.md",
+            "sha256": "3aa3c9ad4b3025933f90deb087bf1134efa4048e65e58c5ed80271a9d1aa9f6d",
+            "method": "markdown",
+            "text": "员工个人快递请在工作日17点前到一楼收发室领取，公司不承担个人快递的寄件费用。",
+            "page": null,
+            "bbox": null,
+            "line_start": 13,
+            "line_end": 13,
+            "confidence": null
+          }
+        ]
+      }
+    ],
+    "gaps": [
+      "缺少两版本的替代关系与当前适用确认"
+    ],
+    "conflicts": [
+      "D11两版分别规定18点与17点，尚未消解"
+    ]
+  }
+}

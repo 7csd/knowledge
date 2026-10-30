@@ -1,0 +1,16 @@
+{
+  "mode": "assistant_in_the_loop",
+  "corpus": "data\\processed-incremental-verified\\corpus.json",
+  "corpus_hash": "8d15dcb31ad9808976828da27f7e8a2d8e34ae8c8ddc9e6c8eb08769de8563b2",
+  "documents": 13,
+  "passages": 108,
+  "embedding": "BAAI/bge-small-zh-v1.5@7999e1d3359715c523056ef9478215996d62a620:bge-query-instruction-v1",
+  "backend": "qdrant",
+  "api_usage": null,
+  "limitations": [
+    "当前助手逐轮代行决策，不是项目HTTP模型验收",
+    "同一助手编题、回答及审阅，有自评偏差",
+    "问题token为BGE tokenizer实测，非对话模型计费token",
+    "wall时间含文件桥接等待，不能作为API推理性能"
+  ]
+}

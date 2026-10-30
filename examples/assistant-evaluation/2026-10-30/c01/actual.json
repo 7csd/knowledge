@@ -1,0 +1,119 @@
+{
+  "run_id": "41479fd77ef948d9afe66d7963d0f66f",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 5,
+  "tool_calls": 8,
+  "result": {
+    "status": "needs_clarification",
+    "answer": "D01规定费用发生后30个自然日提交，D02规定15个自然日。补查后仍缺少适用范围和优先关系，不能因为D02较新或更严格就选择15天。请确认本次费用适用哪份制度，或补充正式的适用范围及替代文件。",
+    "citations": [
+      {
+        "doc_id": "D01",
+        "version_date": "2026-01-01",
+        "chunk_id": "r005",
+        "quote": "报销期限为费用发生后30个自然日。",
+        "source_locations": [
+          {
+            "file_id": "D01-canonical",
+            "source_path": "data/source_materials/corpus/pdf_native/D01_费用报销制度甲_原生.pdf",
+            "sha256": "e44b5b4ce13137c381e6910f5304e7b8a583e6dd84756e9c49fdf5520fcd7933",
+            "method": "pdf_text",
+            "text": "报销期限为费用发生后30个自然日。报销申请应提交发票和费用说明。自然日包含周末和节假日，不能直接理解为30个工作日。本文未给出节假日顺延、超期豁免或跨年度延期的批准规则；遇到这些情形时，需要补充制度依据。",
+            "page": 2,
+            "bbox": [
+              48.0,
+              211.4765625,
+              541.5,
+              256.9765625
+            ],
+            "line_start": null,
+            "line_end": null,
+            "confidence": null
+          }
+        ]
+      },
+      {
+        "doc_id": "D02",
+        "version_date": "2026-03-01",
+        "chunk_id": "r005",
+        "quote": "报销期限为费用发生后15个自然日。",
+        "source_locations": [
+          {
+            "file_id": "D02-canonical",
+            "source_path": "data/source_materials/corpus/pdf_scanned/D02_费用报销制度乙_模拟扫描.pdf",
+            "sha256": "545aa231842caf089edb81acf5afb59034f885fca9c050d28d312c53f0902bd2",
+            "method": "ocr",
+            "text": "报销期限为费用发生后15个自然日。本文未说明适用部门，也未说明是否替代其他报销制度。自然日包括周末和节假日，申请人不应自行改为工作日口径。申请材料应如实列明费用发生日期及提交日期。",
+            "page": 2,
+            "bbox": [
+              48.646304321289065,
+              211.3488037109375,
+              541.8775390625,
+              240.6320556640625
+            ],
+            "line_start": null,
+            "line_end": null,
+            "confidence": 0.998851158789226
+          }
+        ]
+      },
+      {
+        "doc_id": "D01",
+        "version_date": "2026-01-01",
+        "chunk_id": "r001",
+        "quote": "现存资料未给出本制度适用的具体部门、人员类别和批准生效文件。本文也未说明与其他报销制度的优先关系。",
+        "source_locations": [
+          {
+            "file_id": "D01-canonical",
+            "source_path": "data/source_materials/corpus/pdf_native/D01_费用报销制度甲_原生.pdf",
+            "sha256": "e44b5b4ce13137c381e6910f5304e7b8a583e6dd84756e9c49fdf5520fcd7933",
+            "method": "pdf_text",
+            "text": "现存资料未给出本制度适用的具体部门、人员类别和批准生效文件。本文也未说明与其他报销制度的优先关系。因此，使用本制度办理业务前，仍应确认实际适用制度；不能仅以版本日期判断其当然优先于其他文件。",
+            "page": 1,
+            "bbox": [
+              48.0,
+              272.9765625,
+              552.0,
+              300.9765625
+            ],
+            "line_start": null,
+            "line_end": null,
+            "confidence": null
+          }
+        ]
+      },
+      {
+        "doc_id": "D02",
+        "version_date": "2026-03-01",
+        "chunk_id": "r008",
+        "quote": "本文件没有说明哪份制度优先，不能仅凭严格程度或版本日期选择15天。",
+        "source_locations": [
+          {
+            "file_id": "D02-canonical",
+            "source_path": "data/source_materials/corpus/pdf_scanned/D02_费用报销制度乙_模拟扫描.pdf",
+            "sha256": "545aa231842caf089edb81acf5afb59034f885fca9c050d28d312c53f0902bd2",
+            "method": "ocr",
+            "text": "如果另一制度规定30个自然日，应同时核对两份原文及适用依据。本文件没有说明哪份制度优先，不能仅凭严格程度或版本日期选择15天。对具体申请的适用制度应请求补充确认，并说明当前资料存在冲突。",
+            "page": 2,
+            "bbox": [
+              47.3772705078125,
+              590.75810546875,
+              540.60849609375,
+              621.738916015625
+            ],
+            "line_start": null,
+            "line_end": null,
+            "confidence": 0.9992694146931171
+          }
+        ]
+      }
+    ],
+    "gaps": [
+      "缺少适用范围、制度优先级或明确替代依据"
+    ],
+    "conflicts": [
+      "D01为30个自然日，D02为15个自然日，尚未消解"
+    ]
+  }
+}

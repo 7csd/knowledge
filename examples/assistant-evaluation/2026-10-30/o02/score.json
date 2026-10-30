@@ -1,0 +1,16 @@
+{
+  "review_status": "reviewed",
+  "reviewer": "Codex current assistant (answer author; non-independent)",
+  "faithfulness": null,
+  "citation_precision": null,
+  "citation_coverage": null,
+  "answer_correctness": 1.0,
+  "answer_relevance": 1.0,
+  "status_appropriate": true,
+  "conflict_handling": null,
+  "clarification_quality": null,
+  "refusal_appropriate": true,
+  "claim_count": 0,
+  "score_origin": "review_annotations_not_automatic_entailment",
+  "critical_failure": false
+}

@@ -1,0 +1,13 @@
+{
+  "case_id": "n01",
+  "category": "明确答案",
+  "question": "正式员工申请年假需要提前多久，谁审批？",
+  "expected_behavior": "提前3个工作日办公系统提交，直属主管审批",
+  "required": [
+    "D03@2026-02-01#c001"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ]
+}

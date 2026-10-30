@@ -1,0 +1,16 @@
+{
+  "command": [
+    "E:\\企业知识库问答agent\\.venv\\Scripts\\python.exe",
+    "-m",
+    "knowledge_agent",
+    "--data",
+    "data/processed/corpus.json",
+    "--retrieval",
+    "bm25",
+    "search",
+    "个人快递最晚几点到哪里领取？"
+  ],
+  "exit_code": 2,
+  "stdout": "",
+  "stderr": "运行失败：源文件已变化或缺失：data/source_materials/corpus/markdown/D11_快递领取规范.md，请更新清单并重新ingest\n"
+}

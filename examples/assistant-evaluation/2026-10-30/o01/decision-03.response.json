@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "已读原文支持以下结论；保留原文范围与条件。",
+  "tool_calls": [
+    {
+      "id": "o01-3-0",
+      "type": "function",
+      "function": {
+        "name": "submit_result",
+        "arguments": "{\"answer\": \"两次检索未找到公司婚假天数的依据，暂时无法确定。请补充适用的婚假制度。\", \"status\": \"insufficient_evidence\", \"citations\": [], \"gaps\": [\"未检索到婚假天数的制度依据\"], \"conflicts\": []}"
+      }
+    }
+  ]
+}

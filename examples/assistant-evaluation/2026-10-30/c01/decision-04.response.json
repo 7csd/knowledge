@@ -1,0 +1,22 @@
+{
+  "role": "assistant",
+  "content": "相关文档元数据仍缺范围和优先级，继续读取范围与期限争议原文。",
+  "tool_calls": [
+    {
+      "id": "c01-4-0",
+      "type": "function",
+      "function": {
+        "name": "read_passage",
+        "arguments": "{\"doc_id\": \"D01\", \"version_date\": \"2026-01-01\", \"chunk_id\": \"c001\"}"
+      }
+    },
+    {
+      "id": "c01-4-1",
+      "type": "function",
+      "function": {
+        "name": "read_passage",
+        "arguments": "{\"doc_id\": \"D02\", \"version_date\": \"2026-03-01\", \"chunk_id\": \"c008\"}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "先检索当前快递领取时间。",
+  "tool_calls": [
+    {
+      "id": "v01-1-0",
+      "type": "function",
+      "function": {
+        "name": "search_documents",
+        "arguments": "{\"query\": \"现在个人快递最晚几点领？\"}"
+      }
+    }
+  ]
+}

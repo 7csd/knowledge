@@ -1,0 +1,16 @@
+{
+  "run_id": "9dc8662bd8f5416da0af81e44bfc13e8",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 1,
+  "tool_calls": 1,
+  "result": {
+    "status": "needs_clarification",
+    "answer": "请问你要申请的是年假、设备、VPN，还是其他事项？",
+    "citations": [],
+    "gaps": [
+      "缺少申请事项"
+    ],
+    "conflicts": []
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "case_id": "p04",
+  "category": "口语改写",
+  "question": "远程连公司网络一直不通，先查啥，还是不行找谁？",
+  "expected_behavior": "网络与验证码有效性；IT服务台；不分享验证码",
+  "required": [
+    "D05@2026-01-01#c009"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ]
+}

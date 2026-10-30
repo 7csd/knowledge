@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "已读原文且同主题只有这一版本，按18点规则回答。",
+  "tool_calls": [
+    {
+      "id": "v01-3-0",
+      "type": "function",
+      "function": {
+        "name": "submit_result",
+        "arguments": "{\"answer\": \"总部办公区员工个人快递请在工作日18点前到一楼收发室领取。\", \"status\": \"completed\", \"citations\": [{\"doc_id\": \"D11\", \"version_date\": \"2026-01-05\", \"chunk_id\": \"r001\", \"quote\": \"员工个人快递请在工作日18点前到一楼收发室领取，\"}], \"gaps\": [], \"conflicts\": []}"
+      }
+    }
+  ]
+}

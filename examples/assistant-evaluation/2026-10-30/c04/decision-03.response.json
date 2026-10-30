@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "已读两个版本分别为18点和17点，继续核对版本范围与有效性声明。",
+  "tool_calls": [
+    {
+      "id": "c04-3-0",
+      "type": "function",
+      "function": {
+        "name": "list_related_documents",
+        "arguments": "{\"doc_id\": \"D11\", \"version_date\": \"2026-10-30\"}"
+      }
+    }
+  ]
+}

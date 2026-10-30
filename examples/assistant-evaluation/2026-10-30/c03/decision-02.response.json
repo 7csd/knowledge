@@ -1,0 +1,22 @@
+{
+  "role": "assistant",
+  "content": "检索已有相关候选，读取完整原文核验；多来源问题同时核对。",
+  "tool_calls": [
+    {
+      "id": "c03-2-0",
+      "type": "function",
+      "function": {
+        "name": "read_passage",
+        "arguments": "{\"doc_id\": \"D11\", \"version_date\": \"2026-01-05\", \"chunk_id\": \"c001\"}"
+      }
+    },
+    {
+      "id": "c03-2-1",
+      "type": "function",
+      "function": {
+        "name": "read_passage",
+        "arguments": "{\"doc_id\": \"D11\", \"version_date\": \"2026-10-30\", \"chunk_id\": \"c001\"}"
+      }
+    }
+  ]
+}

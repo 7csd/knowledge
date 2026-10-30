@@ -1,0 +1,13 @@
+{
+  "case_id": "n05",
+  "category": "明确答案",
+  "question": "总部会议室预约后多久不用会释放？",
+  "expected_behavior": "超过15分钟未使用，管理员可以释放",
+  "required": [
+    "D10@2026-01-05#c001"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ]
+}

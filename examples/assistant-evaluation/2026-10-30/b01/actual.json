@@ -1,0 +1,16 @@
+{
+  "run_id": "181d781e23664755a2944bde56d8978c",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 1,
+  "tool_calls": 1,
+  "result": {
+    "status": "incomplete",
+    "answer": "本次任务未完成，尚不能给出可靠结论。",
+    "citations": [],
+    "gaps": [
+      "达到模型决策步数上限"
+    ],
+    "conflicts": []
+  }
+}

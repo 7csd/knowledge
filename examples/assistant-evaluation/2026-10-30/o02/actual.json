@@ -1,0 +1,16 @@
+{
+  "run_id": "d448020c9c0f4954934ac10c07d95424",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 3,
+  "result": {
+    "status": "insufficient_evidence",
+    "answer": "两次检索未找到年度调薪比例的依据，暂时无法确定。请补充公司薪酬或调薪政策。",
+    "citations": [],
+    "gaps": [
+      "未检索到年度调薪比例政策"
+    ],
+    "conflicts": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "case_id": "n09",
+  "category": "多文档",
+  "question": "VPN连上了，普通成员在星云还是不能导出怎么办？",
+  "expected_behavior": "网络不代表权限；普通成员联系空间管理员",
+  "required": [
+    "D05@2026-01-01#c007",
+    "D06@2026-02-10#c002"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ]
+}

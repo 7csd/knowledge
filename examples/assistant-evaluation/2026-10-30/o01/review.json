@@ -1,0 +1,16 @@
+{
+  "run_id": "50391dd37c2a472bb2b0af55f89aacec",
+  "artifact_sha256": "e7c3eaebf1f67fef7c21f1d65e49556dd76d1153ab4eb057771c1ac8f9723f19",
+  "status": "reviewed",
+  "reviewer": "Codex current assistant (answer author; non-independent)",
+  "all_factual_claims_reviewed": true,
+  "claims": [],
+  "citation_judgments": [],
+  "answer_correctness": 1,
+  "answer_relevance": 1,
+  "status_appropriate": true,
+  "conflict_handling": null,
+  "clarification_quality": null,
+  "refusal_appropriate": true,
+  "notes": "当前助手对照已读原文、问题和预期逐条审阅；同一助手出题/作答/审阅，存在自评偏差，需独立复核。纯操作状态和澄清请求不计企业事实。"
+}

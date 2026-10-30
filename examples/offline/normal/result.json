@@ -1,0 +1,26 @@
+{
+  "warning": "离线预设动作回放，仅验证工程流程；不代表真实模型决策或语义检索效果。",
+  "scenario": "normal",
+  "input": "申请年假需要提前多久？",
+  "actual": {
+    "run_id": "e634512bf4fa4935a88583937cfbe272",
+    "model_mode": "offline_scripted",
+    "retrieval_mode": "bm25",
+    "model_steps": 4,
+    "tool_calls": 4,
+    "result": {
+      "status": "completed",
+      "answer": "应至少提前3个工作日在办公系统提交，并由直属主管审批。",
+      "citations": [
+        {
+          "doc_id": "D03",
+          "version_date": "2026-02-01",
+          "chunk_id": "p001",
+          "quote": "正式员工申请年假，应至少提前3个工作日在办公系统提交申请，并由直属主管审批。"
+        }
+      ],
+      "gaps": [],
+      "conflicts": []
+    }
+  }
+}

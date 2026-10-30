@@ -1,0 +1,15 @@
+{
+  "command": [
+    "E:\\企业知识库问答agent\\.venv\\Scripts\\python.exe",
+    "-m",
+    "knowledge_agent",
+    "--data",
+    "data/processed-d11-20261030/corpus.json",
+    "--retrieval",
+    "hybrid",
+    "index"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"mode\": \"hybrid\",\n  \"documents\": 12,\n  \"passages\": 107,\n  \"corpus_hash\": \"b2f4fd3f91c67d9265362d5021a9d1eb688d4835242a91ef8dce6f4578cf4669\",\n  \"parents\": 107,\n  \"vector_backend\": \"qdrant_local\",\n  \"vector_database\": \".cache\\\\qdrant\\\\3e6178f8e63ccc7e12a7344ca2ae194ab86d84d95793e3baeded987828784c2c\",\n  \"vector_count\": 107\n}\n",
+  "stderr": "\nLoading weights:   0%|          | 0/71 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 71/71 [00:00<00:00, 2213.63it/s]\n"
+}

@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "申请事项尚未说明，先确认业务类型。",
+  "tool_calls": [
+    {
+      "id": "a01-1-0",
+      "type": "function",
+      "function": {
+        "name": "submit_result",
+        "arguments": "{\"answer\": \"请问你要申请的是年假、设备、VPN，还是其他事项？\", \"status\": \"needs_clarification\", \"citations\": [], \"gaps\": [\"缺少申请事项\"], \"conflicts\": []}"
+      }
+    }
+  ]
+}

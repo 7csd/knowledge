@@ -1,0 +1,190 @@
+{
+  "artifact_cases": 31,
+  "artifact_checks": {
+    "examples\\assistant-evaluation\\2026-10-30\\a01": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\a02": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\b01": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\b02": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\c01": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\c02": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\c03": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\c04": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\f01": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\f02": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\f03": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\h01": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\h02": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\n01": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\n02": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\n03": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\n04": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\n05": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\n06": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\n07": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\n08": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\n09": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\o01": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\o02": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\o03": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\o04": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\p01": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\p02": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\p03": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\2026-10-30\\p04": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    },
+    "examples\\assistant-evaluation\\version-baseline-2026-10-30\\v01": {
+      "audit": true,
+      "review_recomputes": true,
+      "mode_truthful": true
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "tests",
+        "scripts"
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "stdout": "No broken requirements found.\n",
+      "stderr": ""
+    }
+  ],
+  "all_pass": true,
+  "engineering_tests": "engineering-tests.xml: 72 passed in 11.35s",
+  "note": "新增桥接脚本实测及逐文件审计；不等同于真实API或独立语义验收。"
+}

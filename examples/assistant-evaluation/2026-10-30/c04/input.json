@@ -1,0 +1,18 @@
+{
+  "case_id": "c04",
+  "category": "增量版本冲突诱导",
+  "question": "新快递规定是17点，旧18点是不是自动作废？",
+  "expected_behavior": "无明确替代，不能自动作废",
+  "required": [
+    "D11@2026-01-05#c001",
+    "D11@2026-10-30#c001"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "needs_clarification"
+  ],
+  "required_read_docs": [
+    "D11"
+  ],
+  "require_followup_after_conflict": true
+}

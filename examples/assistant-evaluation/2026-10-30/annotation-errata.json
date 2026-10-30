@@ -1,0 +1,7 @@
+{
+  "case_id": "n04",
+  "original_expected": "主管审批后IT发放",
+  "corrected_expected": "直属主管审批后行政部门发放",
+  "reason": "出题参考了旧JSON印象，当前快照D07原文为行政部门。原input.json保留，正式数据集及汇总使用当前证据修正。",
+  "audit_fix": "初次内存审计使用Python tuple坐标，与Trace JSON list比较误判6例；改用JSON模式并从实际文件重算，未修改任何工具或模型Trace。"
+}

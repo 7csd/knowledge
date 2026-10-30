@@ -1,0 +1,35 @@
+{
+  "run_id": "af7e06e9209d47c099f34ba052b2836d",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 4,
+  "tool_calls": 4,
+  "result": {
+    "status": "completed",
+    "answer": "内部培训取消报名应至少在开课前1个工作日操作。",
+    "citations": [
+      {
+        "doc_id": "D12",
+        "version_date": "2026-02-15",
+        "chunk_id": "r001",
+        "quote": "需取消报名的，应至少在开课前1个工作日操作；",
+        "source_locations": [
+          {
+            "file_id": "D12-canonical",
+            "source_path": "data/source_materials/corpus/markdown/D12_培训报名说明.md",
+            "sha256": "6886534016c7f0c5a3440e5129740f76d66e89bf4df55a5f3be0d417b1b2afbb",
+            "method": "markdown",
+            "text": "内部培训通过学习平台报名。需取消报名的，应至少在开课前1个工作日操作；本文不规定外部培训费用标准。",
+            "page": null,
+            "bbox": null,
+            "line_start": 13,
+            "line_end": 13,
+            "confidence": null
+          }
+        ]
+      }
+    ],
+    "gaps": [],
+    "conflicts": []
+  }
+}

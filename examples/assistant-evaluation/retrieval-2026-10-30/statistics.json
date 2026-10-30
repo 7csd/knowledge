@@ -1,0 +1,41 @@
+{
+  "bm25": {
+    "single_run_query_ms": {
+      "p50": 0.371,
+      "p95": 0.502,
+      "mean": 0.3753333333333333
+    },
+    "not_all_required_at_6": [
+      "n08",
+      "p04",
+      "c02"
+    ]
+  },
+  "vector": {
+    "single_run_query_ms": {
+      "p50": 6.784,
+      "p95": 7.829,
+      "mean": 6.9899523809523805
+    },
+    "not_all_required_at_6": [
+      "n08",
+      "c02"
+    ]
+  },
+  "hybrid": {
+    "single_run_query_ms": {
+      "p50": 7.149,
+      "p95": 8.406,
+      "mean": 7.325761904761905
+    },
+    "not_all_required_at_6": [
+      "n08",
+      "c02"
+    ]
+  },
+  "assistant_followup": {
+    "eligible": 17,
+    "all_required_read_count": 17,
+    "note": "补查及父块/共同注释展开后的读取覆盖，不是首轮Recall"
+  }
+}

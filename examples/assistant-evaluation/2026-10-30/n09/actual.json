@@ -1,0 +1,80 @@
+{
+  "run_id": "06ee8b050a4e4780a9803bf35a920234",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 5,
+  "result": {
+    "status": "completed",
+    "answer": "VPN网络连通不能替代业务角色授权。星云仅空间管理员有导出权限，普通成员需要导出时应联系本空间管理员。",
+    "citations": [
+      {
+        "doc_id": "D05",
+        "version_date": "2026-01-01",
+        "chunk_id": "r007",
+        "quote": "网络连通并不能替代角色授权。",
+        "source_locations": [
+          {
+            "file_id": "D05-canonical",
+            "source_path": "data/source_materials/corpus/pdf_native/D05_办公网络接入指南_原生.pdf",
+            "sha256": "468dcdffde9e628d40f6b7a32db4b483af08f657c4a450b05524e31b616e15cf",
+            "method": "pdf_text",
+            "text": "不应把“没有导出权限”等业务角色限制理解为VPN故障。例如某产品功能仅管理员可用时，网络连通并不能替代角色授权。相关产品权限应查阅对应产品资料，不得通过借用管理员账号来验证。",
+            "page": 2,
+            "bbox": [
+              48.0,
+              497.4765625,
+              546.75,
+              525.4765625
+            ],
+            "line_start": null,
+            "line_end": null,
+            "confidence": null
+          }
+        ]
+      },
+      {
+        "doc_id": "D06",
+        "version_date": "2026-02-10",
+        "chunk_id": "r001",
+        "quote": "仅空间管理员具有导出权限。",
+        "source_locations": [
+          {
+            "file_id": "D06-canonical",
+            "source_path": "data/source_materials/corpus/markdown/D06_知识产品星云导出FAQ.md",
+            "sha256": "8bd9082bfec18a6fea3a5ab443c22c0742c05745f2eab4efaf59ba5203e15437",
+            "method": "markdown",
+            "text": "星云企业版支持将检索结果导出为CSV。单次导出最多10000条记录，仅空间管理员具有导出权限。",
+            "page": null,
+            "bbox": null,
+            "line_start": 13,
+            "line_end": 13,
+            "confidence": null
+          }
+        ]
+      },
+      {
+        "doc_id": "D06",
+        "version_date": "2026-02-10",
+        "chunk_id": "r002",
+        "quote": "普通成员需要导出时，应联系本空间管理员；",
+        "source_locations": [
+          {
+            "file_id": "D06-canonical",
+            "source_path": "data/source_materials/corpus/markdown/D06_知识产品星云导出FAQ.md",
+            "sha256": "8bd9082bfec18a6fea3a5ab443c22c0742c05745f2eab4efaf59ba5203e15437",
+            "method": "markdown",
+            "text": "普通成员需要导出时，应联系本空间管理员；本文不涉及其他产品。",
+            "page": null,
+            "bbox": null,
+            "line_start": 15,
+            "line_end": 15,
+            "confidence": null
+          }
+        ]
+      }
+    ],
+    "gaps": [],
+    "conflicts": []
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "run_id": "3e13c0981d9b4afca50342024255207f",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 4,
+  "result": {
+    "status": "completed",
+    "answer": "企业账号密码至少12位，每90天更换一次。D09自2026年1月1日起明确替代D08，旧8位规则已被替代。",
+    "citations": [
+      {
+        "doc_id": "D09",
+        "version_date": "2026-01-01",
+        "chunk_id": "r001",
+        "quote": "自2026年1月1日起，企业账号密码至少12位，每90天更换一次。本制度明确替代2025年1月1日发布的D08密码规则。",
+        "source_locations": [
+          {
+            "file_id": "D09-canonical",
+            "source_path": "data/source_materials/corpus/markdown/D09_密码规则新版.md",
+            "sha256": "71ad9ff23c2dcf6e540cf1d673187f2bb0977564ec21c1a7fd9402e6c00951e4",
+            "method": "markdown",
+            "text": "自2026年1月1日起，企业账号密码至少12位，每90天更换一次。本制度明确替代2025年1月1日发布的D08密码规则。",
+            "page": null,
+            "bbox": null,
+            "line_start": 13,
+            "line_end": 13,
+            "confidence": null
+          }
+        ]
+      },
+      {
+        "doc_id": "D08",
+        "version_date": "2025-01-01",
+        "chunk_id": "r001",
+        "quote": "本版本自2026年1月1日起被D09替代。",
+        "source_locations": [
+          {
+            "file_id": "D08-canonical",
+            "source_path": "data/source_materials/corpus/markdown/D08_密码规则旧版.md",
+            "sha256": "d784932c7532eb19b02039e65134b6fc557ec5352ea8d76ea639c0d4116576f3",
+            "method": "markdown",
+            "text": "企业账号密码至少8位，每180天更换一次。本版本自2026年1月1日起被D09替代。",
+            "page": null,
+            "bbox": null,
+            "line_start": 13,
+            "line_end": 13,
+            "confidence": null
+          }
+        ]
+      }
+    ],
+    "gaps": [],
+    "conflicts": []
+  }
+}

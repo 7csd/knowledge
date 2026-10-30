@@ -1,0 +1,11 @@
+{
+  "case_id": "o02",
+  "category": "资料外",
+  "question": "我们每年调薪的百分比是多少？",
+  "expected_behavior": "无薪酬政策",
+  "required": [],
+  "relevant": null,
+  "acceptable_statuses": [
+    "insufficient_evidence"
+  ]
+}

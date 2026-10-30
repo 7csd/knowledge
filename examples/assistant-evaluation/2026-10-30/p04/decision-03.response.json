@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "已读原文支持以下结论；保留原文范围与条件。",
+  "tool_calls": [
+    {
+      "id": "p04-3-0",
+      "type": "function",
+      "function": {
+        "name": "submit_result",
+        "arguments": "{\"answer\": \"如果你指企业VPN连接失败，先检查网络与验证码有效性；仍失败应联系IT服务台，不要向他人分享验证码。\", \"status\": \"completed\", \"citations\": [{\"doc_id\": \"D05\", \"version_date\": \"2026-01-01\", \"chunk_id\": \"r009\", \"quote\": \"VPN连接失败时，先检查网络与验证码有效性；仍失败应联系IT服务台，不要向他人分享验证码。\"}], \"gaps\": [], \"conflicts\": []}"
+      }
+    }
+  ]
+}

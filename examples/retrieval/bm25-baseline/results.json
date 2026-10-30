@@ -1,0 +1,1994 @@
+{
+  "scope": "retrieval_only_no_llm_no_rerank",
+  "time_utc": "2026-10-29T09:01:49.049061+00:00",
+  "corpus_hash": "54e390b758fed059ea0916a894d429f45169c757535605f0c0a2ba3edd3983c8",
+  "documents": 12,
+  "passages": 18,
+  "cases": 24,
+  "semantic_status": "not_requested",
+  "semantic_error": null,
+  "embedding_model": "BAAI/bge-small-zh-v1.5",
+  "embedding_revision": "main",
+  "vector_min_score": 0.45,
+  "embedding_init_seconds": null,
+  "results": {
+    "bm25": {
+      "summary": {
+        "positive_count": 20,
+        "outside_count": 4,
+        "hit@1": 0.85,
+        "hit@3": 0.95,
+        "hit@6": 0.95,
+        "recall@1": 0.8,
+        "recall@3": 0.95,
+        "recall@6": 0.95,
+        "reciprocal_rank": 0.8916666666666666,
+        "multi_source_all@6": 0.6666666666666666,
+        "outside_candidate_rate": 0.75,
+        "mean_query_ms": 0.18675
+      },
+      "cases": [
+        {
+          "case_id": "leave_exact",
+          "category": "直接提问",
+          "query": "申请年假要提前多久，在哪里申请？",
+          "required": [
+            "D03@2026-02-01#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "version_date": "2026-02-01",
+              "chunk_id": "p001",
+              "title": "年假申请流程",
+              "topic": "年假",
+              "scope": "全体正式员工",
+              "status": "有效",
+              "snippet": "正式员工申请年假，应至少提前3个工作日在办公系统提交申请，并由直属主管审批。",
+              "rrf_score": 0.016393,
+              "bm25_score": 7.588433,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D03",
+              "version_date": "2026-02-01",
+              "chunk_id": "p002",
+              "title": "年假申请流程",
+              "topic": "年假",
+              "scope": "全体正式员工",
+              "status": "有效",
+              "snippet": "紧急请假可先联系主管，再于返岗后1个工作日内补交申请。本文不规定年假天数。",
+              "rrf_score": 0.016129,
+              "bm25_score": 4.141981,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "员工在公司外访问内部系统时，需要使用企业VPN。首次使用须在服务台申请开通，审批通过后使用企业账号和动态验证码登录。",
+              "rrf_score": 0.015873,
+              "bm25_score": 2.338089,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D01",
+              "version_date": "2026-01-01",
+              "chunk_id": "p002",
+              "title": "费用报销制度甲",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第二条 报销申请应提交发票和费用说明。本文未说明与其他报销制度的优先关系。",
+              "rrf_score": 0.015625,
+              "bm25_score": 1.843282,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D07",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "设备申领指南",
+              "topic": "设备申领",
+              "scope": "新入职员工",
+              "status": "有效",
+              "snippet": "新入职员工可通过资产系统申请一台工作笔记本电脑，经直属主管审批后由行政部门发放。",
+              "rrf_score": 0.015385,
+              "bm25_score": 1.843282,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D09",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "密码规则新版",
+              "topic": "密码规则",
+              "scope": "企业账号",
+              "status": "有效",
+              "snippet": "自2026年1月1日起，企业账号密码至少12位，每90天更换一次。本制度明确替代2025年1月1日发布的D08密码规则。",
+              "rrf_score": 0.015152,
+              "bm25_score": 1.440088,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.263,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 1.0,
+            "all_required@1": true,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "leave_rewrite",
+          "category": "改写问题",
+          "query": "想休几天带薪年休假，得提前几个工作日走什么手续？",
+          "required": [
+            "D03@2026-02-01#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "version_date": "2026-02-01",
+              "chunk_id": "p001",
+              "title": "年假申请流程",
+              "topic": "年假",
+              "scope": "全体正式员工",
+              "status": "有效",
+              "snippet": "正式员工申请年假，应至少提前3个工作日在办公系统提交申请，并由直属主管审批。",
+              "rrf_score": 0.016393,
+              "bm25_score": 3.821964,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D11",
+              "version_date": "2026-01-05",
+              "chunk_id": "p001",
+              "title": "快递领取规范",
+              "topic": "快递",
+              "scope": "总部办公区",
+              "status": "有效",
+              "snippet": "员工个人快递请在工作日18点前到一楼收发室领取，公司不承担个人快递的寄件费用。",
+              "rrf_score": 0.016129,
+              "bm25_score": 1.497705,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D12",
+              "version_date": "2026-02-15",
+              "chunk_id": "p001",
+              "title": "培训报名说明",
+              "topic": "培训",
+              "scope": "内部培训",
+              "status": "有效",
+              "snippet": "内部培训通过学习平台报名。需取消报名的，应至少在开课前1个工作日操作；本文不规定外部培训费用标准。",
+              "rrf_score": 0.015873,
+              "bm25_score": 1.341473,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.526,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 1.0,
+            "all_required@1": true,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "leave_colloquial",
+          "category": "改写问题",
+          "query": "下周想歇两天，最迟啥时候跟领导走申请流程？",
+          "required": [
+            "D03@2026-02-01#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "version_date": "2026-02-01",
+              "chunk_id": "p001",
+              "title": "年假申请流程",
+              "topic": "年假",
+              "scope": "全体正式员工",
+              "status": "有效",
+              "snippet": "正式员工申请年假，应至少提前3个工作日在办公系统提交申请，并由直属主管审批。",
+              "rrf_score": 0.016393,
+              "bm25_score": 3.298616,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D03",
+              "version_date": "2026-02-01",
+              "chunk_id": "p002",
+              "title": "年假申请流程",
+              "topic": "年假",
+              "scope": "全体正式员工",
+              "status": "有效",
+              "snippet": "紧急请假可先联系主管，再于返岗后1个工作日内补交申请。本文不规定年假天数。",
+              "rrf_score": 0.016129,
+              "bm25_score": 3.082286,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D01",
+              "version_date": "2026-01-01",
+              "chunk_id": "p002",
+              "title": "费用报销制度甲",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第二条 报销申请应提交发票和费用说明。本文未说明与其他报销制度的优先关系。",
+              "rrf_score": 0.015873,
+              "bm25_score": 0.921641,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D07",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "设备申领指南",
+              "topic": "设备申领",
+              "scope": "新入职员工",
+              "status": "有效",
+              "snippet": "新入职员工可通过资产系统申请一台工作笔记本电脑，经直属主管审批后由行政部门发放。",
+              "rrf_score": 0.015625,
+              "bm25_score": 0.921641,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "员工在公司外访问内部系统时，需要使用企业VPN。首次使用须在服务台申请开通，审批通过后使用企业账号和动态验证码登录。",
+              "rrf_score": 0.015385,
+              "bm25_score": 0.756844,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.231,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 1.0,
+            "all_required@1": true,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "urgent_leave",
+          "category": "直接提问",
+          "query": "紧急请假没来得及申请，回来后什么时候补交？",
+          "required": [
+            "D03@2026-02-01#p002"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "version_date": "2026-02-01",
+              "chunk_id": "p002",
+              "title": "年假申请流程",
+              "topic": "年假",
+              "scope": "全体正式员工",
+              "status": "有效",
+              "snippet": "紧急请假可先联系主管，再于返岗后1个工作日内补交申请。本文不规定年假天数。",
+              "rrf_score": 0.016393,
+              "bm25_score": 9.028231,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D07",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "设备申领指南",
+              "topic": "设备申领",
+              "scope": "新入职员工",
+              "status": "有效",
+              "snippet": "新入职员工可通过资产系统申请一台工作笔记本电脑，经直属主管审批后由行政部门发放。",
+              "rrf_score": 0.016129,
+              "bm25_score": 1.592826,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D03",
+              "version_date": "2026-02-01",
+              "chunk_id": "p001",
+              "title": "年假申请流程",
+              "topic": "年假",
+              "scope": "全体正式员工",
+              "status": "有效",
+              "snippet": "正式员工申请年假，应至少提前3个工作日在办公系统提交申请，并由直属主管审批。",
+              "rrf_score": 0.015873,
+              "bm25_score": 1.470314,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "员工在公司外访问内部系统时，需要使用企业VPN。首次使用须在服务台申请开通，审批通过后使用企业账号和动态验证码登录。",
+              "rrf_score": 0.015625,
+              "bm25_score": 1.308016,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D01",
+              "version_date": "2026-01-01",
+              "chunk_id": "p002",
+              "title": "费用报销制度甲",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第二条 报销申请应提交发票和费用说明。本文未说明与其他报销制度的优先关系。",
+              "rrf_score": 0.015385,
+              "bm25_score": 0.921641,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D01",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "费用报销制度甲",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第一条 报销期限为费用发生后30个自然日。",
+              "rrf_score": 0.015152,
+              "bm25_score": 0.779146,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.166,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 1.0,
+            "all_required@1": true,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "expense_conflict",
+          "category": "冲突双方",
+          "query": "报销期限多久？",
+          "required": [
+            "D01@2026-01-01#p001",
+            "D02@2026-03-01#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D01",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "费用报销制度甲",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第一条 报销期限为费用发生后30个自然日。",
+              "rrf_score": 0.016393,
+              "bm25_score": 3.697551,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D02",
+              "version_date": "2026-03-01",
+              "chunk_id": "p001",
+              "title": "费用报销制度乙",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第一条 报销期限为费用发生后15个自然日。",
+              "rrf_score": 0.016129,
+              "bm25_score": 3.697551,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D01",
+              "version_date": "2026-01-01",
+              "chunk_id": "p002",
+              "title": "费用报销制度甲",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第二条 报销申请应提交发票和费用说明。本文未说明与其他报销制度的优先关系。",
+              "rrf_score": 0.015873,
+              "bm25_score": 1.518259,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D02",
+              "version_date": "2026-03-01",
+              "chunk_id": "p002",
+              "title": "费用报销制度乙",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第二条 本文未说明适用部门，也未说明是否替代其他报销制度。",
+              "rrf_score": 0.015625,
+              "bm25_score": 1.426922,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D04",
+              "version_date": "2026-02-01",
+              "chunk_id": "p002",
+              "title": "出差住宿规则",
+              "topic": "住宿",
+              "scope": "国内出差",
+              "status": "有效",
+              "snippet": "超出住宿标准须事先取得部门负责人书面批准，并在报销时附批准记录。",
+              "rrf_score": 0.015385,
+              "bm25_score": 0.979827,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.071,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 0.5,
+            "all_required@1": false,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "expense_rewrite",
+          "category": "冲突双方",
+          "query": "我垫付的钱最晚多长时间内能找公司报账？",
+          "required": [
+            "D01@2026-01-01#p001",
+            "D02@2026-03-01#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D11",
+              "version_date": "2026-01-05",
+              "chunk_id": "p001",
+              "title": "快递领取规范",
+              "topic": "快递",
+              "scope": "总部办公区",
+              "status": "有效",
+              "snippet": "员工个人快递请在工作日18点前到一楼收发室领取，公司不承担个人快递的寄件费用。",
+              "rrf_score": 0.016393,
+              "bm25_score": 3.076921,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "员工在公司外访问内部系统时，需要使用企业VPN。首次使用须在服务台申请开通，审批通过后使用企业账号和动态验证码登录。",
+              "rrf_score": 0.016129,
+              "bm25_score": 1.590546,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D01",
+              "version_date": "2026-01-01",
+              "chunk_id": "p002",
+              "title": "费用报销制度甲",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第二条 报销申请应提交发票和费用说明。本文未说明与其他报销制度的优先关系。",
+              "rrf_score": 0.015873,
+              "bm25_score": 1.200953,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D12",
+              "version_date": "2026-02-15",
+              "chunk_id": "p001",
+              "title": "培训报名说明",
+              "topic": "培训",
+              "scope": "内部培训",
+              "status": "有效",
+              "snippet": "内部培训通过学习平台报名。需取消报名的，应至少在开课前1个工作日操作；本文不规定外部培训费用标准。",
+              "rrf_score": 0.015625,
+              "bm25_score": 1.054797,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D09",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "密码规则新版",
+              "topic": "密码规则",
+              "scope": "企业账号",
+              "status": "有效",
+              "snippet": "自2026年1月1日起，企业账号密码至少12位，每90天更换一次。本制度明确替代2025年1月1日发布的D08密码规则。",
+              "rrf_score": 0.015385,
+              "bm25_score": 0.95516,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.178,
+          "metrics": {
+            "reciprocal_rank": 0.0,
+            "hit@1": false,
+            "recall@1": 0.0,
+            "all_required@1": false,
+            "hit@3": false,
+            "recall@3": 0.0,
+            "all_required@3": false,
+            "hit@6": false,
+            "recall@6": 0.0,
+            "all_required@6": false
+          }
+        },
+        {
+          "case_id": "hotel_exact",
+          "category": "直接提问",
+          "query": "一线城市出差住宿每晚标准是多少？",
+          "required": [
+            "D04@2026-02-01#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "version_date": "2026-02-01",
+              "chunk_id": "p001",
+              "title": "出差住宿规则",
+              "topic": "住宿",
+              "scope": "国内出差",
+              "status": "有效",
+              "snippet": "国内出差住宿标准：一线城市每晚不超过500元，其他城市每晚不超过350元。",
+              "rrf_score": 0.016393,
+              "bm25_score": 16.953736,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D04",
+              "version_date": "2026-02-01",
+              "chunk_id": "p002",
+              "title": "出差住宿规则",
+              "topic": "住宿",
+              "scope": "国内出差",
+              "status": "有效",
+              "snippet": "超出住宿标准须事先取得部门负责人书面批准，并在报销时附批准记录。",
+              "rrf_score": 0.016129,
+              "bm25_score": 6.549888,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D12",
+              "version_date": "2026-02-15",
+              "chunk_id": "p001",
+              "title": "培训报名说明",
+              "topic": "培训",
+              "scope": "内部培训",
+              "status": "有效",
+              "snippet": "内部培训通过学习平台报名。需取消报名的，应至少在开课前1个工作日操作；本文不规定外部培训费用标准。",
+              "rrf_score": 0.015873,
+              "bm25_score": 1.341473,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.112,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 1.0,
+            "all_required@1": true,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "hotel_exception",
+          "category": "改写问题",
+          "query": "出差住酒店超预算了，需要找谁提前同意？",
+          "required": [
+            "D04@2026-02-01#p002"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "version_date": "2026-02-01",
+              "chunk_id": "p001",
+              "title": "出差住宿规则",
+              "topic": "住宿",
+              "scope": "国内出差",
+              "status": "有效",
+              "snippet": "国内出差住宿标准：一线城市每晚不超过500元，其他城市每晚不超过350元。",
+              "rrf_score": 0.016393,
+              "bm25_score": 2.785343,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D03",
+              "version_date": "2026-02-01",
+              "chunk_id": "p001",
+              "title": "年假申请流程",
+              "topic": "年假",
+              "scope": "全体正式员工",
+              "status": "有效",
+              "snippet": "正式员工申请年假，应至少提前3个工作日在办公系统提交申请，并由直属主管审批。",
+              "rrf_score": 0.016129,
+              "bm25_score": 2.380228,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D04",
+              "version_date": "2026-02-01",
+              "chunk_id": "p002",
+              "title": "出差住宿规则",
+              "topic": "住宿",
+              "scope": "国内出差",
+              "status": "有效",
+              "snippet": "超出住宿标准须事先取得部门负责人书面批准，并在报销时附批准记录。",
+              "rrf_score": 0.015873,
+              "bm25_score": 2.059156,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D06",
+              "version_date": "2026-02-10",
+              "chunk_id": "p002",
+              "title": "知识产品星云导出FAQ",
+              "topic": "星云导出",
+              "scope": "星云企业版",
+              "status": "有效",
+              "snippet": "普通成员需要导出时，应联系本空间管理员；本文不涉及其他产品。",
+              "rrf_score": 0.015625,
+              "bm25_score": 2.016716,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "员工在公司外访问内部系统时，需要使用企业VPN。首次使用须在服务台申请开通，审批通过后使用企业账号和动态验证码登录。",
+              "rrf_score": 0.015385,
+              "bm25_score": 1.590546,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.298,
+          "metrics": {
+            "reciprocal_rank": 0.3333333333333333,
+            "hit@1": false,
+            "recall@1": 0.0,
+            "all_required@1": false,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "vpn_exact",
+          "category": "直接提问",
+          "query": "企业VPN首次使用如何开通？",
+          "required": [
+            "D05@2026-01-01#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "员工在公司外访问内部系统时，需要使用企业VPN。首次使用须在服务台申请开通，审批通过后使用企业账号和动态验证码登录。",
+              "rrf_score": 0.016393,
+              "bm25_score": 10.056988,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D10",
+              "version_date": "2026-01-05",
+              "chunk_id": "p001",
+              "title": "会议室使用规范",
+              "topic": "会议室",
+              "scope": "总部办公区",
+              "status": "有效",
+              "snippet": "总部会议室须在办公系统预约。预约后超过15分钟无人使用，行政人员可释放该时段。",
+              "rrf_score": 0.016129,
+              "bm25_score": 2.70825,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p002",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "VPN连接失败时，先检查网络与验证码有效性；仍失败应联系IT服务台，不要向他人分享验证码。",
+              "rrf_score": 0.015873,
+              "bm25_score": 1.828303,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D08",
+              "version_date": "2025-01-01",
+              "chunk_id": "p001",
+              "title": "密码规则旧版",
+              "topic": "密码规则",
+              "scope": "企业账号",
+              "status": "历史",
+              "snippet": "企业账号密码至少8位，每180天更换一次。本版本自2026年1月1日起被D09替代。",
+              "rrf_score": 0.015625,
+              "bm25_score": 1.133633,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D06",
+              "version_date": "2026-02-10",
+              "chunk_id": "p001",
+              "title": "知识产品星云导出FAQ",
+              "topic": "星云导出",
+              "scope": "星云企业版",
+              "status": "有效",
+              "snippet": "星云企业版支持将检索结果导出为CSV。单次导出最多10000条记录，仅空间管理员具有导出权限。",
+              "rrf_score": 0.015385,
+              "bm25_score": 1.092795,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D09",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "密码规则新版",
+              "topic": "密码规则",
+              "scope": "企业账号",
+              "status": "有效",
+              "snippet": "自2026年1月1日起，企业账号密码至少12位，每90天更换一次。本制度明确替代2025年1月1日发布的D08密码规则。",
+              "rrf_score": 0.015152,
+              "bm25_score": 0.95516,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.123,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 1.0,
+            "all_required@1": true,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "vpn_rewrite",
+          "category": "改写问题",
+          "query": "在家办公想进公司内网，应该先办什么手续？",
+          "required": [
+            "D05@2026-01-01#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "员工在公司外访问内部系统时，需要使用企业VPN。首次使用须在服务台申请开通，审批通过后使用企业账号和动态验证码登录。",
+              "rrf_score": 0.016393,
+              "bm25_score": 2.576759,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D11",
+              "version_date": "2026-01-05",
+              "chunk_id": "p001",
+              "title": "快递领取规范",
+              "topic": "快递",
+              "scope": "总部办公区",
+              "status": "有效",
+              "snippet": "员工个人快递请在工作日18点前到一楼收发室领取，公司不承担个人快递的寄件费用。",
+              "rrf_score": 0.016129,
+              "bm25_score": 1.899279,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D10",
+              "version_date": "2026-01-05",
+              "chunk_id": "p001",
+              "title": "会议室使用规范",
+              "topic": "会议室",
+              "scope": "总部办公区",
+              "status": "有效",
+              "snippet": "总部会议室须在办公系统预约。预约后超过15分钟无人使用，行政人员可释放该时段。",
+              "rrf_score": 0.015873,
+              "bm25_score": 1.177642,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D03",
+              "version_date": "2026-02-01",
+              "chunk_id": "p001",
+              "title": "年假申请流程",
+              "topic": "年假",
+              "scope": "全体正式员工",
+              "status": "有效",
+              "snippet": "正式员工申请年假，应至少提前3个工作日在办公系统提交申请，并由直属主管审批。",
+              "rrf_score": 0.015625,
+              "bm25_score": 1.133633,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p002",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "VPN连接失败时，先检查网络与验证码有效性；仍失败应联系IT服务台，不要向他人分享验证码。",
+              "rrf_score": 0.015385,
+              "bm25_score": 1.133633,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.173,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 1.0,
+            "all_required@1": true,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "vpn_failure",
+          "category": "直接提问",
+          "query": "VPN连不上，检查网络验证码后还失败要找谁？",
+          "required": [
+            "D05@2026-01-01#p002"
+          ],
+          "hits": [
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p002",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "VPN连接失败时，先检查网络与验证码有效性；仍失败应联系IT服务台，不要向他人分享验证码。",
+              "rrf_score": 0.016393,
+              "bm25_score": 12.910003,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "员工在公司外访问内部系统时，需要使用企业VPN。首次使用须在服务台申请开通，审批通过后使用企业账号和动态验证码登录。",
+              "rrf_score": 0.016129,
+              "bm25_score": 5.322811,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D01",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "费用报销制度甲",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第一条 报销期限为费用发生后30个自然日。",
+              "rrf_score": 0.015873,
+              "bm25_score": 0.779146,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D02",
+              "version_date": "2026-03-01",
+              "chunk_id": "p001",
+              "title": "费用报销制度乙",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第一条 报销期限为费用发生后15个自然日。",
+              "rrf_score": 0.015625,
+              "bm25_score": 0.779146,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D07",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "设备申领指南",
+              "topic": "设备申领",
+              "scope": "新入职员工",
+              "status": "有效",
+              "snippet": "新入职员工可通过资产系统申请一台工作笔记本电脑，经直属主管审批后由行政部门发放。",
+              "rrf_score": 0.015385,
+              "bm25_score": 0.671186,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D10",
+              "version_date": "2026-01-05",
+              "chunk_id": "p001",
+              "title": "会议室使用规范",
+              "topic": "会议室",
+              "scope": "总部办公区",
+              "status": "有效",
+              "snippet": "总部会议室须在办公系统预约。预约后超过15分钟无人使用，行政人员可释放该时段。",
+              "rrf_score": 0.015152,
+              "bm25_score": 0.658157,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.201,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 1.0,
+            "all_required@1": true,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "export_exact",
+          "category": "直接提问",
+          "query": "星云企业版CSV单次最多导出几条记录？",
+          "required": [
+            "D06@2026-02-10#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D06",
+              "version_date": "2026-02-10",
+              "chunk_id": "p001",
+              "title": "知识产品星云导出FAQ",
+              "topic": "星云导出",
+              "scope": "星云企业版",
+              "status": "有效",
+              "snippet": "星云企业版支持将检索结果导出为CSV。单次导出最多10000条记录，仅空间管理员具有导出权限。",
+              "rrf_score": 0.016393,
+              "bm25_score": 17.923549,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D06",
+              "version_date": "2026-02-10",
+              "chunk_id": "p002",
+              "title": "知识产品星云导出FAQ",
+              "topic": "星云导出",
+              "scope": "星云企业版",
+              "status": "有效",
+              "snippet": "普通成员需要导出时，应联系本空间管理员；本文不涉及其他产品。",
+              "rrf_score": 0.016129,
+              "bm25_score": 4.842274,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D04",
+              "version_date": "2026-02-01",
+              "chunk_id": "p002",
+              "title": "出差住宿规则",
+              "topic": "住宿",
+              "scope": "国内出差",
+              "status": "有效",
+              "snippet": "超出住宿标准须事先取得部门负责人书面批准，并在报销时附批准记录。",
+              "rrf_score": 0.015873,
+              "bm25_score": 2.059156,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "员工在公司外访问内部系统时，需要使用企业VPN。首次使用须在服务台申请开通，审批通过后使用企业账号和动态验证码登录。",
+              "rrf_score": 0.015625,
+              "bm25_score": 1.475101,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D08",
+              "version_date": "2025-01-01",
+              "chunk_id": "p001",
+              "title": "密码规则旧版",
+              "topic": "密码规则",
+              "scope": "企业账号",
+              "status": "历史",
+              "snippet": "企业账号密码至少8位，每180天更换一次。本版本自2026年1月1日起被D09替代。",
+              "rrf_score": 0.015385,
+              "bm25_score": 1.133633,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D09",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "密码规则新版",
+              "topic": "密码规则",
+              "scope": "企业账号",
+              "status": "有效",
+              "snippet": "自2026年1月1日起，企业账号密码至少12位，每90天更换一次。本制度明确替代2025年1月1日发布的D08密码规则。",
+              "rrf_score": 0.015152,
+              "bm25_score": 0.95516,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.179,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 1.0,
+            "all_required@1": true,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "export_rewrite",
+          "category": "改写问题",
+          "query": "星云里面查到的数据能下载成表格吗，谁有这个权限？",
+          "required": [
+            "D06@2026-02-10#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D06",
+              "version_date": "2026-02-10",
+              "chunk_id": "p001",
+              "title": "知识产品星云导出FAQ",
+              "topic": "星云导出",
+              "scope": "星云企业版",
+              "status": "有效",
+              "snippet": "星云企业版支持将检索结果导出为CSV。单次导出最多10000条记录，仅空间管理员具有导出权限。",
+              "rrf_score": 0.016393,
+              "bm25_score": 4.860678,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D06",
+              "version_date": "2026-02-10",
+              "chunk_id": "p002",
+              "title": "知识产品星云导出FAQ",
+              "topic": "星云导出",
+              "scope": "星云企业版",
+              "status": "有效",
+              "snippet": "普通成员需要导出时，应联系本空间管理员；本文不涉及其他产品。",
+              "rrf_score": 0.016129,
+              "bm25_score": 2.016716,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D01",
+              "version_date": "2026-01-01",
+              "chunk_id": "p002",
+              "title": "费用报销制度甲",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第二条 报销申请应提交发票和费用说明。本文未说明与其他报销制度的优先关系。",
+              "rrf_score": 0.015873,
+              "bm25_score": 1.200953,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D11",
+              "version_date": "2026-01-05",
+              "chunk_id": "p001",
+              "title": "快递领取规范",
+              "topic": "快递",
+              "scope": "总部办公区",
+              "status": "有效",
+              "snippet": "员工个人快递请在工作日18点前到一楼收发室领取，公司不承担个人快递的寄件费用。",
+              "rrf_score": 0.015625,
+              "bm25_score": 1.177642,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D12",
+              "version_date": "2026-02-15",
+              "chunk_id": "p001",
+              "title": "培训报名说明",
+              "topic": "培训",
+              "scope": "内部培训",
+              "status": "有效",
+              "snippet": "内部培训通过学习平台报名。需取消报名的，应至少在开课前1个工作日操作；本文不规定外部培训费用标准。",
+              "rrf_score": 0.015385,
+              "bm25_score": 1.054797,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D09",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "密码规则新版",
+              "topic": "密码规则",
+              "scope": "企业账号",
+              "status": "有效",
+              "snippet": "自2026年1月1日起，企业账号密码至少12位，每90天更换一次。本制度明确替代2025年1月1日发布的D08密码规则。",
+              "rrf_score": 0.015152,
+              "bm25_score": 0.95516,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.223,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 1.0,
+            "all_required@1": true,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "export_member",
+          "category": "直接提问",
+          "query": "星云的普通成员想导出数据怎么办？",
+          "required": [
+            "D06@2026-02-10#p002"
+          ],
+          "hits": [
+            {
+              "doc_id": "D06",
+              "version_date": "2026-02-10",
+              "chunk_id": "p002",
+              "title": "知识产品星云导出FAQ",
+              "topic": "星云导出",
+              "scope": "星云企业版",
+              "status": "有效",
+              "snippet": "普通成员需要导出时，应联系本空间管理员；本文不涉及其他产品。",
+              "rrf_score": 0.016393,
+              "bm25_score": 10.093313,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D06",
+              "version_date": "2026-02-10",
+              "chunk_id": "p001",
+              "title": "知识产品星云导出FAQ",
+              "topic": "星云导出",
+              "scope": "星云企业版",
+              "status": "有效",
+              "snippet": "星云企业版支持将检索结果导出为CSV。单次导出最多10000条记录，仅空间管理员具有导出权限。",
+              "rrf_score": 0.016129,
+              "bm25_score": 5.890382,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D01",
+              "version_date": "2026-01-01",
+              "chunk_id": "p002",
+              "title": "费用报销制度甲",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第二条 报销申请应提交发票和费用说明。本文未说明与其他报销制度的优先关系。",
+              "rrf_score": 0.015873,
+              "bm25_score": 1.200953,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D11",
+              "version_date": "2026-01-05",
+              "chunk_id": "p001",
+              "title": "快递领取规范",
+              "topic": "快递",
+              "scope": "总部办公区",
+              "status": "有效",
+              "snippet": "员工个人快递请在工作日18点前到一楼收发室领取，公司不承担个人快递的寄件费用。",
+              "rrf_score": 0.015625,
+              "bm25_score": 1.177642,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D12",
+              "version_date": "2026-02-15",
+              "chunk_id": "p001",
+              "title": "培训报名说明",
+              "topic": "培训",
+              "scope": "内部培训",
+              "status": "有效",
+              "snippet": "内部培训通过学习平台报名。需取消报名的，应至少在开课前1个工作日操作；本文不规定外部培训费用标准。",
+              "rrf_score": 0.015385,
+              "bm25_score": 1.054797,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D09",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "密码规则新版",
+              "topic": "密码规则",
+              "scope": "企业账号",
+              "status": "有效",
+              "snippet": "自2026年1月1日起，企业账号密码至少12位，每90天更换一次。本制度明确替代2025年1月1日发布的D08密码规则。",
+              "rrf_score": 0.015152,
+              "bm25_score": 0.95516,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.192,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 1.0,
+            "all_required@1": true,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "equipment",
+          "category": "改写问题",
+          "query": "刚入职想领一台上班用的电脑，去哪里申请谁来审批？",
+          "required": [
+            "D07@2026-01-01#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D07",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "设备申领指南",
+              "topic": "设备申领",
+              "scope": "新入职员工",
+              "status": "有效",
+              "snippet": "新入职员工可通过资产系统申请一台工作笔记本电脑，经直属主管审批后由行政部门发放。",
+              "rrf_score": 0.016393,
+              "bm25_score": 4.970569,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D03",
+              "version_date": "2026-02-01",
+              "chunk_id": "p001",
+              "title": "年假申请流程",
+              "topic": "年假",
+              "scope": "全体正式员工",
+              "status": "有效",
+              "snippet": "正式员工申请年假，应至少提前3个工作日在办公系统提交申请，并由直属主管审批。",
+              "rrf_score": 0.016129,
+              "bm25_score": 2.912049,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D01",
+              "version_date": "2026-01-01",
+              "chunk_id": "p002",
+              "title": "费用报销制度甲",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第二条 报销申请应提交发票和费用说明。本文未说明与其他报销制度的优先关系。",
+              "rrf_score": 0.015873,
+              "bm25_score": 2.122594,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "员工在公司外访问内部系统时，需要使用企业VPN。首次使用须在服务台申请开通，审批通过后使用企业账号和动态验证码登录。",
+              "rrf_score": 0.015625,
+              "bm25_score": 2.011093,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D03",
+              "version_date": "2026-02-01",
+              "chunk_id": "p002",
+              "title": "年假申请流程",
+              "topic": "年假",
+              "scope": "全体正式员工",
+              "status": "有效",
+              "snippet": "紧急请假可先联系主管，再于返岗后1个工作日内补交申请。本文不规定年假天数。",
+              "rrf_score": 0.015385,
+              "bm25_score": 1.253983,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D11",
+              "version_date": "2026-01-05",
+              "chunk_id": "p001",
+              "title": "快递领取规范",
+              "topic": "快递",
+              "scope": "总部办公区",
+              "status": "有效",
+              "snippet": "员工个人快递请在工作日18点前到一楼收发室领取，公司不承担个人快递的寄件费用。",
+              "rrf_score": 0.015152,
+              "bm25_score": 1.177642,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.362,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 1.0,
+            "all_required@1": true,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "password_versions",
+          "category": "版本查证",
+          "query": "企业账号密码多久更换一次，旧规则现在还适用吗？",
+          "required": [
+            "D08@2025-01-01#p001",
+            "D09@2026-01-01#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D08",
+              "version_date": "2025-01-01",
+              "chunk_id": "p001",
+              "title": "密码规则旧版",
+              "topic": "密码规则",
+              "scope": "企业账号",
+              "status": "历史",
+              "snippet": "企业账号密码至少8位，每180天更换一次。本版本自2026年1月1日起被D09替代。",
+              "rrf_score": 0.016393,
+              "bm25_score": 7.752174,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D09",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "密码规则新版",
+              "topic": "密码规则",
+              "scope": "企业账号",
+              "status": "有效",
+              "snippet": "自2026年1月1日起，企业账号密码至少12位，每90天更换一次。本制度明确替代2025年1月1日发布的D08密码规则。",
+              "rrf_score": 0.016129,
+              "bm25_score": 7.016643,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D02",
+              "version_date": "2026-03-01",
+              "chunk_id": "p002",
+              "title": "费用报销制度乙",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第二条 本文未说明适用部门，也未说明是否替代其他报销制度。",
+              "rrf_score": 0.015873,
+              "bm25_score": 2.861423,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "员工在公司外访问内部系统时，需要使用企业VPN。首次使用须在服务台申请开通，审批通过后使用企业账号和动态验证码登录。",
+              "rrf_score": 0.015625,
+              "bm25_score": 1.475101,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D04",
+              "version_date": "2026-02-01",
+              "chunk_id": "p002",
+              "title": "出差住宿规则",
+              "topic": "住宿",
+              "scope": "国内出差",
+              "status": "有效",
+              "snippet": "超出住宿标准须事先取得部门负责人书面批准，并在报销时附批准记录。",
+              "rrf_score": 0.015385,
+              "bm25_score": 1.276773,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D04",
+              "version_date": "2026-02-01",
+              "chunk_id": "p001",
+              "title": "出差住宿规则",
+              "topic": "住宿",
+              "scope": "国内出差",
+              "status": "有效",
+              "snippet": "国内出差住宿标准：一线城市每晚不超过500元，其他城市每晚不超过350元。",
+              "rrf_score": 0.015152,
+              "bm25_score": 1.225206,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.168,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 0.5,
+            "all_required@1": false,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "password_new",
+          "category": "直接提问",
+          "query": "现行企业账号密码至少要几位？",
+          "required": [
+            "D09@2026-01-01#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D08",
+              "version_date": "2025-01-01",
+              "chunk_id": "p001",
+              "title": "密码规则旧版",
+              "topic": "密码规则",
+              "scope": "企业账号",
+              "status": "历史",
+              "snippet": "企业账号密码至少8位，每180天更换一次。本版本自2026年1月1日起被D09替代。",
+              "rrf_score": 0.016393,
+              "bm25_score": 4.095569,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D09",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "密码规则新版",
+              "topic": "密码规则",
+              "scope": "企业账号",
+              "status": "有效",
+              "snippet": "自2026年1月1日起，企业账号密码至少12位，每90天更换一次。本制度明确替代2025年1月1日发布的D08密码规则。",
+              "rrf_score": 0.016129,
+              "bm25_score": 3.450785,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "员工在公司外访问内部系统时，需要使用企业VPN。首次使用须在服务台申请开通，审批通过后使用企业账号和动态验证码登录。",
+              "rrf_score": 0.015873,
+              "bm25_score": 1.475101,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D03",
+              "version_date": "2026-02-01",
+              "chunk_id": "p001",
+              "title": "年假申请流程",
+              "topic": "年假",
+              "scope": "全体正式员工",
+              "status": "有效",
+              "snippet": "正式员工申请年假，应至少提前3个工作日在办公系统提交申请，并由直属主管审批。",
+              "rrf_score": 0.015625,
+              "bm25_score": 1.133633,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D06",
+              "version_date": "2026-02-10",
+              "chunk_id": "p001",
+              "title": "知识产品星云导出FAQ",
+              "topic": "星云导出",
+              "scope": "星云企业版",
+              "status": "有效",
+              "snippet": "星云企业版支持将检索结果导出为CSV。单次导出最多10000条记录，仅空间管理员具有导出权限。",
+              "rrf_score": 0.015385,
+              "bm25_score": 1.092795,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D12",
+              "version_date": "2026-02-15",
+              "chunk_id": "p001",
+              "title": "培训报名说明",
+              "topic": "培训",
+              "scope": "内部培训",
+              "status": "有效",
+              "snippet": "内部培训通过学习平台报名。需取消报名的，应至少在开课前1个工作日操作；本文不规定外部培训费用标准。",
+              "rrf_score": 0.015152,
+              "bm25_score": 1.054797,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.102,
+          "metrics": {
+            "reciprocal_rank": 0.5,
+            "hit@1": false,
+            "recall@1": 0.0,
+            "all_required@1": false,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "meeting",
+          "category": "改写问题",
+          "query": "订了会议室一直没人来，过多久会被释放？",
+          "required": [
+            "D10@2026-01-05#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D10",
+              "version_date": "2026-01-05",
+              "chunk_id": "p001",
+              "title": "会议室使用规范",
+              "topic": "会议室",
+              "scope": "总部办公区",
+              "status": "有效",
+              "snippet": "总部会议室须在办公系统预约。预约后超过15分钟无人使用，行政人员可释放该时段。",
+              "rrf_score": 0.016393,
+              "bm25_score": 5.998444,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D08",
+              "version_date": "2025-01-01",
+              "chunk_id": "p001",
+              "title": "密码规则旧版",
+              "topic": "密码规则",
+              "scope": "企业账号",
+              "status": "历史",
+              "snippet": "企业账号密码至少8位，每180天更换一次。本版本自2026年1月1日起被D09替代。",
+              "rrf_score": 0.016129,
+              "bm25_score": 2.380228,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.174,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 1.0,
+            "all_required@1": true,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "parcel",
+          "category": "直接提问",
+          "query": "个人快递在哪取，几点之前去？",
+          "required": [
+            "D11@2026-01-05#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D11",
+              "version_date": "2026-01-05",
+              "chunk_id": "p001",
+              "title": "快递领取规范",
+              "topic": "快递",
+              "scope": "总部办公区",
+              "status": "有效",
+              "snippet": "员工个人快递请在工作日18点前到一楼收发室领取，公司不承担个人快递的寄件费用。",
+              "rrf_score": 0.016393,
+              "bm25_score": 8.293205,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "员工在公司外访问内部系统时，需要使用企业VPN。首次使用须在服务台申请开通，审批通过后使用企业账号和动态验证码登录。",
+              "rrf_score": 0.016129,
+              "bm25_score": 0.824401,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D04",
+              "version_date": "2026-02-01",
+              "chunk_id": "p002",
+              "title": "出差住宿规则",
+              "topic": "住宿",
+              "scope": "国内出差",
+              "status": "有效",
+              "snippet": "超出住宿标准须事先取得部门负责人书面批准，并在报销时附批准记录。",
+              "rrf_score": 0.015873,
+              "bm25_score": 0.71356,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D10",
+              "version_date": "2026-01-05",
+              "chunk_id": "p001",
+              "title": "会议室使用规范",
+              "topic": "会议室",
+              "scope": "总部办公区",
+              "status": "有效",
+              "snippet": "总部会议室须在办公系统预约。预约后超过15分钟无人使用，行政人员可释放该时段。",
+              "rrf_score": 0.015625,
+              "bm25_score": 0.658157,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D03",
+              "version_date": "2026-02-01",
+              "chunk_id": "p001",
+              "title": "年假申请流程",
+              "topic": "年假",
+              "scope": "全体正式员工",
+              "status": "有效",
+              "snippet": "正式员工申请年假，应至少提前3个工作日在办公系统提交申请，并由直属主管审批。",
+              "rrf_score": 0.015385,
+              "bm25_score": 0.633562,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D12",
+              "version_date": "2026-02-15",
+              "chunk_id": "p001",
+              "title": "培训报名说明",
+              "topic": "培训",
+              "scope": "内部培训",
+              "status": "有效",
+              "snippet": "内部培训通过学习平台报名。需取消报名的，应至少在开课前1个工作日操作；本文不规定外部培训费用标准。",
+              "rrf_score": 0.015152,
+              "bm25_score": 0.589502,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.13,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 1.0,
+            "all_required@1": true,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "training",
+          "category": "改写问题",
+          "query": "内部课程报完名不想去了，最晚什么时候能取消？",
+          "required": [
+            "D12@2026-02-15#p001"
+          ],
+          "hits": [
+            {
+              "doc_id": "D12",
+              "version_date": "2026-02-15",
+              "chunk_id": "p001",
+              "title": "培训报名说明",
+              "topic": "培训",
+              "scope": "内部培训",
+              "status": "有效",
+              "snippet": "内部培训通过学习平台报名。需取消报名的，应至少在开课前1个工作日操作；本文不规定外部培训费用标准。",
+              "rrf_score": 0.016393,
+              "bm25_score": 3.915858,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "员工在公司外访问内部系统时，需要使用企业VPN。首次使用须在服务台申请开通，审批通过后使用企业账号和动态验证码登录。",
+              "rrf_score": 0.016129,
+              "bm25_score": 1.590546,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.186,
+          "metrics": {
+            "reciprocal_rank": 1.0,
+            "hit@1": true,
+            "recall@1": 1.0,
+            "all_required@1": true,
+            "hit@3": true,
+            "recall@3": 1.0,
+            "all_required@3": true,
+            "hit@6": true,
+            "recall@6": 1.0,
+            "all_required@6": true
+          }
+        },
+        {
+          "case_id": "outside_house",
+          "category": "资料外",
+          "query": "公司员工购房补贴有多少钱？",
+          "required": [],
+          "hits": [],
+          "elapsed_ms": 0.082,
+          "metrics": {
+            "outside_returned_candidates": false
+          }
+        },
+        {
+          "case_id": "outside_leave_days",
+          "category": "资料外",
+          "query": "入职满三年能休多少天年假？",
+          "required": [],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "version_date": "2026-02-01",
+              "chunk_id": "p001",
+              "title": "年假申请流程",
+              "topic": "年假",
+              "scope": "全体正式员工",
+              "status": "有效",
+              "snippet": "正式员工申请年假，应至少提前3个工作日在办公系统提交申请，并由直属主管审批。",
+              "rrf_score": 0.016393,
+              "bm25_score": 2.635309,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D03",
+              "version_date": "2026-02-01",
+              "chunk_id": "p002",
+              "title": "年假申请流程",
+              "topic": "年假",
+              "scope": "全体正式员工",
+              "status": "有效",
+              "snippet": "紧急请假可先联系主管，再于返岗后1个工作日内补交申请。本文不规定年假天数。",
+              "rrf_score": 0.016129,
+              "bm25_score": 2.635309,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.132,
+          "metrics": {
+            "outside_returned_candidates": true
+          }
+        },
+        {
+          "case_id": "outside_training_cost",
+          "category": "资料外",
+          "query": "参加外部培训公司报销上限是多少元？",
+          "required": [],
+          "hits": [
+            {
+              "doc_id": "D12",
+              "version_date": "2026-02-15",
+              "chunk_id": "p001",
+              "title": "培训报名说明",
+              "topic": "培训",
+              "scope": "内部培训",
+              "status": "有效",
+              "snippet": "内部培训通过学习平台报名。需取消报名的，应至少在开课前1个工作日操作；本文不规定外部培训费用标准。",
+              "rrf_score": 0.016393,
+              "bm25_score": 6.074892,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D04",
+              "version_date": "2026-02-01",
+              "chunk_id": "p001",
+              "title": "出差住宿规则",
+              "topic": "住宿",
+              "scope": "国内出差",
+              "status": "有效",
+              "snippet": "国内出差住宿标准：一线城市每晚不超过500元，其他城市每晚不超过350元。",
+              "rrf_score": 0.016129,
+              "bm25_score": 3.626178,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D11",
+              "version_date": "2026-01-05",
+              "chunk_id": "p001",
+              "title": "快递领取规范",
+              "topic": "快递",
+              "scope": "总部办公区",
+              "status": "有效",
+              "snippet": "员工个人快递请在工作日18点前到一楼收发室领取，公司不承担个人快递的寄件费用。",
+              "rrf_score": 0.015873,
+              "bm25_score": 1.899279,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "办公网络接入指南",
+              "topic": "VPN",
+              "scope": "全体员工",
+              "status": "有效",
+              "snippet": "员工在公司外访问内部系统时，需要使用企业VPN。首次使用须在服务台申请开通，审批通过后使用企业账号和动态验证码登录。",
+              "rrf_score": 0.015625,
+              "bm25_score": 1.590546,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D01",
+              "version_date": "2026-01-01",
+              "chunk_id": "p002",
+              "title": "费用报销制度甲",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第二条 报销申请应提交发票和费用说明。本文未说明与其他报销制度的优先关系。",
+              "rrf_score": 0.015385,
+              "bm25_score": 1.518259,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D01",
+              "version_date": "2026-01-01",
+              "chunk_id": "p001",
+              "title": "费用报销制度甲",
+              "topic": "报销期限",
+              "scope": "未说明",
+              "status": "未说明",
+              "snippet": "第一条 报销期限为费用发生后30个自然日。",
+              "rrf_score": 0.015152,
+              "bm25_score": 1.449128,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.129,
+          "metrics": {
+            "outside_returned_candidates": true
+          }
+        },
+        {
+          "case_id": "outside_product",
+          "category": "资料外",
+          "query": "星云个人版支持视频剪辑吗？",
+          "required": [],
+          "hits": [
+            {
+              "doc_id": "D06",
+              "version_date": "2026-02-10",
+              "chunk_id": "p001",
+              "title": "知识产品星云导出FAQ",
+              "topic": "星云导出",
+              "scope": "星云企业版",
+              "status": "有效",
+              "snippet": "星云企业版支持将检索结果导出为CSV。单次导出最多10000条记录，仅空间管理员具有导出权限。",
+              "rrf_score": 0.016393,
+              "bm25_score": 4.860678,
+              "vector_score": null
+            },
+            {
+              "doc_id": "D06",
+              "version_date": "2026-02-10",
+              "chunk_id": "p002",
+              "title": "知识产品星云导出FAQ",
+              "topic": "星云导出",
+              "scope": "星云企业版",
+              "status": "有效",
+              "snippet": "普通成员需要导出时，应联系本空间管理员；本文不涉及其他产品。",
+              "rrf_score": 0.016129,
+              "bm25_score": 2.016716,
+              "vector_score": null
+            }
+          ],
+          "elapsed_ms": 0.081,
+          "metrics": {
+            "outside_returned_candidates": true
+          }
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "人工编写的小规模合成资料与用例，没有独立生产测试集，不能外推生产质量。",
+    "按支持答案的具体片段计算，不仅按文档ID；多来源要求同时找全。",
+    "资料外仍召回候选不等于最终幻觉；拒答需模型读取后判断。",
+    "这里不测试对话历史改写、工具失败恢复或真实模型决策。",
+    "耗时为单次本机测量，排除索引初始化，不能作为稳定性能基准。"
+  ]
+}

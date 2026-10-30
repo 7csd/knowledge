@@ -1,0 +1,18 @@
+{
+  "command": [
+    "E:\\企业知识库问答agent\\.venv\\Scripts\\python.exe",
+    "-m",
+    "knowledge_agent",
+    "--data",
+    "data/processed-incremental/corpus.json",
+    "--retrieval",
+    "bm25",
+    "read",
+    "D11",
+    "2026-01-05",
+    "c001"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"ok\": true,\n  \"passage\": {\n    \"doc_id\": \"D11\",\n    \"version_date\": \"2026-01-05\",\n    \"chunk_id\": \"r001\",\n    \"title\": \"快递领取规范\",\n    \"topic\": \"快递\",\n    \"scope\": \"总部办公区\",\n    \"status\": \"有效\",\n    \"start\": 0,\n    \"end\": 39,\n    \"text\": \"员工个人快递请在工作日18点前到一楼收发室领取，公司不承担个人快递的寄件费用。\",\n    \"parent_id\": null,\n    \"related_ids\": [],\n    \"heading_path\": [\n      \"快递领取规范\",\n      \"正文\"\n    ],\n    \"source_locations\": [\n      {\n        \"file_id\": \"D11-canonical\",\n        \"source_path\": \"data/source_materials/corpus/markdown/D11_快递领取规范.md\",\n        \"sha256\": \"f05f6939113789ec6039b9b03044e9ed78fc7aa18617994111badee48dbba0e2\",\n        \"method\": \"markdown\",\n        \"text\": \"员工个人快递请在工作日18点前到一楼收发室领取，公司不承担个人快递的寄件费用。\",\n        \"page\": null,\n        \"bbox\": null,\n        \"line_start\": 13,\n        \"line_end\": 13,\n        \"confidence\": null\n      }\n    ],\n    \"index_text\": null,\n    \"token_count\": null,\n    \"kind\": \"text\",\n    \"table_id\": null,\n    \"row_id\": null,\n    \"quality_warnings\": []\n  },\n  \"related_passages\": []\n}\n",
+  "stderr": ""
+}

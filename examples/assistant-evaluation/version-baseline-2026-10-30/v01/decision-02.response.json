@@ -1,0 +1,22 @@
+{
+  "role": "assistant",
+  "content": "首轮仅见18点规定，读取原文并核对是否还有相关版本。",
+  "tool_calls": [
+    {
+      "id": "v01-2-0",
+      "type": "function",
+      "function": {
+        "name": "read_passage",
+        "arguments": "{\"doc_id\": \"D11\", \"version_date\": \"2026-01-05\", \"chunk_id\": \"c001\"}"
+      }
+    },
+    {
+      "id": "v01-2-1",
+      "type": "function",
+      "function": {
+        "name": "list_related_documents",
+        "arguments": "{\"doc_id\": \"D11\", \"version_date\": \"2026-01-05\"}"
+      }
+    }
+  ]
+}

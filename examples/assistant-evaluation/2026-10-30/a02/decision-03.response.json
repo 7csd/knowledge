@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "已读原文支持以下结论；保留原文范围与条件。",
+  "tool_calls": [
+    {
+      "id": "a02-3-0",
+      "type": "function",
+      "function": {
+        "name": "submit_result",
+        "arguments": "{\"answer\": \"请补充出差城市，以及是否为国内出差，以便核对适用的住宿标准。\", \"status\": \"needs_clarification\", \"citations\": [], \"gaps\": [\"缺少出差城市及地域范围\"], \"conflicts\": []}"
+      }
+    }
+  ]
+}

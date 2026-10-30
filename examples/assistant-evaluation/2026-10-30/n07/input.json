@@ -1,0 +1,14 @@
+{
+  "case_id": "n07",
+  "category": "明确替代",
+  "question": "现在企业账号密码最少几位，多久更新？旧8位规则还有效吗？",
+  "expected_behavior": "D09明确替代D08；12位、90天",
+  "required": [
+    "D08@2025-01-01#c001",
+    "D09@2026-01-01#c001"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ]
+}

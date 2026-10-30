@@ -1,0 +1,14 @@
+{
+  "scope": "requirements_audit_not_live_acceptance",
+  "case_count": 13,
+  "mechanical_offline_cases_passed": 4,
+  "semantic_metrics_status": "pending",
+  "live_model_configured": false,
+  "live_dynamic_paths_verified": false,
+  "precision_ndcg_status": "pending_complete_relevance_labels",
+  "faithfulness": null,
+  "answer_correctness": null,
+  "answer_relevance": null,
+  "citation_precision": null,
+  "citation_coverage": null
+}

@@ -1,0 +1,126 @@
+{
+  "scope": "actual_source_update_retrieval_and_read_not_llm_answer",
+  "query": "个人快递最晚几点到哪里领取？",
+  "before": {
+    "file_id": "D11-canonical",
+    "doc_id": "D11",
+    "version_date": "2026-01-05",
+    "title": "快递领取规范",
+    "scope": "总部办公区",
+    "status": "有效",
+    "topic": "快递",
+    "path": "corpus/markdown/D11_快递领取规范.md",
+    "format": "md",
+    "representation": "markdown",
+    "variant": "canonical",
+    "canonical": true,
+    "page_count": null,
+    "features": [],
+    "sha256": "f05f6939113789ec6039b9b03044e9ed78fc7aa18617994111badee48dbba0e2",
+    "synthetic": true
+  },
+  "after": {
+    "file_id": "D11-canonical",
+    "doc_id": "D11",
+    "version_date": "2026-10-30",
+    "title": "快递领取规范",
+    "scope": "总部办公区",
+    "status": "有效",
+    "topic": "快递",
+    "path": "corpus/markdown/D11_快递领取规范.md",
+    "format": "md",
+    "representation": "markdown",
+    "variant": "canonical",
+    "canonical": true,
+    "page_count": null,
+    "features": [],
+    "sha256": "3aa3c9ad4b3025933f90deb087bf1134efa4048e65e58c5ed80271a9d1aa9f6d",
+    "synthetic": true
+  },
+  "old_snapshot_rejected": true,
+  "index": {
+    "mode": "hybrid",
+    "documents": 12,
+    "passages": 107,
+    "corpus_hash": "b2f4fd3f91c67d9265362d5021a9d1eb688d4835242a91ef8dce6f4578cf4669",
+    "parents": 107,
+    "vector_backend": "qdrant_local",
+    "vector_database": ".cache\\qdrant\\3e6178f8e63ccc7e12a7344ca2ae194ab86d84d95793e3baeded987828784c2c",
+    "vector_count": 107
+  },
+  "before_hit": {
+    "doc_id": "D11",
+    "version_date": "2026-01-05",
+    "chunk_id": "c001",
+    "title": "快递领取规范",
+    "topic": "快递",
+    "scope": "总部办公区",
+    "status": "有效",
+    "parent_id": "r001",
+    "related_ids": [],
+    "heading_path": [
+      "快递领取规范",
+      "正文"
+    ],
+    "token_count": 59,
+    "kind": "text",
+    "table_id": null,
+    "row_id": null,
+    "quality_warnings": [],
+    "source_locations": [
+      {
+        "file_id": "D11-canonical",
+        "source_path": "data/source_materials/corpus/markdown/D11_快递领取规范.md",
+        "sha256": "f05f6939113789ec6039b9b03044e9ed78fc7aa18617994111badee48dbba0e2",
+        "method": "markdown",
+        "page": null,
+        "bbox": null,
+        "line_start": 13,
+        "line_end": 13,
+        "confidence": null
+      }
+    ],
+    "snippet": "员工个人快递请在工作日18点前到一楼收发室领取，公司不承担个人快递的寄件费用。",
+    "rrf_score": 0.032787,
+    "bm25_score": 21.992487,
+    "vector_score": 0.640019
+  },
+  "after_hit": {
+    "doc_id": "D11",
+    "version_date": "2026-10-30",
+    "chunk_id": "c001",
+    "title": "快递领取规范",
+    "topic": "快递",
+    "scope": "总部办公区",
+    "status": "有效",
+    "parent_id": "r001",
+    "related_ids": [],
+    "heading_path": [
+      "快递领取规范",
+      "正文"
+    ],
+    "token_count": 59,
+    "kind": "text",
+    "table_id": null,
+    "row_id": null,
+    "quality_warnings": [],
+    "source_locations": [
+      {
+        "file_id": "D11-canonical",
+        "source_path": "data/source_materials/corpus/markdown/D11_快递领取规范.md",
+        "sha256": "3aa3c9ad4b3025933f90deb087bf1134efa4048e65e58c5ed80271a9d1aa9f6d",
+        "method": "markdown",
+        "page": null,
+        "bbox": null,
+        "line_start": 13,
+        "line_end": 13,
+        "confidence": null
+      }
+    ],
+    "snippet": "员工个人快递请在工作日17点前到一楼收发室领取，公司不承担个人快递的寄件费用。",
+    "rrf_score": 0.032787,
+    "bm25_score": 21.992487,
+    "vector_score": 0.643493
+  },
+  "live_model_evaluated": false
+}

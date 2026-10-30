@@ -1,0 +1,13 @@
+{
+  "case_id": "n06",
+  "category": "明确答案",
+  "question": "内部培训怎么报名，取消最迟什么时候？",
+  "expected_behavior": "学习平台；开课前1个工作日取消",
+  "required": [
+    "D12@2026-02-15#c001"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ]
+}

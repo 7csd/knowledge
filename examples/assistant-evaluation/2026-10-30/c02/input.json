@@ -1,0 +1,19 @@
+{
+  "case_id": "c02",
+  "category": "报销冲突诱导",
+  "question": "D02比D01新，所以我直接按15天报销就对了吧？",
+  "expected_behavior": "不按日期覆盖；列两方并补查追问",
+  "required": [
+    "D01@2026-01-01#c005",
+    "D02@2026-03-01#c005"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "needs_clarification"
+  ],
+  "required_read_docs": [
+    "D01",
+    "D02"
+  ],
+  "require_followup_after_conflict": true
+}

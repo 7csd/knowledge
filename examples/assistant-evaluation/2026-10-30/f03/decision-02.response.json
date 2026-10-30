@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "首次检索失败，先重试查询核对能否恢复。",
+  "tool_calls": [
+    {
+      "id": "f03-2-0",
+      "type": "function",
+      "function": {
+        "name": "search_documents",
+        "arguments": "{\"query\": \"内部培训 取消报名\"}"
+      }
+    }
+  ]
+}

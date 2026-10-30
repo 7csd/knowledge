@@ -1,0 +1,16 @@
+{
+  "run_id": "e37b2371c44b4d57bf645bf541ab2cab",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 2,
+  "tool_calls": 1,
+  "result": {
+    "status": "incomplete",
+    "answer": "本次任务未完成，尚不能给出可靠结论。",
+    "citations": [],
+    "gaps": [
+      "达到工具调用次数上限"
+    ],
+    "conflicts": []
+  }
+}

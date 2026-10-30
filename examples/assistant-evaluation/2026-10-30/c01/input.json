@@ -1,0 +1,19 @@
+{
+  "case_id": "c01",
+  "category": "报销冲突",
+  "question": "费用发生后报销最晚几天交？",
+  "expected_behavior": "列30/15自然日，继续核对范围优先级，无法消解追问",
+  "required": [
+    "D01@2026-01-01#c005",
+    "D02@2026-03-01#c005"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "needs_clarification"
+  ],
+  "required_read_docs": [
+    "D01",
+    "D02"
+  ],
+  "require_followup_after_conflict": true
+}

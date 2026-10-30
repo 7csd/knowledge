@@ -1,0 +1,15 @@
+{
+  "case_id": "f03",
+  "category": "检索瞬时失败恢复",
+  "question": "内部培训报名后最晚什么时候取消？",
+  "expected_behavior": "先观察失败再重试读原文，恢复后回答",
+  "required": [
+    "D12@2026-02-15#c001"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ],
+  "fail_tool": "search_documents",
+  "fail_once": true
+}

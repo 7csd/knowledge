@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "候选没有调薪政策，换薪酬关键词复查。",
+  "tool_calls": [
+    {
+      "id": "o02-2-0",
+      "type": "function",
+      "function": {
+        "name": "search_documents",
+        "arguments": "{\"query\": \"薪酬 年度 调薪 比例\"}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "o04",
+  "category": "相关但缺答案",
+  "question": "企业VPN服务器地址和端口是什么？",
+  "expected_behavior": "D05未提供，不能猜配置",
+  "required": [],
+  "relevant": null,
+  "acceptable_statuses": [
+    "insufficient_evidence"
+  ]
+}

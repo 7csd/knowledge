@@ -1,0 +1,47 @@
+{
+  "scope": "offline_engineering_only",
+  "python_version": "3.10.8",
+  "time_utc": "2026-10-29T15:41:31.919874+00:00",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=examples/offline-tests.xml"
+      ],
+      "exit_code": 0,
+      "stdout": "....................................................................     [100%]\n68 passed in 4.14s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "tests",
+        "scripts"
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "stdout": "No broken requirements found.\n",
+      "stderr": ""
+    }
+  ],
+  "passed": true,
+  "live_model_evaluated": false,
+  "real_embedding_evaluated": false
+}

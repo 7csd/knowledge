@@ -1,0 +1,14 @@
+{
+  "case_id": "f02",
+  "category": "原文持续失败",
+  "question": "星云最多能导出多少条？",
+  "expected_behavior": "读失败不能用snippet冒充已核验，明确失败",
+  "required": [
+    "D06@2026-02-10#c001"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "tool_failed"
+  ],
+  "fail_tool": "read_passage"
+}

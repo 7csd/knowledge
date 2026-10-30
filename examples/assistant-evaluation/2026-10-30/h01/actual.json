@@ -1,0 +1,35 @@
+{
+  "run_id": "10f39a7784d94f97936fa5b56357039f",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 3,
+  "result": {
+    "status": "completed",
+    "answer": "普通成员需要导出星云数据时，应联系本空间管理员。",
+    "citations": [
+      {
+        "doc_id": "D06",
+        "version_date": "2026-02-10",
+        "chunk_id": "r002",
+        "quote": "普通成员需要导出时，应联系本空间管理员；",
+        "source_locations": [
+          {
+            "file_id": "D06-canonical",
+            "source_path": "data/source_materials/corpus/markdown/D06_知识产品星云导出FAQ.md",
+            "sha256": "8bd9082bfec18a6fea3a5ab443c22c0742c05745f2eab4efaf59ba5203e15437",
+            "method": "markdown",
+            "text": "普通成员需要导出时，应联系本空间管理员；本文不涉及其他产品。",
+            "page": null,
+            "bbox": null,
+            "line_start": 15,
+            "line_end": 15,
+            "confidence": null
+          }
+        ]
+      }
+    ],
+    "gaps": [],
+    "conflicts": []
+  }
+}

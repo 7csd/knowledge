@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "output_schema": true,
+    "trace_has_start_and_end": true,
+    "run_identity_consistent": true,
+    "trace_sequence_continuous": true,
+    "trace_output_matches": true,
+    "tool_count_matches_trace": true,
+    "model_count_matches_trace": true,
+    "citations_read_and_verbatim": true,
+    "noncompletion_has_gaps": true,
+    "no_unresolved_conflicts_marked_completed": true,
+    "execution_budget_respected": true,
+    "mode_matches_trace": true,
+    "expected_status": true
+  },
+  "mechanical_pass": true,
+  "citation_errors": [],
+  "read_documents": [
+    "D04"
+  ],
+  "actions": [
+    "search_documents",
+    "read_passage",
+    "submit_result"
+  ],
+  "observed_failed_tools": [],
+  "live_model_run": false,
+  "semantic_pass": null,
+  "note": "引用存在/动作发生不是忠实度、相关性或补查有效性的语义证明"
+}

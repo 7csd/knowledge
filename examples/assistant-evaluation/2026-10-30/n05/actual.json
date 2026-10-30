@@ -1,0 +1,35 @@
+{
+  "run_id": "e7f3e16271c14d879177767a188c84cc",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 3,
+  "result": {
+    "status": "completed",
+    "answer": "预约后超过15分钟无人使用，行政人员可释放该时段。",
+    "citations": [
+      {
+        "doc_id": "D10",
+        "version_date": "2026-01-05",
+        "chunk_id": "r001",
+        "quote": "预约后超过15分钟无人使用，行政人员可释放该时段。",
+        "source_locations": [
+          {
+            "file_id": "D10-canonical",
+            "source_path": "data/source_materials/corpus/markdown/D10_会议室使用规范.md",
+            "sha256": "c829951b02a7cb49551b3ba1bab0cc2ac889620884a9752b4a9f9b3c9ceea078",
+            "method": "markdown",
+            "text": "总部会议室须在办公系统预约。预约后超过15分钟无人使用，行政人员可释放该时段。",
+            "page": null,
+            "bbox": null,
+            "line_start": 13,
+            "line_end": 13,
+            "confidence": null
+          }
+        ]
+      }
+    ],
+    "gaps": [],
+    "conflicts": []
+  }
+}

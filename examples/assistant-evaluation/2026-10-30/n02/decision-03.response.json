@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "已读原文支持以下结论；保留原文范围与条件。",
+  "tool_calls": [
+    {
+      "id": "n02-3-0",
+      "type": "function",
+      "function": {
+        "name": "submit_result",
+        "arguments": "{\"answer\": \"紧急请假可先联系主管，再于返岗后1个工作日内补交申请。\", \"status\": \"completed\", \"citations\": [{\"doc_id\": \"D03\", \"version_date\": \"2026-02-01\", \"chunk_id\": \"r002\", \"quote\": \"紧急请假可先联系主管，再于返岗后1个工作日内补交申请。\"}], \"gaps\": [], \"conflicts\": []}"
+      }
+    }
+  ]
+}

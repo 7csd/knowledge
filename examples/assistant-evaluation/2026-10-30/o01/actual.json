@@ -1,0 +1,16 @@
+{
+  "run_id": "50391dd37c2a472bb2b0af55f89aacec",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 3,
+  "result": {
+    "status": "insufficient_evidence",
+    "answer": "两次检索未找到公司婚假天数的依据，暂时无法确定。请补充适用的婚假制度。",
+    "citations": [],
+    "gaps": [
+      "未检索到婚假天数的制度依据"
+    ],
+    "conflicts": []
+  }
+}

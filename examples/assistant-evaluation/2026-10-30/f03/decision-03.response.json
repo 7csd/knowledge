@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "重试已恢复并返回培训条款，继续读取原文。",
+  "tool_calls": [
+    {
+      "id": "f03-3-0",
+      "type": "function",
+      "function": {
+        "name": "read_passage",
+        "arguments": "{\"doc_id\": \"D12\", \"version_date\": \"2026-02-15\", \"chunk_id\": \"c001\"}"
+      }
+    }
+  ]
+}

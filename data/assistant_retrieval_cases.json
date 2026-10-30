@@ -1,0 +1,191 @@
+[
+  {
+    "case_id": "n01",
+    "category": "明确答案",
+    "query": "正式员工申请年假需要提前多久，谁审批？",
+    "required": [
+      "D03@2026-02-01#c001"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "n02",
+    "category": "明确答案",
+    "query": "紧急事假应该如何补申请？",
+    "required": [
+      "D03@2026-02-01#c002"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "n03",
+    "category": "明确答案",
+    "query": "星云企业版导出支持什么格式、多少条，谁有权限？",
+    "required": [
+      "D06@2026-02-10#c001"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "n04",
+    "category": "明确答案",
+    "query": "新员工怎么领电脑？",
+    "required": [
+      "D07@2026-01-01#c001"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "n05",
+    "category": "明确答案",
+    "query": "总部会议室预约后多久不用会释放？",
+    "required": [
+      "D10@2026-01-05#c001"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "n06",
+    "category": "明确答案",
+    "query": "内部培训怎么报名，取消最迟什么时候？",
+    "required": [
+      "D12@2026-02-15#c001"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "n07",
+    "category": "明确替代",
+    "query": "现在企业账号密码最少几位，多久更新？旧8位规则还有效吗？",
+    "required": [
+      "D08@2025-01-01#c001",
+      "D09@2026-01-01#c001"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "n08",
+    "category": "跨页表格",
+    "query": "成都会展期间房价500元一晚，能直接报500吗？",
+    "required": [
+      "D04@2026-02-01#c013",
+      "D04@2026-02-01#c039"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "n09",
+    "category": "多文档",
+    "query": "VPN连上了，普通成员在星云还是不能导出怎么办？",
+    "required": [
+      "D05@2026-01-01#c007",
+      "D06@2026-02-10#c002"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "p01",
+    "category": "口语改写",
+    "query": "想休年假，得提前几个上班日跟谁打招呼？",
+    "required": [
+      "D03@2026-02-01#c001"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "p02",
+    "category": "口语改写",
+    "query": "星云里想把一万条记录弄到表格，普通员工自己能操作吗？",
+    "required": [
+      "D06@2026-02-10#c001",
+      "D06@2026-02-10#c002"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "p03",
+    "category": "口语改写",
+    "query": "预定的总部会议室空着一刻钟多了，会被收回吗？",
+    "required": [
+      "D10@2026-01-05#c001"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "p04",
+    "category": "口语改写",
+    "query": "远程连公司网络一直不通，先查啥，还是不行找谁？",
+    "required": [
+      "D05@2026-01-01#c009"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "c01",
+    "category": "报销冲突",
+    "query": "费用发生后报销最晚几天交？",
+    "required": [
+      "D01@2026-01-01#c005",
+      "D02@2026-03-01#c005"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "c02",
+    "category": "报销冲突诱导",
+    "query": "D02比D01新，所以我直接按15天报销就对了吧？",
+    "required": [
+      "D01@2026-01-01#c005",
+      "D02@2026-03-01#c005"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "c03",
+    "category": "增量版本冲突",
+    "query": "现在个人快递最晚几点领？",
+    "required": [
+      "D11@2026-01-05#c001",
+      "D11@2026-10-30#c001"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "c04",
+    "category": "增量版本冲突诱导",
+    "query": "新快递规定是17点，旧18点是不是自动作废？",
+    "required": [
+      "D11@2026-01-05#c001",
+      "D11@2026-10-30#c001"
+    ],
+    "relevant": null
+  },
+  {
+    "case_id": "o01",
+    "category": "资料外",
+    "query": "公司婚假一共多少天？",
+    "required": [],
+    "relevant": null
+  },
+  {
+    "case_id": "o02",
+    "category": "资料外",
+    "query": "我们每年调薪的百分比是多少？",
+    "required": [],
+    "relevant": null
+  },
+  {
+    "case_id": "o03",
+    "category": "相关但缺答案",
+    "query": "外部培训可以报销多少钱？",
+    "required": [],
+    "relevant": null
+  },
+  {
+    "case_id": "o04",
+    "category": "相关但缺答案",
+    "query": "企业VPN服务器地址和端口是什么？",
+    "required": [],
+    "relevant": null
+  }
+]

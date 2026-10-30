@@ -1,0 +1,16 @@
+{
+  "run_id": "9a85e4cc78c246fa941883c04dd17ff6",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 3,
+  "result": {
+    "status": "tool_failed",
+    "answer": "已检索到星云候选资料，但原文读取工具失败，未完成原文核验，暂不确认导出上限。请恢复读取工具后重试。",
+    "citations": [],
+    "gaps": [
+      "原文读取失败，检索摘要不能替代核验"
+    ],
+    "conflicts": []
+  }
+}

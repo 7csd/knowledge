@@ -1,0 +1,16 @@
+{
+  "run_id": "b4a56520e1c64636b4032139b2babcec",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 3,
+  "result": {
+    "status": "tool_failed",
+    "answer": "检索工具连续两次失败，尚未核验年假制度，暂时无法给出可靠期限。请恢复工具后重试。",
+    "citations": [],
+    "gaps": [
+      "检索工具持续失败，无法获取原文依据"
+    ],
+    "conflicts": []
+  }
+}

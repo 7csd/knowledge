@@ -1,0 +1,13 @@
+{
+  "case_id": "n02",
+  "category": "明确答案",
+  "question": "紧急事假应该如何补申请？",
+  "expected_behavior": "先联系主管，返岗后1个工作日内补交",
+  "required": [
+    "D03@2026-02-01#c002"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ]
+}

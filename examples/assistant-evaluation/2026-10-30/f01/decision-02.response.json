@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "检索工具失败不能当作没有制度，换简短查询重试。",
+  "tool_calls": [
+    {
+      "id": "f01-2-0",
+      "type": "function",
+      "function": {
+        "name": "search_documents",
+        "arguments": "{\"query\": \"年假 提前 工作日\"}"
+      }
+    }
+  ]
+}

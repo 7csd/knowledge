@@ -1,0 +1,56 @@
+{
+  "run_id": "89ea27b06704441ab9d0e3f724cb7682",
+  "artifact_sha256": "8b688e72a00c31e3c516dbb4155882356c8a24f1e8f9f91738eabd019644e255",
+  "status": "reviewed",
+  "reviewer": "Codex current assistant (answer author; non-independent)",
+  "all_factual_claims_reviewed": true,
+  "claims": [
+    {
+      "answer_span": "先检查网络与验证码有效性",
+      "supported_by_read_evidence": true,
+      "supporting_read_keys": [
+        "D05@2026-01-01#r009"
+      ],
+      "supporting_citation_indices": [
+        0
+      ],
+      "rationale": "已读原文与指定引文支持该事实，保留范围、时间及条件；表格单元格结合相同行与计价单位判断。"
+    },
+    {
+      "answer_span": "仍失败应联系IT服务台",
+      "supported_by_read_evidence": true,
+      "supporting_read_keys": [
+        "D05@2026-01-01#r009"
+      ],
+      "supporting_citation_indices": [
+        0
+      ],
+      "rationale": "已读原文与指定引文支持该事实，保留范围、时间及条件；表格单元格结合相同行与计价单位判断。"
+    },
+    {
+      "answer_span": "不要向他人分享验证码",
+      "supported_by_read_evidence": true,
+      "supporting_read_keys": [
+        "D05@2026-01-01#r009"
+      ],
+      "supporting_citation_indices": [
+        0
+      ],
+      "rationale": "已读原文与指定引文支持该事实，保留范围、时间及条件；表格单元格结合相同行与计价单位判断。"
+    }
+  ],
+  "citation_judgments": [
+    {
+      "citation_index": 0,
+      "supports_associated_claim": true,
+      "rationale": "与回答事实对应；表格的城市、金额、计价单位需联合支持同一结论，续行及共同注释支持超标条件。"
+    }
+  ],
+  "answer_correctness": 1,
+  "answer_relevance": 1,
+  "status_appropriate": true,
+  "conflict_handling": null,
+  "clarification_quality": null,
+  "refusal_appropriate": null,
+  "notes": "当前助手对照已读原文、问题和预期逐条审阅；同一助手出题/作答/审阅，存在自评偏差，需独立复核。纯操作状态和澄清请求不计企业事实。"
+}

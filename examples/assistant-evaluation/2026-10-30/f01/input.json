@@ -1,0 +1,12 @@
+{
+  "case_id": "f01",
+  "category": "检索持续失败",
+  "question": "年假需要提前多久？",
+  "expected_behavior": "失败后重试观察仍失败，明确工具失败",
+  "required": [],
+  "relevant": null,
+  "acceptable_statuses": [
+    "tool_failed"
+  ],
+  "fail_tool": "search_documents"
+}

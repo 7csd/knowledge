@@ -1,0 +1,25 @@
+{
+  "question_bge_tokens": 16,
+  "question_embedding_input_tokens": 37,
+  "llm_prompt_tokens": null,
+  "llm_completion_tokens": null,
+  "llm_total_tokens": null,
+  "llm_api_latency_ms": null,
+  "wall_ms_including_assistant_wait": 88091.15360002033,
+  "assistant_bridge_wait_ms": 87429.43220003508,
+  "business_tools": [
+    {
+      "name": "search_documents",
+      "elapsed_ms": 384.57010011188686,
+      "injected": false,
+      "ok": true
+    },
+    {
+      "name": "read_passage",
+      "elapsed_ms": 88.53380009531975,
+      "injected": false,
+      "ok": true
+    }
+  ],
+  "business_tool_ms": 473.1039002072066
+}

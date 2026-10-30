@@ -1,0 +1,14 @@
+{
+  "case_id": "b01",
+  "category": "决策预算",
+  "question": "企业账号的密码长度和更新周期？",
+  "expected_behavior": "1步决策后中断，不伪装完成",
+  "required": [
+    "D09@2026-01-01#c001"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "incomplete"
+  ],
+  "max_model_steps": 1
+}

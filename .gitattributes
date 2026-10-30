@@ -1,0 +1,4 @@
+# Preserve exact source and evidence bytes used by MD5/SHA256 verification.
+* -text
+*.pdf binary
+*.png binary

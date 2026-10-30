@@ -1,0 +1,286 @@
+{
+  "dataset_id": "synthetic-enterprise-source-materials-v2",
+  "scope": "Expanded PDF structure only. No OCR, chunking, retrieval or model acceptance.",
+  "pdf_count": 5,
+  "pdf_pages": 24,
+  "files": [
+    {
+      "file_id": "D01-canonical",
+      "path": "corpus/pdf_native/D01_费用报销制度甲_原生.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "extractable_text_characters": 912,
+          "image_count": 0
+        },
+        {
+          "page": 2,
+          "extractable_text_characters": 903,
+          "image_count": 0
+        },
+        {
+          "page": 3,
+          "extractable_text_characters": 867,
+          "image_count": 0
+        },
+        {
+          "page": 4,
+          "extractable_text_characters": 875,
+          "image_count": 0
+        }
+      ],
+      "structural_checks": "passed"
+    },
+    {
+      "file_id": "D05-canonical",
+      "path": "corpus/pdf_native/D05_办公网络接入指南_原生.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "extractable_text_characters": 880,
+          "image_count": 0
+        },
+        {
+          "page": 2,
+          "extractable_text_characters": 826,
+          "image_count": 0
+        },
+        {
+          "page": 3,
+          "extractable_text_characters": 882,
+          "image_count": 0
+        },
+        {
+          "page": 4,
+          "extractable_text_characters": 888,
+          "image_count": 0
+        },
+        {
+          "page": 5,
+          "extractable_text_characters": 905,
+          "image_count": 0
+        }
+      ],
+      "structural_checks": "passed"
+    },
+    {
+      "file_id": "D04-canonical",
+      "path": "corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "extractable_text_characters": 895,
+          "image_count": 0
+        },
+        {
+          "page": 2,
+          "extractable_text_characters": 634,
+          "image_count": 0
+        },
+        {
+          "page": 3,
+          "extractable_text_characters": 708,
+          "image_count": 0
+        },
+        {
+          "page": 4,
+          "extractable_text_characters": 642,
+          "image_count": 0
+        },
+        {
+          "page": 5,
+          "extractable_text_characters": 778,
+          "image_count": 0
+        },
+        {
+          "page": 6,
+          "extractable_text_characters": 1004,
+          "image_count": 0
+        }
+      ],
+      "structural_checks": "passed"
+    },
+    {
+      "file_id": "D02-canonical",
+      "path": "corpus/pdf_scanned/D02_费用报销制度乙_模拟扫描.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "extractable_text_characters": 0,
+          "image_count": 1
+        },
+        {
+          "page": 2,
+          "extractable_text_characters": 0,
+          "image_count": 1
+        },
+        {
+          "page": 3,
+          "extractable_text_characters": 0,
+          "image_count": 1
+        },
+        {
+          "page": 4,
+          "extractable_text_characters": 0,
+          "image_count": 1
+        }
+      ],
+      "structural_checks": "passed"
+    },
+    {
+      "file_id": "D05-scan_comparison",
+      "path": "corpus/pdf_scanned/D05_办公网络接入指南_模拟扫描.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "extractable_text_characters": 0,
+          "image_count": 1
+        },
+        {
+          "page": 2,
+          "extractable_text_characters": 0,
+          "image_count": 1
+        },
+        {
+          "page": 3,
+          "extractable_text_characters": 0,
+          "image_count": 1
+        },
+        {
+          "page": 4,
+          "extractable_text_characters": 0,
+          "image_count": 1
+        },
+        {
+          "page": 5,
+          "extractable_text_characters": 0,
+          "image_count": 1
+        }
+      ],
+      "structural_checks": "passed"
+    }
+  ],
+  "native_layout": [
+    {
+      "doc_id": "D01",
+      "page": 1,
+      "content_bottom_y": 148.9,
+      "kind": "text"
+    },
+    {
+      "doc_id": "D01",
+      "page": 2,
+      "content_bottom_y": 131.4,
+      "kind": "text"
+    },
+    {
+      "doc_id": "D01",
+      "page": 3,
+      "content_bottom_y": 166.4,
+      "kind": "text"
+    },
+    {
+      "doc_id": "D01",
+      "page": 4,
+      "content_bottom_y": 183.9,
+      "kind": "text"
+    },
+    {
+      "doc_id": "D02",
+      "page": 1,
+      "content_bottom_y": 166.4,
+      "kind": "text"
+    },
+    {
+      "doc_id": "D02",
+      "page": 2,
+      "content_bottom_y": 201.4,
+      "kind": "text"
+    },
+    {
+      "doc_id": "D02",
+      "page": 3,
+      "content_bottom_y": 183.9,
+      "kind": "text"
+    },
+    {
+      "doc_id": "D02",
+      "page": 4,
+      "content_bottom_y": 166.4,
+      "kind": "text"
+    },
+    {
+      "doc_id": "D05",
+      "page": 1,
+      "content_bottom_y": 183.9,
+      "kind": "text"
+    },
+    {
+      "doc_id": "D05",
+      "page": 2,
+      "content_bottom_y": 218.9,
+      "kind": "text"
+    },
+    {
+      "doc_id": "D05",
+      "page": 3,
+      "content_bottom_y": 183.9,
+      "kind": "text"
+    },
+    {
+      "doc_id": "D05",
+      "page": 4,
+      "content_bottom_y": 166.4,
+      "kind": "text"
+    },
+    {
+      "doc_id": "D05",
+      "page": 5,
+      "content_bottom_y": 166.4,
+      "kind": "text"
+    },
+    {
+      "doc_id": "D04",
+      "page": 1,
+      "content_bottom_y": 148.9,
+      "kind": "text"
+    },
+    {
+      "doc_id": "D04",
+      "page": 2,
+      "content_bottom_y": 307.9,
+      "kind": "table"
+    },
+    {
+      "doc_id": "D04",
+      "page": 3,
+      "content_bottom_y": 291.9,
+      "kind": "table"
+    },
+    {
+      "doc_id": "D04",
+      "page": 4,
+      "content_bottom_y": 293.4,
+      "kind": "table"
+    },
+    {
+      "doc_id": "D04",
+      "page": 5,
+      "content_bottom_y": 190.9,
+      "kind": "table"
+    },
+    {
+      "doc_id": "D04",
+      "page": 6,
+      "content_bottom_y": 104.9,
+      "kind": "text"
+    }
+  ],
+  "previews": [
+    "expanded-D01-canonical.png",
+    "expanded-D05-canonical.png",
+    "expanded-D04-canonical.png",
+    "expanded-D02-canonical.png",
+    "expanded-D05-scan_comparison.png"
+  ]
+}

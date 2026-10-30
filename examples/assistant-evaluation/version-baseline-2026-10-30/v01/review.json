@@ -1,0 +1,45 @@
+{
+  "run_id": "7044c2ce7f0644429c63a2b52e46effc",
+  "artifact_sha256": "8132f6fd28f90971ad1e57667cf3b84290a64d956aa4982ef5323e8a4c78dab5",
+  "status": "reviewed",
+  "reviewer": "Codex current assistant (non-independent)",
+  "all_factual_claims_reviewed": true,
+  "claims": [
+    {
+      "answer_span": "工作日18点前",
+      "supported_by_read_evidence": true,
+      "supporting_read_keys": [
+        "D11@2026-01-05#r001"
+      ],
+      "supporting_citation_indices": [
+        0
+      ],
+      "rationale": "基线仅有旧版，已读原文明确支持时间和地点"
+    },
+    {
+      "answer_span": "一楼收发室领取",
+      "supported_by_read_evidence": true,
+      "supporting_read_keys": [
+        "D11@2026-01-05#r001"
+      ],
+      "supporting_citation_indices": [
+        0
+      ],
+      "rationale": "基线仅有旧版，已读原文明确支持时间和地点"
+    }
+  ],
+  "citation_judgments": [
+    {
+      "citation_index": 0,
+      "supports_associated_claim": true,
+      "rationale": "原文支持工作日18点及收发室地点"
+    }
+  ],
+  "answer_correctness": 1,
+  "answer_relevance": 1,
+  "status_appropriate": true,
+  "conflict_handling": null,
+  "clarification_quality": null,
+  "refusal_appropriate": null,
+  "notes": "对照原文及仅单版本的相关文档列表审阅；不纳入主集30题平均分。"
+}

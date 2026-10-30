@@ -1,0 +1,13 @@
+{
+  "case_id": "n04",
+  "category": "明确答案",
+  "question": "新员工怎么领电脑？",
+  "expected_behavior": "资产系统申请一台标准笔记本，主管审批后IT发放",
+  "required": [
+    "D07@2026-01-01#c001"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ]
+}

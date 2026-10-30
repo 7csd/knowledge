@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "先检索问题对应制度；追问结合已有对话确定事项。",
+  "tool_calls": [
+    {
+      "id": "p02-1-0",
+      "type": "function",
+      "function": {
+        "name": "search_documents",
+        "arguments": "{\"query\": \"星云里想把一万条记录弄到表格，普通员工自己能操作吗？\"}"
+      }
+    }
+  ]
+}

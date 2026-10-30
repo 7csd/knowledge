@@ -1,0 +1,10 @@
+{
+  "mode": "hybrid",
+  "documents": 12,
+  "passages": 107,
+  "corpus_hash": "0b8d3a2ea3422aae754560340fcbc5dfbbd45558ee737736151f9ba93c0bd70c",
+  "parents": 107,
+  "vector_backend": "qdrant_local",
+  "vector_database": ".cache\\qdrant\\d50d3ca6516a65bcedaf1c55f199edaefed30449af76b44c4fb605bde842104a",
+  "vector_count": 107
+}

@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "已读原文支持以下结论；保留原文范围与条件。",
+  "tool_calls": [
+    {
+      "id": "f01-3-0",
+      "type": "function",
+      "function": {
+        "name": "submit_result",
+        "arguments": "{\"answer\": \"检索工具连续两次失败，尚未核验年假制度，暂时无法给出可靠期限。请恢复工具后重试。\", \"status\": \"tool_failed\", \"citations\": [], \"gaps\": [\"检索工具持续失败，无法获取原文依据\"], \"conflicts\": []}"
+      }
+    }
+  ]
+}

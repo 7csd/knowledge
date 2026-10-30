@@ -1,0 +1,18 @@
+{
+  "case_id": "c03",
+  "category": "增量版本冲突",
+  "question": "现在个人快递最晚几点领？",
+  "expected_behavior": "旧18点新17点，无替代依据，保留冲突追问",
+  "required": [
+    "D11@2026-01-05#c001",
+    "D11@2026-10-30#c001"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "needs_clarification"
+  ],
+  "required_read_docs": [
+    "D11"
+  ],
+  "require_followup_after_conflict": true
+}

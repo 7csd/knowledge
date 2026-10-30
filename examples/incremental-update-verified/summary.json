@@ -1,0 +1,118 @@
+{
+  "scope": "actual_md5_incremental_ingestion_and_bge_retrieval_not_llm_decisions",
+  "added_files": 1,
+  "skipped_files": 12,
+  "index": {
+    "mode": "hybrid",
+    "documents": 13,
+    "passages": 108,
+    "corpus_hash": "8d15dcb31ad9808976828da27f7e8a2d8e34ae8c8ddc9e6c8eb08769de8563b2",
+    "parents": 108,
+    "vector_backend": "qdrant_local",
+    "vector_database": ".cache\\incremental-verified\\qdrant\\29a0ad98257d68c67b4dd23d1d4a4bec687cdd3eeca4212e10264b65a737aa6e",
+    "vector_count": 108,
+    "embedding_stats": {
+      "encoded_inputs": 1,
+      "reused_passages": 107
+    },
+    "vector_points_added": 1
+  },
+  "repeat_index": {
+    "mode": "hybrid",
+    "documents": 13,
+    "passages": 108,
+    "corpus_hash": "8ae0117dd5117f1260f423e42c841ec27cb91ece235e560f13fc0f6913dbe334",
+    "parents": 108,
+    "vector_backend": "qdrant_local",
+    "vector_database": ".cache\\incremental-verified\\qdrant\\29a0ad98257d68c67b4dd23d1d4a4bec687cdd3eeca4212e10264b65a737aa6e",
+    "vector_count": 108,
+    "embedding_stats": {
+      "encoded_inputs": 0,
+      "reused_passages": 108
+    },
+    "vector_points_added": 0
+  },
+  "conflicting_hits": [
+    {
+      "doc_id": "D11",
+      "version_date": "2026-01-05",
+      "chunk_id": "c001",
+      "title": "快递领取规范",
+      "topic": "快递",
+      "scope": "总部办公区",
+      "status": "有效",
+      "parent_id": "r001",
+      "related_ids": [],
+      "heading_path": [
+        "快递领取规范",
+        "正文"
+      ],
+      "token_count": 59,
+      "kind": "text",
+      "table_id": null,
+      "row_id": null,
+      "quality_warnings": [],
+      "source_locations": [
+        {
+          "file_id": "D11-canonical",
+          "source_path": "data/source_materials/corpus/markdown/D11_快递领取规范.md",
+          "sha256": "f05f6939113789ec6039b9b03044e9ed78fc7aa18617994111badee48dbba0e2",
+          "method": "markdown",
+          "page": null,
+          "bbox": null,
+          "line_start": 13,
+          "line_end": 13,
+          "confidence": null
+        }
+      ],
+      "snippet": "员工个人快递请在工作日18点前到一楼收发室领取，公司不承担个人快递的寄件费用。",
+      "rrf_score": 0.032522,
+      "bm25_score": 20.080552,
+      "vector_score": 0.640019
+    },
+    {
+      "doc_id": "D11",
+      "version_date": "2026-10-30",
+      "chunk_id": "c001",
+      "title": "快递领取规范",
+      "topic": "快递",
+      "scope": "总部办公区",
+      "status": "有效",
+      "parent_id": "r001",
+      "related_ids": [],
+      "heading_path": [
+        "快递领取规范",
+        "正文"
+      ],
+      "token_count": 59,
+      "kind": "text",
+      "table_id": null,
+      "row_id": null,
+      "quality_warnings": [],
+      "source_locations": [
+        {
+          "file_id": "D11-20261030",
+          "source_path": "data/source_materials/corpus/markdown/D11_快递领取规范_20261030.md",
+          "sha256": "3aa3c9ad4b3025933f90deb087bf1134efa4048e65e58c5ed80271a9d1aa9f6d",
+          "method": "markdown",
+          "page": null,
+          "bbox": null,
+          "line_start": 13,
+          "line_end": 13,
+          "confidence": null
+        }
+      ],
+      "snippet": "员工个人快递请在工作日17点前到一楼收发室领取，公司不承担个人快递的寄件费用。",
+      "rrf_score": 0.032522,
+      "bm25_score": 20.080552,
+      "vector_score": 0.643492
+    }
+  ],
+  "live_model_evaluated": false,
+  "execution_environment": {
+    "EMBEDDING_LOCAL_ONLY": "true",
+    "HF_HUB_OFFLINE": "1",
+    "CACHE_DIR": ".cache/incremental-verified",
+    "VECTOR_DB_PATH": ".cache/incremental-verified/qdrant"
+  }
+}

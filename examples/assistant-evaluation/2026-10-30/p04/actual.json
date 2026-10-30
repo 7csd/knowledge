@@ -1,0 +1,40 @@
+{
+  "run_id": "89ea27b06704441ab9d0e3f724cb7682",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 3,
+  "result": {
+    "status": "completed",
+    "answer": "如果你指企业VPN连接失败，先检查网络与验证码有效性；仍失败应联系IT服务台，不要向他人分享验证码。",
+    "citations": [
+      {
+        "doc_id": "D05",
+        "version_date": "2026-01-01",
+        "chunk_id": "r009",
+        "quote": "VPN连接失败时，先检查网络与验证码有效性；仍失败应联系IT服务台，不要向他人分享验证码。",
+        "source_locations": [
+          {
+            "file_id": "D05-canonical",
+            "source_path": "data/source_materials/corpus/pdf_native/D05_办公网络接入指南_原生.pdf",
+            "sha256": "468dcdffde9e628d40f6b7a32db4b483af08f657c4a450b05524e31b616e15cf",
+            "method": "pdf_text",
+            "text": "VPN连接失败时，先检查网络与验证码有效性；仍失败应联系IT服务台，不要向他人分享验证码。排查时先确认基础网络可用，再核对企业账号、当前验证码和客户端提示。应一次记录一个明确现象，避免同时修改多项配置后无法确定原因。",
+            "page": 3,
+            "bbox": [
+              48.0,
+              211.4765625,
+              546.75,
+              256.9765625
+            ],
+            "line_start": null,
+            "line_end": null,
+            "confidence": null
+          }
+        ]
+      }
+    ],
+    "gaps": [],
+    "conflicts": []
+  }
+}

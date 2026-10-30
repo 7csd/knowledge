@@ -1,0 +1,13 @@
+{
+  "case_id": "p03",
+  "category": "口语改写",
+  "question": "预定的总部会议室空着一刻钟多了，会被收回吗？",
+  "expected_behavior": "超过15分钟管理员可以释放",
+  "required": [
+    "D10@2026-01-05#c001"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ]
+}

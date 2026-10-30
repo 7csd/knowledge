@@ -1,0 +1,11 @@
+{
+  "case_id": "o03",
+  "category": "相关但缺答案",
+  "question": "外部培训可以报销多少钱？",
+  "expected_behavior": "D12只规定内部培训，不规定外部费用标准",
+  "required": [],
+  "relevant": null,
+  "acceptable_statuses": [
+    "insufficient_evidence"
+  ]
+}

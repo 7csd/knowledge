@@ -1,0 +1,23 @@
+{
+  "case_id": "h01",
+  "category": "上下文追问",
+  "question": "那普通成员呢？",
+  "expected_behavior": "从历史识别星云导出，联系空间管理员",
+  "required": [
+    "D06@2026-02-10#c002"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ],
+  "history": [
+    {
+      "role": "user",
+      "content": "星云企业版导出谁有权限？"
+    },
+    {
+      "role": "assistant",
+      "content": "空间管理员有导出权限。"
+    }
+  ]
+}

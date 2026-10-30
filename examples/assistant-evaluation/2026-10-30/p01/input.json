@@ -1,0 +1,13 @@
+{
+  "case_id": "p01",
+  "category": "口语改写",
+  "question": "想休年假，得提前几个上班日跟谁打招呼？",
+  "expected_behavior": "提前3工作日系统提交主管审批",
+  "required": [
+    "D03@2026-02-01#c001"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ]
+}

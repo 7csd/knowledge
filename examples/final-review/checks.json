@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-30",
+  "scope": "delivery_documentation_and_offline_engineering_review",
+  "checks": [
+    {
+      "command": "python -m pytest -q --junitxml=examples/final-review/tests.xml",
+      "exit_code": 0,
+      "stdout": "72 passed in 9.54s",
+      "tests": 72,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "command": "python -m ruff check src tests scripts",
+      "exit_code": 0,
+      "stdout": "All checks passed!"
+    },
+    {
+      "command": "python -m pip check",
+      "exit_code": 0,
+      "stdout": "No broken requirements found."
+    }
+  ],
+  "broken_document_links": [],
+  "source_integrity": "baseline, current and final repeat snapshots verified",
+  "live_model_configuration_ready": false,
+  "live_model_evaluated": false,
+  "cleanup": {
+    "mode": "moved_to_git_ignored_recoverable_archive_after_recursive_delete_was_blocked",
+    "archive": ".cache/cleanup-archive-20261030",
+    "items": [
+      "tmp",
+      "data/processed-d11-20261030",
+      "data/processed-incremental",
+      "data/processed-incremental-repeat",
+      "data/processed-incremental-final",
+      "data/processed-incremental-final-repeat"
+    ]
+  },
+  "documentation": [
+    {
+      "path": "README.md",
+      "lines": 73
+    },
+    {
+      "path": "docs\\01-requirements.md",
+      "lines": 19
+    },
+    {
+      "path": "docs\\02-solution.md",
+      "lines": 43
+    },
+    {
+      "path": "docs\\03-evaluation.md",
+      "lines": 63
+    },
+    {
+      "path": "docs\\04-ai-usage.md",
+      "lines": 15
+    },
+    {
+      "path": "docs\\05-retrospective.md",
+      "lines": 17
+    },
+    {
+      "path": "data\\source_materials\\README.md",
+      "lines": 27
+    }
+  ],
+  "passed": true,
+  "candidate_document_review": {
+    "date": "2026-10-30",
+    "perspective": "candidate_first_person",
+    "broken_links": [],
+    "execution_trace_fields_verified": [
+      "n01",
+      "c01",
+      "f03"
+    ],
+    "incomplete_budget_results_verified": [
+      "b01",
+      "b02"
+    ],
+    "api_model_evaluated": false
+  },
+  "publication_review": {
+    "repository": "https://github.com/7csd/knowledge",
+    "visibility": "private",
+    "secret_pattern_matches": 0,
+    "ignored": [
+      ".env",
+      ".venv/",
+      ".cache/"
+    ],
+    "smoke_tests": [
+      {
+        "command": "python -m knowledge_agent --retrieval hybrid search 年假要提前几个上班日申请？",
+        "exit_code": 0,
+        "top_hit": "D03@2026-02-01#c001"
+      },
+      {
+        "command": "python -m knowledge_agent demo --scenario normal --output .cache/delivery-smoke-20261030",
+        "exit_code": 0,
+        "status": "completed",
+        "mode": "offline_scripted"
+      }
+    ]
+  }
+}

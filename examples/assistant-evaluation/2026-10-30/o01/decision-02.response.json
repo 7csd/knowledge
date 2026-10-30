@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "首轮没有婚假规定，补充针对性检索确认资料缺口。",
+  "tool_calls": [
+    {
+      "id": "o01-2-0",
+      "type": "function",
+      "function": {
+        "name": "search_documents",
+        "arguments": "{\"query\": \"婚假 婚姻 假期天数\"}"
+      }
+    }
+  ]
+}

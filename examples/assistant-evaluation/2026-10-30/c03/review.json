@@ -1,0 +1,70 @@
+{
+  "run_id": "04683158086d4adeaf3c4f7b1c035ba4",
+  "artifact_sha256": "2d2b390ad961349815623951cffbd9ea625650ce1729042f310f11fd5fa7eab6",
+  "status": "reviewed",
+  "reviewer": "Codex current assistant (answer author; non-independent)",
+  "all_factual_claims_reviewed": true,
+  "claims": [
+    {
+      "answer_span": "2026-01-05版要求工作日18点前领取",
+      "supported_by_read_evidence": true,
+      "supporting_read_keys": [
+        "D11@2026-01-05#r001"
+      ],
+      "supporting_citation_indices": [
+        0
+      ],
+      "rationale": "已读原文与指定引文支持该事实，保留范围、时间及条件；表格单元格结合相同行与计价单位判断。"
+    },
+    {
+      "answer_span": "2026-10-30版要求17点前领取",
+      "supported_by_read_evidence": true,
+      "supporting_read_keys": [
+        "D11@2026-10-30#r001"
+      ],
+      "supporting_citation_indices": [
+        1
+      ],
+      "rationale": "已读原文与指定引文支持该事实，保留范围、时间及条件；表格单元格结合相同行与计价单位判断。"
+    },
+    {
+      "answer_span": "两版均列为有效",
+      "supported_by_read_evidence": true,
+      "supporting_read_keys": [
+        "D11@2026-01-05#r001",
+        "D11@2026-10-30#r001"
+      ],
+      "supporting_citation_indices": [],
+      "rationale": "已读两版完整原文及相关文档元数据显示同范围均有效、无替代声明；该结论未在引文中直接覆盖。"
+    },
+    {
+      "answer_span": "未提供替代依据",
+      "supported_by_read_evidence": true,
+      "supporting_read_keys": [
+        "D11@2026-01-05#r001",
+        "D11@2026-10-30#r001"
+      ],
+      "supporting_citation_indices": [],
+      "rationale": "已读两版完整原文及相关文档元数据显示同范围均有效、无替代声明；该结论未在引文中直接覆盖。"
+    }
+  ],
+  "citation_judgments": [
+    {
+      "citation_index": 0,
+      "supports_associated_claim": true,
+      "rationale": "与回答事实对应；表格的城市、金额、计价单位需联合支持同一结论，续行及共同注释支持超标条件。"
+    },
+    {
+      "citation_index": 1,
+      "supports_associated_claim": true,
+      "rationale": "与回答事实对应；表格的城市、金额、计价单位需联合支持同一结论，续行及共同注释支持超标条件。"
+    }
+  ],
+  "answer_correctness": 1,
+  "answer_relevance": 1,
+  "status_appropriate": true,
+  "conflict_handling": true,
+  "clarification_quality": true,
+  "refusal_appropriate": null,
+  "notes": "当前助手对照已读原文、问题和预期逐条审阅；同一助手出题/作答/审阅，存在自评偏差，需独立复核。纯操作状态和澄清请求不计企业事实。"
+}

@@ -1,0 +1,14 @@
+{
+  "case_id": "n08",
+  "category": "跨页表格",
+  "question": "成都会展期间房价500元一晚，能直接报500吗？",
+  "expected_behavior": "350限额；会展不自动提高，需事先部门负责人书面批准并附记录",
+  "required": [
+    "D04@2026-02-01#c013",
+    "D04@2026-02-01#c039"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ]
+}

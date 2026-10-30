@@ -1,0 +1,42 @@
+{
+  "run_id": "e71587d6eea648e8b72775407468e9c3",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 3,
+  "result": {
+    "status": "insufficient_evidence",
+    "answer": "VPN指南未提供服务器地址和端口，无法据此配置。请补充企业受控的接入配置资料。",
+    "citations": [
+      {
+        "doc_id": "D05",
+        "version_date": "2026-01-01",
+        "chunk_id": "r020",
+        "quote": "本文未提供真实服务台入口、客户端版本、服务器地址、端口、验证码有效秒数、账号锁定阈值、服务时限、个人设备和海外接入规则。",
+        "source_locations": [
+          {
+            "file_id": "D05-canonical",
+            "source_path": "data/source_materials/corpus/pdf_native/D05_办公网络接入指南_原生.pdf",
+            "sha256": "468dcdffde9e628d40f6b7a32db4b483af08f657c4a450b05524e31b616e15cf",
+            "method": "pdf_text",
+            "text": "本文未提供真实服务台入口、客户端版本、服务器地址、端口、验证码有效秒数、账号锁定阈值、服务时限、个人设备和海外接入规则。需要这些信息时应请求相应受控资料，不能从通用VPN常识推断为本企业的配置。",
+            "page": 5,
+            "bbox": [
+              48.0,
+              626.9765625,
+              552.0,
+              654.9765625
+            ],
+            "line_start": null,
+            "line_end": null,
+            "confidence": null
+          }
+        ]
+      }
+    ],
+    "gaps": [
+      "缺少VPN服务器地址与端口"
+    ],
+    "conflicts": []
+  }
+}

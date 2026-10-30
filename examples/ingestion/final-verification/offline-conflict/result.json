@@ -1,0 +1,74 @@
+{
+  "warning": "离线预设动作回放，仅验证工程流程；不代表真实模型决策或语义检索效果。",
+  "scenario": "conflict",
+  "input": "报销期限多久？",
+  "actual": {
+    "run_id": "028a30c19f9a438fa3e70ca59dad0514",
+    "model_mode": "offline_scripted",
+    "retrieval_mode": "bm25",
+    "model_steps": 6,
+    "tool_calls": 6,
+    "result": {
+      "status": "needs_clarification",
+      "answer": "资料分别规定30与15个自然日，请确认适用哪份制度。",
+      "citations": [
+        {
+          "doc_id": "D01",
+          "version_date": "2026-01-01",
+          "chunk_id": "r005",
+          "quote": "报销期限为费用发生后30个自然日。报销申请应提交发票和费用说明。自然日包含周末和节假日，不能直接理解为30个工作日。本文未给出节假日顺延、超期豁免或跨年度延期的批准规则；遇到这些情形时，需要补充制度依据。",
+          "source_locations": [
+            {
+              "file_id": "D01-canonical",
+              "source_path": "data/source_materials/corpus/pdf_native/D01_费用报销制度甲_原生.pdf",
+              "sha256": "e44b5b4ce13137c381e6910f5304e7b8a583e6dd84756e9c49fdf5520fcd7933",
+              "method": "pdf_text",
+              "text": "报销期限为费用发生后30个自然日。报销申请应提交发票和费用说明。自然日包含周末和节假日，不能直接理解为30个工作日。本文未给出节假日顺延、超期豁免或跨年度延期的批准规则；遇到这些情形时，需要补充制度依据。",
+              "page": 2,
+              "bbox": [
+                48.0,
+                211.4765625,
+                541.5,
+                256.9765625
+              ],
+              "line_start": null,
+              "line_end": null,
+              "confidence": null
+            }
+          ]
+        },
+        {
+          "doc_id": "D02",
+          "version_date": "2026-03-01",
+          "chunk_id": "r005",
+          "quote": "报销期限为费用发生后15个自然日。本文未说明适用部门，也未说明是否替代其他报销制度。自然日包括周末和节假日，申请人不应自行改为工作日口径。申请材料应如实列明费用发生日期及提交日期。",
+          "source_locations": [
+            {
+              "file_id": "D02-canonical",
+              "source_path": "data/source_materials/corpus/pdf_scanned/D02_费用报销制度乙_模拟扫描.pdf",
+              "sha256": "545aa231842caf089edb81acf5afb59034f885fca9c050d28d312c53f0902bd2",
+              "method": "ocr",
+              "text": "报销期限为费用发生后15个自然日。本文未说明适用部门，也未说明是否替代其他报销制度。自然日包括周末和节假日，申请人不应自行改为工作日口径。申请材料应如实列明费用发生日期及提交日期。",
+              "page": 2,
+              "bbox": [
+                48.646304321289065,
+                211.3488037109375,
+                541.8775390625,
+                240.6320556640625
+              ],
+              "line_start": null,
+              "line_end": null,
+              "confidence": 0.998851158789226
+            }
+          ]
+        }
+      ],
+      "gaps": [
+        "适用范围和制度优先级未说明"
+      ],
+      "conflicts": [
+        "D01规定30个自然日，D02规定15个自然日"
+      ]
+    }
+  }
+}

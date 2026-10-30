@@ -1,0 +1,21 @@
+{
+  "warning": "离线预设动作回放，仅验证工程流程；不代表真实模型决策或语义检索效果。",
+  "scenario": "failure",
+  "input": "申请年假需要提前多久？",
+  "actual": {
+    "run_id": "8688debc80ca43aa8dbfa460443318b7",
+    "model_mode": "offline_scripted",
+    "retrieval_mode": "bm25",
+    "model_steps": 3,
+    "tool_calls": 3,
+    "result": {
+      "status": "tool_failed",
+      "answer": "原文读取失败，暂时无法核实年假申请规定。",
+      "citations": [],
+      "gaps": [
+        "原文读取工具不可用"
+      ],
+      "conflicts": []
+    }
+  }
+}

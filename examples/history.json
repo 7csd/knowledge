@@ -1,0 +1,4 @@
+[
+  {"role":"user","content":"星云企业版可以导出CSV吗？"},
+  {"role":"assistant","content":"可以，单次最多10000条，仅空间管理员可以导出。"}
+]

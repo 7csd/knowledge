@@ -1,0 +1,473 @@
+{
+  "ok": true,
+  "passage": {
+    "doc_id": "D04",
+    "version_date": "2026-02-01",
+    "chunk_id": "r013",
+    "title": "出差住宿规则",
+    "topic": "住宿",
+    "scope": "国内出差",
+    "status": "有效",
+    "start": 1198,
+    "end": 1334,
+    "text": "T08 | 成都 | 国内出差 | 350 | 会展涨价的附加说明见下页T08续行；本行与续行共同构成完整条件。\nT08（续） | 成都（续） | 续上页 | 见前页 | 附加说明：会展期间价格上涨不自动提高额度，超标仍须事先取得部门负责人书面批准，并在报销时附批准记录。",
+    "parent_id": null,
+    "related_ids": [
+      "r005",
+      "r038",
+      "r039",
+      "r040",
+      "r041"
+    ],
+    "heading_path": [
+      "出差住宿规则",
+      "表A"
+    ],
+    "source_locations": [
+      {
+        "file_id": "D04-canonical",
+        "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+        "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+        "method": "pdf_table",
+        "text": "T08",
+        "page": 2,
+        "bbox": [
+          48.0,
+          477.5,
+          96.0,
+          508.0
+        ],
+        "line_start": null,
+        "line_end": null,
+        "confidence": null
+      },
+      {
+        "file_id": "D04-canonical",
+        "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+        "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+        "method": "pdf_table",
+        "text": "成都",
+        "page": 2,
+        "bbox": [
+          96.0,
+          477.5,
+          148.0,
+          508.0
+        ],
+        "line_start": null,
+        "line_end": null,
+        "confidence": null
+      },
+      {
+        "file_id": "D04-canonical",
+        "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+        "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+        "method": "pdf_table",
+        "text": "国内出差",
+        "page": 2,
+        "bbox": [
+          148.0,
+          477.5,
+          209.0,
+          508.0
+        ],
+        "line_start": null,
+        "line_end": null,
+        "confidence": null
+      },
+      {
+        "file_id": "D04-canonical",
+        "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+        "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+        "method": "pdf_table",
+        "text": "350",
+        "page": 2,
+        "bbox": [
+          209.0,
+          477.5,
+          245.0,
+          508.0
+        ],
+        "line_start": null,
+        "line_end": null,
+        "confidence": null
+      },
+      {
+        "file_id": "D04-canonical",
+        "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+        "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+        "method": "pdf_table",
+        "text": "会展涨价的附加说明见下页T08续行；本行与续行共同构成完整条件。",
+        "page": 2,
+        "bbox": [
+          245.0,
+          477.5,
+          547.0,
+          508.0
+        ],
+        "line_start": null,
+        "line_end": null,
+        "confidence": null
+      },
+      {
+        "file_id": "D04-canonical",
+        "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+        "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+        "method": "pdf_table",
+        "text": "T08（续）",
+        "page": 3,
+        "bbox": [
+          48.0,
+          235.0,
+          96.0,
+          280.0
+        ],
+        "line_start": null,
+        "line_end": null,
+        "confidence": null
+      },
+      {
+        "file_id": "D04-canonical",
+        "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+        "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+        "method": "pdf_table",
+        "text": "成都（续）",
+        "page": 3,
+        "bbox": [
+          96.0,
+          235.0,
+          148.0,
+          280.0
+        ],
+        "line_start": null,
+        "line_end": null,
+        "confidence": null
+      },
+      {
+        "file_id": "D04-canonical",
+        "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+        "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+        "method": "pdf_table",
+        "text": "续上页",
+        "page": 3,
+        "bbox": [
+          148.0,
+          235.0,
+          209.0,
+          280.0
+        ],
+        "line_start": null,
+        "line_end": null,
+        "confidence": null
+      },
+      {
+        "file_id": "D04-canonical",
+        "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+        "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+        "method": "pdf_table",
+        "text": "见前页",
+        "page": 3,
+        "bbox": [
+          209.0,
+          235.0,
+          245.0,
+          280.0
+        ],
+        "line_start": null,
+        "line_end": null,
+        "confidence": null
+      },
+      {
+        "file_id": "D04-canonical",
+        "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+        "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+        "method": "pdf_table",
+        "text": "附加说明：会展期间价格上涨不自动提高额度，超标仍须事先取得部门负责人书面批准，并在报销时附批准记录。",
+        "page": 3,
+        "bbox": [
+          245.0,
+          235.0,
+          547.0,
+          280.0
+        ],
+        "line_start": null,
+        "line_end": null,
+        "confidence": null
+      }
+    ],
+    "index_text": null,
+    "token_count": null,
+    "kind": "table_row",
+    "table_id": "table01",
+    "row_id": "T08",
+    "quality_warnings": []
+  },
+  "related_passages": [
+    {
+      "doc_id": "D04",
+      "version_date": "2026-02-01",
+      "chunk_id": "r005",
+      "title": "出差住宿规则",
+      "topic": "住宿",
+      "scope": "国内出差",
+      "status": "有效",
+      "start": 752,
+      "end": 791,
+      "text": "计价单位：人民币元 / 人 / 晚。第2至5页为同一表；全表共同注释见第5页。",
+      "parent_id": null,
+      "related_ids": [],
+      "heading_path": [
+        "出差住宿规则",
+        "计价单位：人民币元 / 人 / 晚。第2至5页为同一表；全表共同注释见第5页。"
+      ],
+      "source_locations": [
+        {
+          "file_id": "D04-canonical",
+          "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+          "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+          "method": "pdf_text",
+          "text": "计价单位：人民币元 / 人 / 晚。第2至5页为同一表；全表共同注释见第5页。",
+          "page": 2,
+          "bbox": [
+            48.0,
+            184.1953125,
+            341.25,
+            192.6953125
+          ],
+          "line_start": null,
+          "line_end": null,
+          "confidence": null
+        },
+        {
+          "file_id": "D04-canonical",
+          "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+          "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+          "method": "pdf_text",
+          "text": "计价单位：人民币元 / 人 / 晚。第2至5页为同一表；全表共同注释见第5页。",
+          "page": 3,
+          "bbox": [
+            48.0,
+            184.1953125,
+            341.25,
+            192.6953125
+          ],
+          "line_start": null,
+          "line_end": null,
+          "confidence": null
+        },
+        {
+          "file_id": "D04-canonical",
+          "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+          "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+          "method": "pdf_text",
+          "text": "计价单位：人民币元 / 人 / 晚。第2至5页为同一表；全表共同注释见第5页。",
+          "page": 4,
+          "bbox": [
+            48.0,
+            184.1953125,
+            341.25,
+            192.6953125
+          ],
+          "line_start": null,
+          "line_end": null,
+          "confidence": null
+        },
+        {
+          "file_id": "D04-canonical",
+          "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+          "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+          "method": "pdf_text",
+          "text": "计价单位：人民币元 / 人 / 晚。第2至5页为同一表；全表共同注释见第5页。",
+          "page": 5,
+          "bbox": [
+            48.0,
+            184.1953125,
+            341.25,
+            192.6953125
+          ],
+          "line_start": null,
+          "line_end": null,
+          "confidence": null
+        }
+      ],
+      "index_text": null,
+      "token_count": null,
+      "kind": "table_caption",
+      "table_id": "table01",
+      "row_id": null,
+      "quality_warnings": []
+    },
+    {
+      "doc_id": "D04",
+      "version_date": "2026-02-01",
+      "chunk_id": "r038",
+      "title": "出差住宿规则",
+      "topic": "住宿",
+      "scope": "国内出差",
+      "status": "有效",
+      "start": 2738,
+      "end": 2775,
+      "text": "注1：限额按每人每晚计算，低于限额按实际发生费用申请，不得填报未发生差额。",
+      "parent_id": null,
+      "related_ids": [],
+      "heading_path": [
+        "出差住宿规则",
+        "注1：限额按每人每晚计算，低于限额按实际发生费用申请，不得填报未发生差额。"
+      ],
+      "source_locations": [
+        {
+          "file_id": "D04-canonical",
+          "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+          "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+          "method": "pdf_text",
+          "text": "注1：限额按每人每晚计算，低于限额按实际发生费用申请，不得填报未发生差额。",
+          "page": 5,
+          "bbox": [
+            48.0,
+            580.1953125,
+            358.25,
+            588.6953125
+          ],
+          "line_start": null,
+          "line_end": null,
+          "confidence": null
+        }
+      ],
+      "index_text": null,
+      "token_count": null,
+      "kind": "table_note",
+      "table_id": "table01",
+      "row_id": null,
+      "quality_warnings": []
+    },
+    {
+      "doc_id": "D04",
+      "version_date": "2026-02-01",
+      "chunk_id": "r039",
+      "title": "出差住宿规则",
+      "topic": "住宿",
+      "scope": "国内出差",
+      "status": "有效",
+      "start": 2777,
+      "end": 2812,
+      "text": "注2：超出住宿标准须事先取得部门负责人书面批准，并在报销时附批准记录。",
+      "parent_id": null,
+      "related_ids": [],
+      "heading_path": [
+        "出差住宿规则",
+        "注2：超出住宿标准须事先取得部门负责人书面批准，并在报销时附批准记录。"
+      ],
+      "source_locations": [
+        {
+          "file_id": "D04-canonical",
+          "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+          "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+          "method": "pdf_text",
+          "text": "注2：超出住宿标准须事先取得部门负责人书面批准，并在报销时附批准记录。",
+          "page": 5,
+          "bbox": [
+            48.0,
+            598.1953125,
+            341.25,
+            606.6953125
+          ],
+          "line_start": null,
+          "line_end": null,
+          "confidence": null
+        }
+      ],
+      "index_text": null,
+      "token_count": null,
+      "kind": "table_note",
+      "table_id": "table01",
+      "row_id": null,
+      "quality_warnings": []
+    },
+    {
+      "doc_id": "D04",
+      "version_date": "2026-02-01",
+      "chunk_id": "r040",
+      "title": "出差住宿规则",
+      "topic": "住宿",
+      "scope": "国内出差",
+      "status": "有效",
+      "start": 2814,
+      "end": 2850,
+      "text": "注3：本表仅适用于国内出差，不规定境外或港澳台住宿标准，也未规定总晚数。",
+      "parent_id": null,
+      "related_ids": [],
+      "heading_path": [
+        "出差住宿规则",
+        "注3：本表仅适用于国内出差，不规定境外或港澳台住宿标准，也未规定总晚数。"
+      ],
+      "source_locations": [
+        {
+          "file_id": "D04-canonical",
+          "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+          "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+          "method": "pdf_text",
+          "text": "注3：本表仅适用于国内出差，不规定境外或港澳台住宿标准，也未规定总晚数。",
+          "page": 5,
+          "bbox": [
+            48.0,
+            616.1953125,
+            349.75,
+            624.6953125
+          ],
+          "line_start": null,
+          "line_end": null,
+          "confidence": null
+        }
+      ],
+      "index_text": null,
+      "token_count": null,
+      "kind": "table_note",
+      "table_id": "table01",
+      "row_id": null,
+      "quality_warnings": []
+    },
+    {
+      "doc_id": "D04",
+      "version_date": "2026-02-01",
+      "chunk_id": "r041",
+      "title": "出差住宿规则",
+      "topic": "住宿",
+      "scope": "国内出差",
+      "status": "有效",
+      "start": 2852,
+      "end": 2887,
+      "text": "注4：城市行、单位、续行和共同注释应合并理解；本表不规定报销提交期限。",
+      "parent_id": null,
+      "related_ids": [],
+      "heading_path": [
+        "出差住宿规则",
+        "注4：城市行、单位、续行和共同注释应合并理解；本表不规定报销提交期限。"
+      ],
+      "source_locations": [
+        {
+          "file_id": "D04-canonical",
+          "source_path": "data/source_materials/corpus/pdf_native/D04_出差住宿规则_跨页表格.pdf",
+          "sha256": "c9384bbeeca21f469c6efc510eee893d76d2fff002f0e681c5bfeeb28a2a97d6",
+          "method": "pdf_text",
+          "text": "注4：城市行、单位、续行和共同注释应合并理解；本表不规定报销提交期限。",
+          "page": 5,
+          "bbox": [
+            48.0,
+            634.1953125,
+            341.25,
+            642.6953125
+          ],
+          "line_start": null,
+          "line_end": null,
+          "confidence": null
+        }
+      ],
+      "index_text": null,
+      "token_count": null,
+      "kind": "table_note",
+      "table_id": "table01",
+      "row_id": null,
+      "quality_warnings": []
+    }
+  ]
+}

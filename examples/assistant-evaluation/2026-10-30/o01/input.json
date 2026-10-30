@@ -1,0 +1,11 @@
+{
+  "case_id": "o01",
+  "category": "资料外",
+  "question": "公司婚假一共多少天？",
+  "expected_behavior": "没有婚假依据，不用常识补齐",
+  "required": [],
+  "relevant": null,
+  "acceptable_statuses": [
+    "insufficient_evidence"
+  ]
+}

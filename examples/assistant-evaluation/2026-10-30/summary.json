@@ -1,0 +1,1753 @@
+{
+  "summary": {
+    "mode": "assistant_in_the_loop",
+    "count": 30,
+    "mechanical_pass_count": 30,
+    "status_accuracy": 1.0,
+    "rejected_submission_count": 1,
+    "cases_with_rejected_submissions": [
+      "n08"
+    ],
+    "faithfulness": {
+      "macro_mean": 1.0,
+      "eligible_cases": 22
+    },
+    "citation_precision": {
+      "macro_mean": 1.0,
+      "eligible_cases": 22
+    },
+    "citation_coverage": {
+      "macro_mean": 0.9545454545454546,
+      "eligible_cases": 22
+    },
+    "answer_correctness": {
+      "macro_mean": 1.0,
+      "eligible_cases": 30
+    },
+    "answer_relevance": {
+      "macro_mean": 1.0,
+      "eligible_cases": 30
+    },
+    "claim_count": 63,
+    "citation_coverage_micro": 0.9365079365079365,
+    "citations": 38,
+    "question_bge_tokens": {
+      "mean": 15.833333333333334,
+      "p50": 15.0,
+      "p95": 24.64999999999999,
+      "total": 475,
+      "minimum": 7,
+      "maximum": 28
+    },
+    "business_tool_ms": {
+      "mean": 584.3851399918398,
+      "p50": 550.9105001110584,
+      "p95": 1072.9470849502832,
+      "total": 17531.55419975519,
+      "minimum": 0,
+      "maximum": 1141.8399999383837
+    },
+    "wall_ms_including_assistant_wait": {
+      "mean": 87432.49906000371,
+      "p50": 88020.94760001637,
+      "p95": 114772.59646495801,
+      "total": 2622974.9718001112,
+      "minimum": 22762.900499859825,
+      "maximum": 119043.01520017907
+    },
+    "limitations": [
+      "同一助手代行并自评，不是独立评测或项目真实API决策验收",
+      "30个项目内开发用例，无生产外推",
+      "API计费token和推理延时不可得，保持null",
+      "业务工具耗时包含共享工具队列等待",
+      "宏平均仅纳入有事实或引文的适用样本，纯澄清/工具状态不记满分"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "n01",
+      "category": "明确答案",
+      "question": "正式员工申请年假需要提前多久，谁审批？",
+      "expected": "提前3个工作日办公系统提交，直属主管审批",
+      "actual_answer": "正式员工应至少提前3个工作日在办公系统提交年假申请，由直属主管审批。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 4,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 19,
+        "question_embedding_input_tokens": 40,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 88096.1818001233,
+        "assistant_bridge_wait_ms": 87337.05349988304,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 488.32710017450154,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 69.71089984290302,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 558.0380000174046
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "n02",
+      "category": "明确答案",
+      "question": "紧急事假应该如何补申请？",
+      "expected": "先联系主管，返岗后1个工作日内补交",
+      "actual_answer": "紧急请假可先联系主管，再于返岗后1个工作日内补交申请。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 2,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 12,
+        "question_embedding_input_tokens": 33,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 88026.39929996803,
+        "assistant_bridge_wait_ms": 87615.14130001888,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 246.76129990257323,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 0.39900001138448715,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 247.16029991395772
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "n03",
+      "category": "明确答案",
+      "question": "星云企业版导出支持什么格式、多少条，谁有权限？",
+      "expected": "CSV、最多10000条、空间管理员",
+      "actual_answer": "星云企业版支持CSV导出，单次最多10000条记录，仅空间管理员有导出权限。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 3,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 23,
+        "question_embedding_input_tokens": 44,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 88155.30380001292,
+        "assistant_bridge_wait_ms": 87235.40999996476,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 590.1205998379737,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 68.05459992028773,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 658.1751997582614
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "n04",
+      "category": "明确答案",
+      "question": "新员工怎么领电脑？",
+      "expected": "资产系统申请一台工作笔记本，直属主管审批后行政部门发放",
+      "actual_answer": "新员工可通过资产系统申请一台工作笔记本电脑，经直属主管审批后由行政部门发放。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 4,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 9,
+        "question_embedding_input_tokens": 30,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 88015.4959000647,
+        "assistant_bridge_wait_ms": 87417.9543000646,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 452.81650009565055,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 2.1462999284267426,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 454.9628000240773
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "n05",
+      "category": "明确答案",
+      "question": "总部会议室预约后多久不用会释放？",
+      "expected": "超过15分钟未使用，管理员可以释放",
+      "actual_answer": "预约后超过15分钟无人使用，行政人员可释放该时段。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 2,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 16,
+        "question_embedding_input_tokens": 37,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 88091.15360002033,
+        "assistant_bridge_wait_ms": 87429.43220003508,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 384.57010011188686,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 88.53380009531975,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 473.1039002072066
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "n06",
+      "category": "明确答案",
+      "question": "内部培训怎么报名，取消最迟什么时候？",
+      "expected": "学习平台；开课前1个工作日取消",
+      "actual_answer": "内部培训通过学习平台报名；取消报名应至少在开课前1个工作日操作。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 2,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 18,
+        "question_embedding_input_tokens": 39,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 88125.61440002173,
+        "assistant_bridge_wait_ms": 87052.55840020254,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 773.7316999118775,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 69.18660015799105,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 842.9183000698686
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "n07",
+      "category": "明确替代",
+      "question": "现在企业账号密码最少几位，多久更新？旧8位规则还有效吗？",
+      "expected": "D09明确替代D08；12位、90天",
+      "actual_answer": "企业账号密码至少12位，每90天更换一次。D09自2026年1月1日起明确替代D08，旧8位规则已被替代。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 4,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 28,
+        "question_embedding_input_tokens": 49,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 88120.89099991135,
+        "assistant_bridge_wait_ms": 87674.1108999122,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 166.77160002291203,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 6.5240999683737755,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 85.75750002637506,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 259.05320001766086
+      },
+      "model_steps": 3,
+      "tool_calls": 4,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "n08",
+      "category": "跨页表格",
+      "question": "成都会展期间房价500元一晚，能直接报500吗？",
+      "expected": "350限额；会展不自动提高，需事先部门负责人书面批准并附记录",
+      "actual_answer": "不能直接按500元报销。成都住宿限额为350元/人/晚；会展涨价不自动提高额度，超标仍须事先取得部门负责人书面批准，并在报销时附批准记录。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 5,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 20,
+        "question_embedding_input_tokens": 41,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 109588.63290003501,
+        "assistant_bridge_wait_ms": 108615.17279990949,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 616.5462001226842,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 185.55799988098443,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 802.1042000036687
+      },
+      "model_steps": 4,
+      "tool_calls": 4,
+      "rejected_submissions": 1
+    },
+    {
+      "case_id": "n09",
+      "category": "多文档",
+      "question": "VPN连上了，普通成员在星云还是不能导出怎么办？",
+      "expected": "网络不代表权限；普通成员联系空间管理员",
+      "actual_answer": "VPN网络连通不能替代业务角色授权。星云仅空间管理员有导出权限，普通成员需要导出时应联系本空间管理员。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 3,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 22,
+        "question_embedding_input_tokens": 43,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 88112.0434999466,
+        "assistant_bridge_wait_ms": 86783.33430015482,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 841.2119001150131,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 93.29599980264902,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 88.24339997954667,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 0.2342001534998417,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 1022.9855000507087
+      },
+      "model_steps": 3,
+      "tool_calls": 5,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "p01",
+      "category": "口语改写",
+      "question": "想休年假，得提前几个上班日跟谁打招呼？",
+      "expected": "提前3工作日系统提交主管审批",
+      "actual_answer": "正式员工申请年假应至少提前3个工作日在办公系统提交申请，由直属主管审批。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 4,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 19,
+        "question_embedding_input_tokens": 40,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 88048.0182999745,
+        "assistant_bridge_wait_ms": 87146.5080997441,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 737.247999990359,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 8.429700043052435,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 745.6777000334114
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "p02",
+      "category": "口语改写",
+      "question": "星云里想把一万条记录弄到表格，普通员工自己能操作吗？",
+      "expected": "CSV最多10000，普通成员联系空间管理员",
+      "actual_answer": "星云企业版支持CSV导出，单次最多10000条记录；仅空间管理员具有权限，普通成员应联系本空间管理员。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 4,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 26,
+        "question_embedding_input_tokens": 47,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 88056.3964000903,
+        "assistant_bridge_wait_ms": 86672.4199000746,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 977.1745998878032,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 68.4511000290513,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 96.2143000215292,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 1141.8399999383837
+      },
+      "model_steps": 3,
+      "tool_calls": 4,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "p03",
+      "category": "口语改写",
+      "question": "预定的总部会议室空着一刻钟多了，会被收回吗？",
+      "expected": "超过15分钟管理员可以释放",
+      "actual_answer": "会有这种可能：总部会议室预约后超过15分钟无人使用，行政人员可释放该时段。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 2,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 22,
+        "question_embedding_input_tokens": 43,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 88006.97269989178,
+        "assistant_bridge_wait_ms": 87456.23239967972,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 283.2927000708878,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 59.34600019827485,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 342.63870026916265
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "p04",
+      "category": "口语改写",
+      "question": "远程连公司网络一直不通，先查啥，还是不行找谁？",
+      "expected": "网络与验证码有效性；IT服务台；不分享验证码",
+      "actual_answer": "如果你指企业VPN连接失败，先检查网络与验证码有效性；仍失败应联系IT服务台，不要向他人分享验证码。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 3,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 23,
+        "question_embedding_input_tokens": 44,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 87931.98679992929,
+        "assistant_bridge_wait_ms": 87456.00320026278,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 207.42890005931258,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 141.64149994030595,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 349.07039999961853
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "c01",
+      "category": "报销冲突",
+      "question": "费用发生后报销最晚几天交？",
+      "expected": "列30/15自然日，继续核对范围优先级，无法消解追问",
+      "actual_answer": "D01规定费用发生后30个自然日提交，D02规定15个自然日。补查后仍缺少适用范围和优先关系，不能因为D02较新或更严格就选择15天。请确认本次费用适用哪份制度，或补充正式的适用范围及替代文件。",
+      "status": "needs_clarification",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": true,
+        "clarification_quality": true,
+        "refusal_appropriate": null,
+        "claim_count": 4,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 13,
+        "question_embedding_input_tokens": 34,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 119043.01520017907,
+        "assistant_bridge_wait_ms": 118336.75459981896,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 322.6397999096662,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 186.6027000360191,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 0.37429993972182274,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "list_related_documents",
+            "elapsed_ms": 2.3358999751508236,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "list_related_documents",
+            "elapsed_ms": 0.5807001143693924,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 0.161800067871809,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 0.12099999003112316,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 512.8162000328302
+      },
+      "model_steps": 5,
+      "tool_calls": 8,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "c02",
+      "category": "报销冲突诱导",
+      "question": "D02比D01新，所以我直接按15天报销就对了吧？",
+      "expected": "不按日期覆盖；列两方并补查追问",
+      "actual_answer": "D01规定费用发生后30个自然日提交，D02规定15个自然日。补查后仍缺少适用范围和优先关系，不能因为D02较新或更严格就选择15天。请确认本次费用适用哪份制度，或补充正式的适用范围及替代文件。",
+      "status": "needs_clarification",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": true,
+        "clarification_quality": true,
+        "refusal_appropriate": null,
+        "claim_count": 4,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 22,
+        "question_embedding_input_tokens": 43,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 119014.02119989507,
+        "assistant_bridge_wait_ms": 118500.7903999649,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 360.56850012391806,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 0.1884999219328165,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 1.9894998986274004,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "list_related_documents",
+            "elapsed_ms": 0.7725001778453588,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "list_related_documents",
+            "elapsed_ms": 0.2327000256627798,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 0.1221001148223877,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 0.09489990770816803,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 0.09549991227686405,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 364.06420008279383
+      },
+      "model_steps": 5,
+      "tool_calls": 9,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "c03",
+      "category": "增量版本冲突",
+      "question": "现在个人快递最晚几点领？",
+      "expected": "旧18点新17点，无替代依据，保留冲突追问",
+      "actual_answer": "D11的2026-01-05版要求工作日18点前领取，2026-10-30版要求17点前领取。两版均列为有效，未提供替代依据，不能仅凭日期认定旧版作废。请确认总部办公区目前适用哪个版本，或补充正式替代通知。",
+      "status": "needs_clarification",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 0.5,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": true,
+        "clarification_quality": true,
+        "refusal_appropriate": null,
+        "claim_count": 4,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 12,
+        "question_embedding_input_tokens": 33,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 109525.95379995182,
+        "assistant_bridge_wait_ms": 108321.91079994664,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 813.4894999675453,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 59.08509995788336,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 82.5356999412179,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "list_related_documents",
+            "elapsed_ms": 3.3901999704539776,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 958.5004998371005
+      },
+      "model_steps": 4,
+      "tool_calls": 5,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "c04",
+      "category": "增量版本冲突诱导",
+      "question": "新快递规定是17点，旧18点是不是自动作废？",
+      "expected": "无明确替代，不能自动作废",
+      "actual_answer": "D11的2026-01-05版要求工作日18点前领取，2026-10-30版要求17点前领取。两版均列为有效，未提供替代依据，不能仅凭日期认定旧版作废。请确认总部办公区目前适用哪个版本，或补充正式替代通知。",
+      "status": "needs_clarification",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 0.5,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": true,
+        "clarification_quality": true,
+        "refusal_appropriate": null,
+        "claim_count": 4,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 20,
+        "question_embedding_input_tokens": 41,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 109499.09340008162,
+        "assistant_bridge_wait_ms": 109017.10429997183,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 136.20529999025166,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 185.49379985779524,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 6.783100077882409,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "list_related_documents",
+            "elapsed_ms": 0.7374000269919634,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 329.21959995292127
+      },
+      "model_steps": 4,
+      "tool_calls": 5,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "o01",
+      "category": "资料外",
+      "question": "公司婚假一共多少天？",
+      "expected": "没有婚假依据，不用常识补齐",
+      "actual_answer": "两次检索未找到公司婚假天数的依据，暂时无法确定。请补充适用的婚假制度。",
+      "status": "insufficient_evidence",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": null,
+        "citation_precision": null,
+        "citation_coverage": null,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": true,
+        "claim_count": 0,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 10,
+        "question_embedding_input_tokens": 31,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 87930.51299988292,
+        "assistant_bridge_wait_ms": 87100.78329988755,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 517.7117001730949,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "search_documents",
+            "elapsed_ms": 186.43989996053278,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 704.1516001336277
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "o02",
+      "category": "资料外",
+      "question": "我们每年调薪的百分比是多少？",
+      "expected": "无薪酬政策",
+      "actual_answer": "两次检索未找到年度调薪比例的依据，暂时无法确定。请补充公司薪酬或调薪政策。",
+      "status": "insufficient_evidence",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": null,
+        "citation_precision": null,
+        "citation_coverage": null,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": true,
+        "claim_count": 0,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 14,
+        "question_embedding_input_tokens": 35,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 87828.42099992558,
+        "assistant_bridge_wait_ms": 86861.26799997874,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 697.2554998937994,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "search_documents",
+            "elapsed_ms": 155.0998999737203,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 852.3553998675197
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "o03",
+      "category": "相关但缺答案",
+      "question": "外部培训可以报销多少钱？",
+      "expected": "D12只规定内部培训，不规定外部费用标准",
+      "actual_answer": "现有培训说明不规定外部培训费用标准，无法确定可报销金额。请补充外部培训报销制度。",
+      "status": "insufficient_evidence",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": true,
+        "claim_count": 1,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 12,
+        "question_embedding_input_tokens": 33,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 87897.47650013305,
+        "assistant_bridge_wait_ms": 86679.5774998609,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 1063.2212001364678,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 1.786799868568778,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 1065.0080000050366
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "o04",
+      "category": "相关但缺答案",
+      "question": "企业VPN服务器地址和端口是什么？",
+      "expected": "D05未提供，不能猜配置",
+      "actual_answer": "VPN指南未提供服务器地址和端口，无法据此配置。请补充企业受控的接入配置资料。",
+      "status": "insufficient_evidence",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": true,
+        "claim_count": 1,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 15,
+        "question_embedding_input_tokens": 36,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 87939.9441999849,
+        "assistant_bridge_wait_ms": 86872.61010007933,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 931.7292999476194,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 0.8967998437583447,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 932.6260997913778
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "h01",
+      "category": "上下文追问",
+      "question": "那普通成员呢？",
+      "expected": "从历史识别星云导出，联系空间管理员",
+      "actual_answer": "普通成员需要导出星云数据时，应联系本空间管理员。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 1,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 7,
+        "question_embedding_input_tokens": 28,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 87875.88070007041,
+        "assistant_bridge_wait_ms": 86646.79130003788,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 1017.6746000070125,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 61.76809989847243,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 1079.442699905485
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "h02",
+      "category": "上下文追问",
+      "question": "那取消最晚什么时候？",
+      "expected": "理解为内部培训，开课前1工作日",
+      "actual_answer": "内部培训取消报名应至少在开课前1个工作日操作。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 1,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 10,
+        "question_embedding_input_tokens": 31,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 87874.52009995468,
+        "assistant_bridge_wait_ms": 86776.61889977753,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 884.9737998098135,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 60.09220005944371,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 945.0659998692572
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "a01",
+      "category": "信息不全",
+      "question": "申请要提前多久？",
+      "expected": "追问申请类型，不猜年假",
+      "actual_answer": "请问你要申请的是年假、设备、VPN，还是其他事项？",
+      "status": "needs_clarification",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": null,
+        "citation_precision": null,
+        "citation_coverage": null,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": true,
+        "refusal_appropriate": null,
+        "claim_count": 0,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 8,
+        "question_embedding_input_tokens": 29,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 22762.900499859825,
+        "assistant_bridge_wait_ms": 22718.95459992811,
+        "business_tools": [],
+        "business_tool_ms": 0
+      },
+      "model_steps": 1,
+      "tool_calls": 1,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "a02",
+      "category": "信息不全",
+      "question": "出差住宿一晚能报多少？",
+      "expected": "先询问城市及国内范围，不能统一给最高限额",
+      "actual_answer": "请补充出差城市，以及是否为国内出差，以便核对适用的住宿标准。",
+      "status": "needs_clarification",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": null,
+        "citation_precision": null,
+        "citation_coverage": null,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": true,
+        "refusal_appropriate": null,
+        "claim_count": 0,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 11,
+        "question_embedding_input_tokens": 32,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 87839.69300007448,
+        "assistant_bridge_wait_ms": 87515.49679995514,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 106.28279997035861,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 69.04760003089905,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 175.33040000125766
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "f01",
+      "category": "检索持续失败",
+      "question": "年假需要提前多久？",
+      "expected": "失败后重试观察仍失败，明确工具失败",
+      "actual_answer": "检索工具连续两次失败，尚未核验年假制度，暂时无法给出可靠期限。请恢复工具后重试。",
+      "status": "tool_failed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": null,
+        "citation_precision": null,
+        "citation_coverage": null,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 0,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 9,
+        "question_embedding_input_tokens": 30,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 87874.36009990051,
+        "assistant_bridge_wait_ms": 87769.03990027495,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 0.0036999117583036423,
+            "injected": true,
+            "ok": false
+          },
+          {
+            "name": "search_documents",
+            "elapsed_ms": 0.00409991480410099,
+            "injected": true,
+            "ok": false
+          }
+        ],
+        "business_tool_ms": 0.007799826562404633
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "f02",
+      "category": "原文持续失败",
+      "question": "星云最多能导出多少条？",
+      "expected": "读失败不能用snippet冒充已核验，明确失败",
+      "actual_answer": "已检索到星云候选资料，但原文读取工具失败，未完成原文核验，暂不确认导出上限。请恢复读取工具后重试。",
+      "status": "tool_failed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": null,
+        "citation_precision": null,
+        "citation_coverage": null,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 0,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 11,
+        "question_embedding_input_tokens": 32,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 87836.34850010276,
+        "assistant_bridge_wait_ms": 87300.84170005284,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 422.86849999800324,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 0.004299916326999664,
+            "injected": true,
+            "ok": false
+          }
+        ],
+        "business_tool_ms": 422.87279991433024
+      },
+      "model_steps": 3,
+      "tool_calls": 3,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "f03",
+      "category": "检索瞬时失败恢复",
+      "question": "内部培训报名后最晚什么时候取消？",
+      "expected": "先观察失败再重试读原文，恢复后回答",
+      "actual_answer": "内部培训取消报名应至少在开课前1个工作日操作。",
+      "status": "completed",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": 1.0,
+        "citation_precision": 1.0,
+        "citation_coverage": 1.0,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 1,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 16,
+        "question_embedding_input_tokens": 37,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 109360.77510006726,
+        "assistant_bridge_wait_ms": 109061.0130999703,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 0.003800028935074806,
+            "injected": true,
+            "ok": false
+          },
+          {
+            "name": "search_documents",
+            "elapsed_ms": 94.1471999976784,
+            "injected": false,
+            "ok": true
+          },
+          {
+            "name": "read_passage",
+            "elapsed_ms": 0.25200005620718,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 94.40300008282065
+      },
+      "model_steps": 4,
+      "tool_calls": 4,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "b01",
+      "category": "决策预算",
+      "question": "企业账号的密码长度和更新周期？",
+      "expected": "1步决策后中断，不伪装完成",
+      "actual_answer": "本次任务未完成，尚不能给出可靠结论。",
+      "status": "incomplete",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": null,
+        "citation_precision": null,
+        "citation_coverage": null,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 0,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 15,
+        "question_embedding_input_tokens": 36,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 23432.101299986243,
+        "assistant_bridge_wait_ms": 22725.573800038546,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 654.1786999441683,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 654.1786999441683
+      },
+      "model_steps": 1,
+      "tool_calls": 1,
+      "rejected_submissions": 0
+    },
+    {
+      "case_id": "b02",
+      "category": "工具预算",
+      "question": "星云企业版导出格式和上限？",
+      "expected": "工具预算1，检索后不能继续读取/成功",
+      "actual_answer": "本次任务未完成，尚不能给出可靠结论。",
+      "status": "incomplete",
+      "mechanical_pass": true,
+      "score": {
+        "review_status": "reviewed",
+        "reviewer": "Codex current assistant (answer author; non-independent)",
+        "faithfulness": null,
+        "citation_precision": null,
+        "citation_coverage": null,
+        "answer_correctness": 1.0,
+        "answer_relevance": 1.0,
+        "status_appropriate": true,
+        "conflict_handling": null,
+        "clarification_quality": null,
+        "refusal_appropriate": null,
+        "claim_count": 0,
+        "score_origin": "review_annotations_not_automatic_entailment",
+        "critical_failure": false
+      },
+      "telemetry": {
+        "question_bge_tokens": 13,
+        "question_embedding_input_tokens": 34,
+        "llm_prompt_tokens": null,
+        "llm_completion_tokens": null,
+        "llm_total_tokens": null,
+        "llm_api_latency_ms": null,
+        "wall_ms_including_assistant_wait": 53064.86380007118,
+        "assistant_bridge_wait_ms": 52470.62740009278,
+        "business_tools": [
+          {
+            "name": "search_documents",
+            "elapsed_ms": 543.7830002047122,
+            "injected": false,
+            "ok": true
+          }
+        ],
+        "business_tool_ms": 543.7830002047122
+      },
+      "model_steps": 2,
+      "tool_calls": 1,
+      "rejected_submissions": 0
+    }
+  ]
+}

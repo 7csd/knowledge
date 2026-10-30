@@ -1,0 +1,21 @@
+{
+  "warning": "离线预设动作回放，仅验证工程流程；不代表真实模型决策或语义检索效果。",
+  "scenario": "missing",
+  "input": "公司购房补贴多少钱？",
+  "actual": {
+    "run_id": "3ea80ea16f4a482292720a2c7e921595",
+    "model_mode": "offline_scripted",
+    "retrieval_mode": "bm25",
+    "model_steps": 3,
+    "tool_calls": 3,
+    "result": {
+      "status": "insufficient_evidence",
+      "answer": "当前知识库没有可确认的购房补贴规定。",
+      "citations": [],
+      "gaps": [
+        "缺少购房补贴制度"
+      ],
+      "conflicts": []
+    }
+  }
+}

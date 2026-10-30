@@ -1,0 +1,14 @@
+{
+  "case_id": "b02",
+  "category": "工具预算",
+  "question": "星云企业版导出格式和上限？",
+  "expected_behavior": "工具预算1，检索后不能继续读取/成功",
+  "required": [
+    "D06@2026-02-10#c001"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "incomplete"
+  ],
+  "max_tool_calls": 1
+}

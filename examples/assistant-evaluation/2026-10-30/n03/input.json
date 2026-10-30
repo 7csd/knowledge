@@ -1,0 +1,13 @@
+{
+  "case_id": "n03",
+  "category": "明确答案",
+  "question": "星云企业版导出支持什么格式、多少条，谁有权限？",
+  "expected_behavior": "CSV、最多10000条、空间管理员",
+  "required": [
+    "D06@2026-02-10#c001"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "role": "assistant",
+  "content": "先检索问题对应制度；追问结合已有对话确定事项。",
+  "tool_calls": [
+    {
+      "id": "b02-1-0",
+      "type": "function",
+      "function": {
+        "name": "search_documents",
+        "arguments": "{\"query\": \"星云企业版导出格式和上限？\"}"
+      }
+    }
+  ]
+}

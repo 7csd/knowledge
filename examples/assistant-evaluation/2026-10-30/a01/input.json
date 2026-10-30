@@ -1,0 +1,11 @@
+{
+  "case_id": "a01",
+  "category": "信息不全",
+  "question": "申请要提前多久？",
+  "expected_behavior": "追问申请类型，不猜年假",
+  "required": [],
+  "relevant": null,
+  "acceptable_statuses": [
+    "needs_clarification"
+  ]
+}

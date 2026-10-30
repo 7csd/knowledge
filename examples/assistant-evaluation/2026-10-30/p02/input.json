@@ -1,0 +1,14 @@
+{
+  "case_id": "p02",
+  "category": "口语改写",
+  "question": "星云里想把一万条记录弄到表格，普通员工自己能操作吗？",
+  "expected_behavior": "CSV最多10000，普通成员联系空间管理员",
+  "required": [
+    "D06@2026-02-10#c001",
+    "D06@2026-02-10#c002"
+  ],
+  "relevant": null,
+  "acceptable_statuses": [
+    "completed"
+  ]
+}

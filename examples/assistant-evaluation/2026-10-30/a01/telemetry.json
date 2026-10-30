@@ -1,0 +1,12 @@
+{
+  "question_bge_tokens": 8,
+  "question_embedding_input_tokens": 29,
+  "llm_prompt_tokens": null,
+  "llm_completion_tokens": null,
+  "llm_total_tokens": null,
+  "llm_api_latency_ms": null,
+  "wall_ms_including_assistant_wait": 22762.900499859825,
+  "assistant_bridge_wait_ms": 22718.95459992811,
+  "business_tools": [],
+  "business_tool_ms": 0
+}

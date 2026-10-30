@@ -1,0 +1,16 @@
+{
+  "run_id": "1df197214c0446b0be495c0293e75aaf",
+  "model_mode": "assistant_in_the_loop",
+  "retrieval_mode": "hybrid",
+  "model_steps": 3,
+  "tool_calls": 3,
+  "result": {
+    "status": "needs_clarification",
+    "answer": "请补充出差城市，以及是否为国内出差，以便核对适用的住宿标准。",
+    "citations": [],
+    "gaps": [
+      "缺少出差城市及地域范围"
+    ],
+    "conflicts": []
+  }
+}

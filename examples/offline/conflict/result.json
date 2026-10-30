@@ -1,0 +1,36 @@
+{
+  "warning": "离线预设动作回放，仅验证工程流程；不代表真实模型决策或语义检索效果。",
+  "scenario": "conflict",
+  "input": "报销期限多久？",
+  "actual": {
+    "run_id": "5c6e109e2f4c48499cd337c2193feeee",
+    "model_mode": "offline_scripted",
+    "retrieval_mode": "bm25",
+    "model_steps": 6,
+    "tool_calls": 6,
+    "result": {
+      "status": "needs_clarification",
+      "answer": "资料分别规定30与15个自然日，请确认适用哪份制度。",
+      "citations": [
+        {
+          "doc_id": "D01",
+          "version_date": "2026-01-01",
+          "chunk_id": "p001",
+          "quote": "第一条 报销期限为费用发生后30个自然日。"
+        },
+        {
+          "doc_id": "D02",
+          "version_date": "2026-03-01",
+          "chunk_id": "p001",
+          "quote": "第一条 报销期限为费用发生后15个自然日。"
+        }
+      ],
+      "gaps": [
+        "适用范围和制度优先级未说明"
+      ],
+      "conflicts": [
+        "D01规定30个自然日，D02规定15个自然日"
+      ]
+    }
+  }
+}

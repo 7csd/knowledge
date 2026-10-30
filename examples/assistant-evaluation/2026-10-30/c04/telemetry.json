@@ -1,0 +1,37 @@
+{
+  "question_bge_tokens": 20,
+  "question_embedding_input_tokens": 41,
+  "llm_prompt_tokens": null,
+  "llm_completion_tokens": null,
+  "llm_total_tokens": null,
+  "llm_api_latency_ms": null,
+  "wall_ms_including_assistant_wait": 109499.09340008162,
+  "assistant_bridge_wait_ms": 109017.10429997183,
+  "business_tools": [
+    {
+      "name": "search_documents",
+      "elapsed_ms": 136.20529999025166,
+      "injected": false,
+      "ok": true
+    },
+    {
+      "name": "read_passage",
+      "elapsed_ms": 185.49379985779524,
+      "injected": false,
+      "ok": true
+    },
+    {
+      "name": "read_passage",
+      "elapsed_ms": 6.783100077882409,
+      "injected": false,
+      "ok": true
+    },
+    {
+      "name": "list_related_documents",
+      "elapsed_ms": 0.7374000269919634,
+      "injected": false,
+      "ok": true
+    }
+  ],
+  "business_tool_ms": 329.21959995292127
+}

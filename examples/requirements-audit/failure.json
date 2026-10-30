@@ -1,0 +1,57 @@
+{
+  "mechanical_audit": {
+    "checks": {
+      "output_schema": true,
+      "trace_has_start_and_end": true,
+      "run_identity_consistent": true,
+      "trace_sequence_continuous": true,
+      "trace_output_matches": true,
+      "tool_count_matches_trace": true,
+      "model_count_matches_trace": true,
+      "citations_read_and_verbatim": true,
+      "noncompletion_has_gaps": true,
+      "no_unresolved_conflicts_marked_completed": true,
+      "execution_budget_respected": true,
+      "mode_matches_trace": true
+    },
+    "mechanical_pass": true,
+    "citation_errors": [],
+    "read_documents": [],
+    "actions": [
+      "search_documents",
+      "read_passage",
+      "submit_result"
+    ],
+    "observed_failed_tools": [
+      "read_passage"
+    ],
+    "live_model_run": false,
+    "semantic_pass": null,
+    "note": "引用存在/动作发生不是忠实度、相关性或补查有效性的语义证明"
+  },
+  "semantic_metrics": {
+    "review_status": "pending",
+    "faithfulness": null,
+    "citation_precision": null,
+    "citation_coverage": null,
+    "answer_correctness": null,
+    "answer_relevance": null
+  },
+  "review": {
+    "run_id": "22588b4d73574c49987c413a916ced74",
+    "artifact_sha256": "93c41ac5e55ed0922c59aa166dc5641ef0cc262ee7163e5eb383d392fd7b7fa4",
+    "status": "pending",
+    "reviewer": "",
+    "all_factual_claims_reviewed": false,
+    "claims": [],
+    "citation_judgments": [],
+    "answer_correctness": null,
+    "answer_relevance": null,
+    "status_appropriate": null,
+    "conflict_handling": null,
+    "clarification_quality": null,
+    "refusal_appropriate": null,
+    "notes": "对照原问题、参考事实、完整原文与Trace审阅；无事实断言时忠实度为null，不能计满分。"
+  },
+  "live_acceptance": "pending"
+}
